@@ -7,4 +7,7 @@ import jakarta.persistence.Id;
 public class TypeMutimedia {
     @Id
     private long id;
+
+    private String libelle;
+    private String code;
 }

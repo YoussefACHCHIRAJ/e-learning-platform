@@ -12,9 +12,38 @@ public class GroupeEtudiant {
     private long id;
     private String libelle;
     private LocalDate date;
-    @OneToOne
-    private GroupeEtudiantDetail groupeEtudiantDetail;
     @ManyToOne
     private Parcours parcours;
 
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getLibelle() {
+        return libelle;
+    }
+
+    public void setLibelle(String libelle) {
+        this.libelle = libelle;
+    }
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
+
+    public Parcours getParcours() {
+        return parcours;
+    }
+
+    public void setParcours(Parcours parcours) {
+        this.parcours = parcours;
+    }
 }

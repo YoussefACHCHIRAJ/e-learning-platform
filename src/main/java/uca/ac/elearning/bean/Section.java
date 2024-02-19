@@ -7,4 +7,11 @@ import jakarta.persistence.Id;
 public class Section {
     @Id
     private long id;
+    private String libelle;
+    private String pathMultimedia;
+    private String typeMultimedia;
+    private String content;
+    private String categorie;
+
+
 }
