@@ -11,7 +11,7 @@ public class GroupeEtudiantDetail {
     private long id;
     private boolean active;
 
-    @OneToOne
+    @ManyToOne
     private GroupeEtudiant groupeEtudiant;
 
     public long getId() {

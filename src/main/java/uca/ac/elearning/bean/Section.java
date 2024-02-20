@@ -2,6 +2,8 @@ package uca.ac.elearning.bean;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
+import jdk.jfr.Category;
 
 @Entity
 public class Section {
@@ -9,9 +11,14 @@ public class Section {
     private long id;
     private String libelle;
     private String pathMultimedia;
-    private String typeMultimedia;
     private String content;
-    private String categorie;
+
+    @ManyToOne
+    private TypeMutimedia typeMultimedia;
+
+   @ManyToOne
+    private Cours cours;
+
 
     public long getId() {
         return id;

@@ -10,6 +10,8 @@ public class TypeMutimedia {
 
     private String libelle;
 
+    private String code;
+
     public long getId() {
         return id;
     }
@@ -33,8 +35,5 @@ public class TypeMutimedia {
     public void setCode(String code) {
         this.code = code;
     }
-
-    private String code;
-
 
 }
