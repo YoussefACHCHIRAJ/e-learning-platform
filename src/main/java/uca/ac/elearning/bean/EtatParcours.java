@@ -8,8 +8,9 @@ public class EtatParcours {
     private long id;
     private String libelle;
     private String code;
-    @ManyToOne
-    private Parcours parcours;
+
+    @OneToOne
+    Parcours parcours;
 
     public long getId() {
         return id;
@@ -33,5 +34,13 @@ public class EtatParcours {
 
     public void setCode(String code) {
         this.code = code;
+    }
+
+    public Parcours getParcours() {
+        return parcours;
+    }
+
+    public void setParcours(Parcours parcours) {
+        this.parcours = parcours;
     }
 }
