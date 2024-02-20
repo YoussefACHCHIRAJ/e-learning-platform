@@ -2,14 +2,16 @@ package uca.ac.elearning.bean;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 public class EtatParcours {
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private String libelle;
     private String code;
-    @OneToOne
-    private Parcours parcours;
+    @OneToMany
+    private List<Parcours> parcours;
 
     public long getId() {
         return id;
@@ -35,11 +37,11 @@ public class EtatParcours {
         this.code = code;
     }
 
-    public Parcours getParcours() {
+    public List<Parcours> getParcours() {
         return parcours;
     }
 
-    public void setParcours(Parcours parcours) {
+    public void setParcours(List<Parcours> parcours) {
         this.parcours = parcours;
     }
 }
