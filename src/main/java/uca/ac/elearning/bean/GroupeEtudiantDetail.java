@@ -9,10 +9,10 @@ import jakarta.persistence.OneToOne;
 public class GroupeEtudiantDetail {
     @Id
     private long id;
-    private boolean active;
+    private boolean isActive;
 
-    @ManyToOne
-    private GroupeEtudiant groupeEtudiant;
+
+
 
     public long getId() {
         return id;
@@ -23,18 +23,12 @@ public class GroupeEtudiantDetail {
     }
 
     public boolean isActive() {
-        return active;
+        return isActive;
     }
 
     public void setActive(boolean active) {
-        this.active = active;
+        this.isActive = active;
     }
 
-    public GroupeEtudiant getGroupeEtudiant() {
-        return groupeEtudiant;
-    }
 
-    public void setGroupeEtudiant(GroupeEtudiant groupeEtudiant) {
-        this.groupeEtudiant = groupeEtudiant;
-    }
 }

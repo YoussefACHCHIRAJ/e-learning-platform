@@ -1,13 +1,12 @@
 package uca.ac.elearning.bean;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 import jdk.jfr.Category;
 
 @Entity
 public class Section {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private String libelle;
     private String pathMultimedia;
@@ -18,7 +17,6 @@ public class Section {
 
    @ManyToOne
     private Cours cours;
-
 
     public long getId() {
         return id;
@@ -44,14 +42,6 @@ public class Section {
         this.pathMultimedia = pathMultimedia;
     }
 
-    public String getTypeMultimedia() {
-        return typeMultimedia;
-    }
-
-    public void setTypeMultimedia(String typeMultimedia) {
-        this.typeMultimedia = typeMultimedia;
-    }
-
     public String getContent() {
         return content;
     }
@@ -60,11 +50,26 @@ public class Section {
         this.content = content;
     }
 
-    public String getCategorie() {
-        return categorie;
+    public TypeMutimedia getTypeMultimedia() {
+        return typeMultimedia;
     }
 
-    public void setCategorie(String categorie) {
-        this.categorie = categorie;
+    public void setTypeMultimedia(TypeMutimedia typeMultimedia) {
+        this.typeMultimedia = typeMultimedia;
+    }
+
+    public Cours getCours() {
+        return cours;
+    }
+
+    public void setCours(Cours cours) {
+        this.cours = cours;
     }
 }
+
+
+
+
+
+
+
