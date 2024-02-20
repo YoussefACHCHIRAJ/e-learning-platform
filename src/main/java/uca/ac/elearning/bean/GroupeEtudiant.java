@@ -2,7 +2,11 @@ package uca.ac.elearning.bean;
 
 import jakarta.persistence.*;
 
+
 import java.util.Date;
+
+import java.time.LocalDate;
+
 
 @Entity
 public class GroupeEtudiant {
@@ -10,7 +14,7 @@ public class GroupeEtudiant {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private String libelle;
-    private Date date;
+    private LocalDate date;
 
     @ManyToOne
     private Prof prof;
@@ -20,6 +24,9 @@ public class GroupeEtudiant {
 
     @ManyToOne
     private InscriptionEtudiant inscriptionEtudiant;
+
+    @ManyToOne
+    private Parcours parcours;
 
     public long getId() {
         return id;
@@ -37,11 +44,11 @@ public class GroupeEtudiant {
         this.libelle = libelle;
     }
 
-    public Date getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 
@@ -67,5 +74,13 @@ public class GroupeEtudiant {
 
     public void setInscriptionEtudiant(InscriptionEtudiant inscriptionEtudiant) {
         this.inscriptionEtudiant = inscriptionEtudiant;
+    }
+
+    public Parcours getParcours() {
+        return parcours;
+    }
+
+    public void setParcours(Parcours parcours) {
+        this.parcours = parcours;
     }
 }

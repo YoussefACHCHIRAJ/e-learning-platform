@@ -1,7 +1,6 @@
 package uca.ac.elearning.bean;
 
 import jakarta.persistence.*;
-import jdk.jfr.Category;
 
 @Entity
 public class Section {
@@ -17,6 +16,9 @@ public class Section {
 
    @ManyToOne
     private Cours cours;
+
+   @ManyToOne
+   private Category category;
 
     public long getId() {
         return id;
@@ -64,6 +66,14 @@ public class Section {
 
     public void setCours(Cours cours) {
         this.cours = cours;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
     }
 }
 
