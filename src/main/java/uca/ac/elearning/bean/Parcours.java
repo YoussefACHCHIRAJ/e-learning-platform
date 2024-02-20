@@ -2,6 +2,8 @@ package uca.ac.elearning.bean;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToOne;
 
 @Entity
 public class Parcours {
@@ -9,7 +11,8 @@ public class Parcours {
     private long id;
     private String libelle;
     private String description;
-    private String EtatParcours;
+    @ManyToOne
+    private EtatParcours etatParcours;
 
     public long getId() {
         return id;
@@ -35,11 +38,11 @@ public class Parcours {
         this.description = description;
     }
 
-    public String getEtatParcours() {
-        return EtatParcours;
+    public EtatParcours getEtatParcours() {
+        return etatParcours;
     }
 
-    public void setEtatParcours(String etatParcours) {
-        EtatParcours = etatParcours;
+    public void setEtatParcours(EtatParcours etatParcours) {
+        this.etatParcours = etatParcours;
     }
 }
