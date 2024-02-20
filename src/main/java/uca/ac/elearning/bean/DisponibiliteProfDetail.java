@@ -1,19 +1,21 @@
 package uca.ac.elearning.bean;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 
-import java.time.LocalDate;
-import java.time.LocalTime;
+import java.util.Date;
 
 @Entity
 public class DisponibiliteProfDetail {
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id
     private long id;
-    private LocalDate jour;
-    private LocalTime tranchHoraireDebut;
+    @ManyToOne
+    private DisponibiliteProf dispoProf;
+    private String jour;
+
+    private Date trancheHoraireDebut;
+    private Date trancheHoraireFin;
 
     public long getId() {
         return id;
@@ -23,34 +25,35 @@ public class DisponibiliteProfDetail {
         this.id = id;
     }
 
-    public LocalDate getJour() {
+    public DisponibiliteProf getDispoProf() {
+        return dispoProf;
+    }
+
+    public void setDispoProf(DisponibiliteProf dispoProf) {
+        this.dispoProf = dispoProf;
+    }
+
+    public String getJour() {
         return jour;
     }
 
-    public void setJour(LocalDate jour) {
+    public void setJour(String jour) {
         this.jour = jour;
     }
 
-    public LocalTime getTranchHoraireDebut() {
-        return tranchHoraireDebut;
+    public Date getTrancheHoraireDebut() {
+        return trancheHoraireDebut;
     }
 
-    public void setTranchHoraireDebut(LocalTime tranchHoraireDebut) {
-        this.tranchHoraireDebut = tranchHoraireDebut;
+    public void setTrancheHoraireDebut(Date trancheHoraireDebut) {
+        this.trancheHoraireDebut = trancheHoraireDebut;
     }
 
-    public LocalTime getTranchHoraireFin() {
-        return tranchHoraireFin;
+    public Date getTrancheHoraireFin() {
+        return trancheHoraireFin;
     }
 
-    public void setTranchHoraireFin(LocalTime tranchHoraireFin) {
-        this.tranchHoraireFin = tranchHoraireFin;
+    public void setTrancheHoraireFin(Date trancheHoraireFin) {
+        this.trancheHoraireFin = trancheHoraireFin;
     }
-
-    private LocalTime tranchHoraireFin;
-
-
-
-
-
 }
