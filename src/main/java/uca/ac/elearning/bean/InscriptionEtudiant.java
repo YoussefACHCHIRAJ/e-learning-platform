@@ -12,18 +12,10 @@ public class InscriptionEtudiant {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-
-    private String coursActuel;
-
+    @ManyToOne
+    private Cours coursActuel;
     @ManyToOne
     private Etudiant etudiant;
-    @ManyToOne
-    private Parcours parcours;
-
-    @ManyToOne
-    private Prof prof;
-    @ManyToOne
-    private GroupeEtudiant groupeEtudiant;
 
     public long getId() {
         return id;
@@ -33,44 +25,20 @@ public class InscriptionEtudiant {
         this.id = id;
     }
 
+    public Cours getCoursActuel() {
+        return coursActuel;
+    }
+
+    public void setCoursActuel(Cours coursActuel) {
+        this.coursActuel = coursActuel;
+    }
+
     public Etudiant getEtudiant() {
         return etudiant;
     }
 
     public void setEtudiant(Etudiant etudiant) {
         this.etudiant = etudiant;
-    }
-
-    public Parcours getParcours() {
-        return parcours;
-    }
-
-    public void setParcours(Parcours parcours) {
-        this.parcours = parcours;
-    }
-
-    public String getCoursActuel() {
-        return coursActuel;
-    }
-
-    public void setCoursActuel(String coursActuel) {
-        this.coursActuel = coursActuel;
-    }
-
-    public Prof getProf() {
-        return prof;
-    }
-
-    public void setProf(Prof prof) {
-        this.prof = prof;
-    }
-
-    public GroupeEtudiant getGroupeEtudiant() {
-        return groupeEtudiant;
-    }
-
-    public void setGroupeEtudiant(GroupeEtudiant groupeEtudiant) {
-        this.groupeEtudiant = groupeEtudiant;
     }
 }
 

@@ -2,16 +2,12 @@ package uca.ac.elearning.bean;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToOne;
 
 @Entity
 public class GroupeEtudiantDetail {
     @Id
     private long id;
     private boolean isActive;
-
-
 
 
     public long getId() {
