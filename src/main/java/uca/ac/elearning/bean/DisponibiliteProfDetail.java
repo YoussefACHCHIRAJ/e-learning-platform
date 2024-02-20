@@ -1,14 +1,13 @@
 package uca.ac.elearning.bean;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 
 import java.util.Date;
 
 @Entity
 public class DisponibiliteProfDetail {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     @ManyToOne
     private DisponibiliteProf dispoProf;
