@@ -9,7 +9,6 @@ import java.util.List;
 @Repository
 public interface ParcoursDao extends JpaRepository<Parcours, Long> {
     Parcours findByLibelle(String Libelle);
-
     List<Parcours> findByEtatParcoursCode(String code);
 
     int deleteByEtatParcoursCode(String code);

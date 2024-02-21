@@ -1,10 +1,9 @@
-package uca.ac.elearning.ws.converter;
+package uca.ac.elearning.webService.converter;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
-import uca.ac.elearning.bean.Category;
 import uca.ac.elearning.bean.DisponibiliteProfDetail;
-import uca.ac.elearning.ws.dto.DisponibiliteProfDetailDto;
+import uca.ac.elearning.webService.dto.DisponibiliteProfDetailDto;
 
 import java.util.List;
 import java.util.stream.Collectors;

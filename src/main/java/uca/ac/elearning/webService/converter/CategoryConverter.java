@@ -1,11 +1,9 @@
-package uca.ac.elearning.ws.converter;
+package uca.ac.elearning.webService.converter;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
-import uca.ac.elearning.bean.Admin;
 import uca.ac.elearning.bean.Category;
-import uca.ac.elearning.ws.dto.AdminDto;
-import uca.ac.elearning.ws.dto.CategoryDto;
+import uca.ac.elearning.webService.dto.CategoryDto;
 
 import java.util.List;
 import java.util.stream.Collectors;

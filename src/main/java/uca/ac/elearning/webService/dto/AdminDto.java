@@ -1,4 +1,4 @@
-package uca.ac.elearning.ws.dto;
+package uca.ac.elearning.webService.dto;
 
 public class AdminDto {
     private long id;
