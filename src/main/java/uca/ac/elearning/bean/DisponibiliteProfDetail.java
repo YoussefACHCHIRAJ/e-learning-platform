@@ -9,12 +9,12 @@ public class DisponibiliteProfDetail {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    @ManyToOne
-    private DisponibiliteProf dispoProf;
     private String jour;
 
     private Date trancheHoraireDebut;
     private Date trancheHoraireFin;
+    @ManyToOne
+    private DisponibiliteProf disponibiliteProf;
 
     public long getId() {
         return id;
@@ -24,12 +24,12 @@ public class DisponibiliteProfDetail {
         this.id = id;
     }
 
-    public DisponibiliteProf getDispoProf() {
-        return dispoProf;
+    public DisponibiliteProf getDisponibiliteProf() {
+        return disponibiliteProf;
     }
 
-    public void setDispoProf(DisponibiliteProf dispoProf) {
-        this.dispoProf = dispoProf;
+    public void setDisponibiliteProf(DisponibiliteProf disponibiliteProf) {
+        this.disponibiliteProf = disponibiliteProf;
     }
 
     public String getJour() {

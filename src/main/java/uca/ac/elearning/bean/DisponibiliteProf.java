@@ -9,11 +9,10 @@ public class DisponibiliteProf {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-
-    @ManyToOne
-    private Prof prof;
     private Date dateDebut;
     private Date dateFin;
+    @ManyToOne
+    private Prof prof;
 
     public long getId() {
         return id;
