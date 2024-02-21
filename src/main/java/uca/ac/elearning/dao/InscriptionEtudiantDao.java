@@ -6,5 +6,5 @@ import uca.ac.elearning.bean.InscriptionEtudiant;
 
 @Repository
 public interface InscriptionEtudiantDao extends JpaRepository<InscriptionEtudiant,Long> {
-
+    InscriptionEtudiant findByEtudiantUserName(String userName);
 }
