@@ -1,7 +1,10 @@
 package uca.ac.elearning.ws.converter;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
+import uca.ac.elearning.bean.Admin;
 import uca.ac.elearning.bean.Category;
+import uca.ac.elearning.ws.dto.AdminDto;
 import uca.ac.elearning.ws.dto.CategoryDto;
 
 import java.util.List;
@@ -10,11 +13,8 @@ import java.util.stream.Collectors;
 @Component
 public class CategoryConverter {
     public Category toBean(CategoryDto dto){
-        Category bean = new Category();
-        bean.setId(dto.getId());
-        bean.setLibelle(dto.getLibelle());
-        bean.setCode(dto.getCode());
-        return bean;
+        ModelMapper modelMapper = new ModelMapper();
+        return modelMapper.map(dto, Category.class);
     }
 
     public List<Category> toBeans(List<CategoryDto> dtos){
@@ -22,11 +22,8 @@ public class CategoryConverter {
     }
 
     public CategoryDto toDto(Category bean) {
-        CategoryDto dto = new CategoryDto();
-        dto.setId(bean.getId());
-        dto.setLibelle(bean.getLibelle());
-        dto.setCode(bean.getCode());
-        return dto;
+        ModelMapper modelMapper = new ModelMapper();
+        return modelMapper.map(bean,CategoryDto.class);
     }
 
     public List<CategoryDto> toDtos(List<Category> beans){
