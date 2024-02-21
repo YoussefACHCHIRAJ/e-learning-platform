@@ -6,6 +6,6 @@ import uca.ac.elearning.bean.Etudiant;
 
 @Repository
 public interface EtudiantDao extends JpaRepository<Etudiant,Long> {
-       Etudiant findByUserName(String userName);
+       Etudiant findByUsername(String userName);
        Etudiant findByEmail(String email);
 }
