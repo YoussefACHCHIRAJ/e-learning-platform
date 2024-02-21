@@ -1,11 +1,10 @@
 package uca.ac.elearning.ws.dto;
 
-import jakarta.persistence.ManyToOne;
 import uca.ac.elearning.bean.DisponibiliteProf;
 
 import java.util.Date;
 
-public class disponibiliteProfDetailsDto {
+public class DisponibiliteProfDetailDto {
     private long id;
     private String jour;
 
