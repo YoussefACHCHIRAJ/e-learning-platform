@@ -10,7 +10,6 @@ public class Etudiant {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-
     private String userName;
     private String email;
     private String password;
