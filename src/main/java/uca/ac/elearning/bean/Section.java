@@ -1,5 +1,4 @@
 package uca.ac.elearning.bean;
-
 import jakarta.persistence.*;
 
 @Entity

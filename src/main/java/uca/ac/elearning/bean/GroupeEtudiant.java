@@ -1,10 +1,5 @@
 package uca.ac.elearning.bean;
-
 import jakarta.persistence.*;
-
-
-import java.util.Date;
-
 import java.time.LocalDate;
 
 
