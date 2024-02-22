@@ -1,16 +1,17 @@
-package uca.ac.elearning.bean;
+package uca.ac.elearning.webService.dto;
 
-import jakarta.persistence.*;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
-@Entity
-public class Cours {
+public class TypeMultimediaDto {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-
     private long id;
-    private String libelle;
-    private String code;
 
+    private String libelle;
+
+    private String code;
 
     public long getId() {
         return id;
@@ -35,14 +36,4 @@ public class Cours {
     public void setCode(String code) {
         this.code = code;
     }
-
-    public Parcours getParcours() {
-        return parcours;
-    }
-
-    public void setParcours(Parcours parcours) {
-        this.parcours = parcours;
-    }
-    @ManyToOne
-    private Parcours parcours;
 }
