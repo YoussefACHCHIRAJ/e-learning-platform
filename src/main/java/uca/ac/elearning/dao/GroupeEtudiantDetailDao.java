@@ -9,5 +9,5 @@ import java.util.List;
 
 @Repository
 public interface GroupeEtudiantDetailDao extends JpaRepository<GroupeEtudiantDetail,Long> {
-
+     List<GroupeEtudiantDetail> findByIsActive(boolean isActive);
 }
