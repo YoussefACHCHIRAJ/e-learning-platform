@@ -1,19 +1,16 @@
-package uca.ac.elearning.bean;
+package uca.ac.elearning.webService.dto;
 
-import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-@Entity
-public class Prof {
+public class ProfDto {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private String nom;
     private String prenom;
     private String username;
-    private String password;
 
     public long getId() {
         return id;
@@ -54,4 +51,7 @@ public class Prof {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    private String password;
+
 }
