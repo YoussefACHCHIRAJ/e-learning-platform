@@ -10,6 +10,9 @@ public class Cours {
     private long id;
     private String libelle;
     private String code;
+    @ManyToOne
+    private Parcours parcours;
+
 
 
     public long getId() {
@@ -39,10 +42,7 @@ public class Cours {
     public Parcours getParcours() {
         return parcours;
     }
-
     public void setParcours(Parcours parcours) {
         this.parcours = parcours;
     }
-    @ManyToOne
-    private Parcours parcours;
 }

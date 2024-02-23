@@ -2,6 +2,7 @@ package uca.ac.elearning.bean;
 
 import jakarta.persistence.*;
 
+import java.time.LocalTime;
 import java.util.Date;
 
 @Entity
@@ -11,8 +12,8 @@ public class DisponibiliteProfDetail {
     private long id;
     private String jour;
 
-    private Date trancheHoraireDebut;
-    private Date trancheHoraireFin;
+    private LocalTime trancheHoraireDebut;
+    private LocalTime trancheHoraireFin;
     @ManyToOne
     private DisponibiliteProf disponibiliteProf;
 
@@ -40,19 +41,19 @@ public class DisponibiliteProfDetail {
         this.jour = jour;
     }
 
-    public Date getTrancheHoraireDebut() {
+    public LocalTime getTrancheHoraireDebut() {
         return trancheHoraireDebut;
     }
 
-    public void setTrancheHoraireDebut(Date trancheHoraireDebut) {
+    public void setTrancheHoraireDebut(LocalTime trancheHoraireDebut) {
         this.trancheHoraireDebut = trancheHoraireDebut;
     }
 
-    public Date getTrancheHoraireFin() {
+    public LocalTime getTrancheHoraireFin() {
         return trancheHoraireFin;
     }
 
-    public void setTrancheHoraireFin(Date trancheHoraireFin) {
+    public void setTrancheHoraireFin(LocalTime trancheHoraireFin) {
         this.trancheHoraireFin = trancheHoraireFin;
     }
 }
