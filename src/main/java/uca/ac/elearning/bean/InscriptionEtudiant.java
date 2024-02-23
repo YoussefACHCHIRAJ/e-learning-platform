@@ -19,6 +19,16 @@ public class InscriptionEtudiant {
     private Cours coursActuel;
     @ManyToOne
     private Etudiant etudiant;
+    @ManyToOne
+    private GroupeEtudiant groupeEtudiant;
+
+    public GroupeEtudiant getGroupeEtudiant() {
+        return groupeEtudiant;
+    }
+
+    public void setGroupeEtudiant(GroupeEtudiant groupeEtudiant) {
+        this.groupeEtudiant = groupeEtudiant;
+    }
 
     public Date getDateInscription() {
         return dateInscription;

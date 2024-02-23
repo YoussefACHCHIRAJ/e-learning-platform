@@ -10,16 +10,7 @@ public class Etudiant {
     private String username;
     private String email;
     private String password;
-    @ManyToOne
-    private GroupeEtudiant groupeEtudiant;
 
-    public GroupeEtudiant getGroupeEtudiant() {
-        return groupeEtudiant;
-    }
-
-    public void setGroupeEtudiant(GroupeEtudiant groupeEtudiant) {
-        this.groupeEtudiant = groupeEtudiant;
-    }
 
     public long getId() {
         return id;

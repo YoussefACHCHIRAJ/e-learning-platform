@@ -10,6 +10,5 @@ import java.util.List;
 public interface EtudiantDao extends JpaRepository<Etudiant,Long> {
        Etudiant findByUsername(String userName);
        Etudiant findByEmail(String email);
-       Etudiant findByInscriptionEtudiantId(Long id);
-       List<Etudiant> findByGroupeEtudiantId(Long id);
+
 }
