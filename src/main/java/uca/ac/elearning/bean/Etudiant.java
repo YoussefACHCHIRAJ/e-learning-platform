@@ -1,9 +1,6 @@
 package uca.ac.elearning.bean;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 public class Etudiant {
@@ -13,6 +10,16 @@ public class Etudiant {
     private String username;
     private String email;
     private String password;
+    @ManyToOne
+    private GroupeEtudiant groupeEtudiant;
+
+    public GroupeEtudiant getGroupeEtudiant() {
+        return groupeEtudiant;
+    }
+
+    public void setGroupeEtudiant(GroupeEtudiant groupeEtudiant) {
+        this.groupeEtudiant = groupeEtudiant;
+    }
 
     public long getId() {
         return id;

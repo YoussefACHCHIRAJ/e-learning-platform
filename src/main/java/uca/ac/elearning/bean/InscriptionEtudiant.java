@@ -6,16 +6,27 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.*;
 
+import java.util.Date;
 
 @Entity
 public class InscriptionEtudiant {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
+    private Date dateInscription;
+
     @ManyToOne
     private Cours coursActuel;
     @ManyToOne
     private Etudiant etudiant;
+
+    public Date getDateInscription() {
+        return dateInscription;
+    }
+
+    public void setDateInscription(Date dateInscription) {
+        this.dateInscription = dateInscription;
+    }
 
     public long getId() {
         return id;
