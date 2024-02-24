@@ -9,6 +9,8 @@ public class Parcours {
     private String libelle;
     private String description;
     @ManyToOne
+    private Admin admin;
+    @ManyToOne
     private EtatParcours etatParcours;
 
     public long getId() {

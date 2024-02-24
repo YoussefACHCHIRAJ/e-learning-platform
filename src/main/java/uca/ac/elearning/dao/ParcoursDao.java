@@ -10,6 +10,7 @@ import java.util.List;
 public interface ParcoursDao extends JpaRepository<Parcours, Long> {
     Parcours findByLibelle(String Libelle);
     List<Parcours> findByEtatParcoursCode(String code);
+    List<Parcours> findByAdmin_Username(String username);
 
     int deleteByEtatParcoursCode(String code);
 
