@@ -1,5 +1,6 @@
 package uca.ac.elearning.webService.dto;
 
+import uca.ac.elearning.bean.Admin;
 import uca.ac.elearning.bean.EtatParcours;
 
 public class ParcoursDto {
@@ -8,6 +9,8 @@ public class ParcoursDto {
     private String description;
 
     private EtatParcours etatParcours;
+
+    private Admin admin;
 
     public long getId() {
         return id;
@@ -39,5 +42,13 @@ public class ParcoursDto {
 
     public void setEtatParcours(EtatParcours etatParcours) {
         this.etatParcours = etatParcours;
+    }
+
+    public Admin getAdmin() {
+        return admin;
+    }
+
+    public void setAdmin(Admin admin) {
+        this.admin = admin;
     }
 }
