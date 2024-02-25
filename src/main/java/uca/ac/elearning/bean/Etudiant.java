@@ -1,8 +1,10 @@
 package uca.ac.elearning.bean;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 @Entity
+@Data
 public class Etudiant {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -10,37 +12,4 @@ public class Etudiant {
     private String username;
     private String email;
     private String password;
-
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String userName) {
-        this.username = userName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
 }
