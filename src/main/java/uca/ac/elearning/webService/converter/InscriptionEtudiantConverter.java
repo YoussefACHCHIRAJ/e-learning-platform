@@ -12,17 +12,17 @@ import java.util.stream.Collectors;
 
 @Component
 public class InscriptionEtudiantConverter {
-
+    private final ModelMapper modelMapper = new ModelMapper();
     public InscriptionEtudiantDto toDto(InscriptionEtudiant inscriptionEtudiant){
-        return (new ModelMapper()).map(inscriptionEtudiant, InscriptionEtudiantDto.class);
+        return modelMapper.map(inscriptionEtudiant, InscriptionEtudiantDto.class);
     }
     public InscriptionEtudiant toBean(InscriptionEtudiantDto inscriptionEtudiantDto){
-        return (new ModelMapper()).map(inscriptionEtudiantDto, InscriptionEtudiant.class);
+        return modelMapper.map(inscriptionEtudiantDto, InscriptionEtudiant.class);
     }
-    public List<InscriptionEtudiantDto> toDtos(List<InscriptionEtudiant> inscreptionEtudiants){
+    public List<InscriptionEtudiantDto> toDto(List<InscriptionEtudiant> inscreptionEtudiants){
         return inscreptionEtudiants.stream().map(this::toDto).collect(Collectors.toList());
     }
-    public List<InscriptionEtudiant> toBeans(List<InscriptionEtudiantDto> inscriptionEtudiantDtos){
+    public List<InscriptionEtudiant> toBean(List<InscriptionEtudiantDto> inscriptionEtudiantDtos){
         return inscriptionEtudiantDtos.stream().map(this::toBean).collect(Collectors.toList());
     }
 }

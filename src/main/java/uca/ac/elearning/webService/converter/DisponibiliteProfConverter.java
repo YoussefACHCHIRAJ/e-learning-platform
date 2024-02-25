@@ -10,22 +10,20 @@ import java.util.stream.Collectors;
 
 @Component
 public class DisponibiliteProfConverter {
-
+    private final ModelMapper modelMapper = new ModelMapper();
     public DisponibiliteProf toBean(DisponibiliteProfDto dto) {
-        ModelMapper modelMapper = new ModelMapper();
         return modelMapper.map(dto, DisponibiliteProf.class);
     }
 
-    public List<DisponibiliteProf> toBeans(List<DisponibiliteProfDto> dtos) {
+    public List<DisponibiliteProf> toBean(List<DisponibiliteProfDto> dtos) {
         return dtos.stream().map(this::toBean).collect(Collectors.toList());
     }
 
     public DisponibiliteProfDto toDto(DisponibiliteProf bean) {
-        ModelMapper modelMapper = new ModelMapper();
         return modelMapper.map(bean, DisponibiliteProfDto.class);
     }
 
-    public List<DisponibiliteProfDto> toDtos(List<DisponibiliteProf> beans) {
+    public List<DisponibiliteProfDto> toDto(List<DisponibiliteProf> beans) {
         return beans.stream().map(this::toDto).collect(Collectors.toList());
     }
 }

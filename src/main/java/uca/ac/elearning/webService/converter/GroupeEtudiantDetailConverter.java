@@ -12,8 +12,8 @@ import java.util.stream.Collectors;
 
 @Component
 public class GroupeEtudiantDetailConverter {
+    private final ModelMapper modelMapper = new ModelMapper();
     public GroupeEtudiantDetail toBean(GroupeEtudiantDetailDto dto) {
-        ModelMapper modelMapper = new ModelMapper();
         return modelMapper.map(dto, GroupeEtudiantDetail.class);
     }
 
@@ -22,7 +22,6 @@ public class GroupeEtudiantDetailConverter {
     }
 
     public GroupeEtudiantDetailDto toDto(GroupeEtudiantDetail beans) {
-        ModelMapper modelMapper = new ModelMapper();
         return modelMapper.map(beans, GroupeEtudiantDetailDto.class);
     }
 

@@ -10,21 +10,21 @@ import java.util.stream.Collectors;
 
 @Component
 public class CategoryConverter {
+
+    private final ModelMapper modelMapper = new ModelMapper();
     public Category toBean(CategoryDto dto){
-        ModelMapper modelMapper = new ModelMapper();
         return modelMapper.map(dto, Category.class);
     }
 
-    public List<Category> toBeans(List<CategoryDto> dtos){
+    public List<Category> toBean(List<CategoryDto> dtos){
         return dtos.stream().map(this::toBean).collect(Collectors.toList());
     }
 
     public CategoryDto toDto(Category bean) {
-        ModelMapper modelMapper = new ModelMapper();
         return modelMapper.map(bean,CategoryDto.class);
     }
 
-    public List<CategoryDto> toDtos(List<Category> beans){
+    public List<CategoryDto> toDto(List<Category> beans){
         return beans.stream().map(this::toDto).collect(Collectors.toList());
     }
 }
