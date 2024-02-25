@@ -10,8 +10,8 @@ import java.util.stream.Collectors;
 
 @Component
 public class DisponibiliteProfDetailConverter {
+    private final ModelMapper modelMapper = new ModelMapper();
     public DisponibiliteProfDetail toBean(DisponibiliteProfDetailDto dto) {
-        ModelMapper modelMapper = new ModelMapper();
         return modelMapper.map(dto, DisponibiliteProfDetail.class);
     }
 
@@ -20,7 +20,6 @@ public class DisponibiliteProfDetailConverter {
     }
 
     public DisponibiliteProfDetailDto toDto(DisponibiliteProfDetail bean) {
-        ModelMapper modelMapper = new ModelMapper();
         return modelMapper.map(bean, DisponibiliteProfDetailDto.class);
     }
 

@@ -10,21 +10,20 @@ import java.util.stream.Collectors;
 
 @Component
 public class GroupeEtudiantConverter {
+    private final ModelMapper modelMapper = new ModelMapper();
     public GroupeEtudiant toBean(GroupeEtudiantDto dto) {
-        ModelMapper modelMapper = new ModelMapper();
         return modelMapper.map(dto, GroupeEtudiant.class);
     }
 
-    public List<GroupeEtudiant> toBeans(List<GroupeEtudiantDto> Dtos) {
+    public List<GroupeEtudiant> toBean(List<GroupeEtudiantDto> Dtos) {
         return Dtos.stream().map(this::toBean).collect(Collectors.toList());
     }
 
     public GroupeEtudiantDto toDto(GroupeEtudiant bean) {
-        ModelMapper modelMapper = new ModelMapper();
         return modelMapper.map(bean, GroupeEtudiantDto.class);
     }
 
-    public List<GroupeEtudiantDto> toDtos(List<GroupeEtudiant> beans) {
+    public List<GroupeEtudiantDto> toDto(List<GroupeEtudiant> beans) {
         return beans.stream().map(this::toDto).collect(Collectors.toList());
     }
 }

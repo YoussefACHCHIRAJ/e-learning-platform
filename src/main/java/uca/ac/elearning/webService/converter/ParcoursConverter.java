@@ -10,21 +10,20 @@ import java.util.stream.Collectors;
 
 @Component
 public class ParcoursConverter {
+    private final ModelMapper modelMapper = new ModelMapper();
     public Parcours toBean(ParcoursDto dto) {
-        ModelMapper modelMapper = new ModelMapper();
         return modelMapper.map(dto, Parcours.class);
     }
 
-    public List<Parcours> toBeans(List<ParcoursDto> dtos) {
+    public List<Parcours> toBean(List<ParcoursDto> dtos) {
         return dtos.stream().map(this::toBean).collect(Collectors.toList());
     }
 
     public ParcoursDto toDto(Parcours bean) {
-        ModelMapper modelMapper = new ModelMapper();
         return modelMapper.map(bean, ParcoursDto.class);
     }
 
-    public List<ParcoursDto> toDtos(List<Parcours> beans) {
+    public List<ParcoursDto> toDto(List<Parcours> beans) {
         return beans.stream().map(this::toDto).collect(Collectors.toList());
     }
 }

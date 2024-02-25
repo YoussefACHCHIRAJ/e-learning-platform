@@ -10,21 +10,20 @@ import java.util.stream.Collectors;
 
 @Component
 public class SectionConverter {
+    private final ModelMapper modelMapper = new ModelMapper();
     public Section toBean(SectionDto dto) {
-        ModelMapper modelMapper = new ModelMapper();
         return modelMapper.map(dto, Section.class);
     }
 
-    public List<Section> toBeans(List<SectionDto> Dtos) {
+    public List<Section> toBean(List<SectionDto> Dtos) {
         return Dtos.stream().map(this::toBean).collect(Collectors.toList());
     }
 
     public SectionDto toDto(Section bean) {
-        ModelMapper modelMapper = new ModelMapper();
         return modelMapper.map(bean, SectionDto.class);
     }
 
-    public List<SectionDto> toDtos(List<Section> beans) {
+    public List<SectionDto> toDto(List<Section> beans) {
         return beans.stream().map(this::toDto).collect(Collectors.toList());
     }
     
