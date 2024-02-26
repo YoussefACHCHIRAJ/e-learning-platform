@@ -13,7 +13,10 @@ public interface SectionDao extends JpaRepository<Section,Long> {
     Section findByLibelle(String libelle);
     List<Section> findByCours_Id(Long id);
 
-    int deleteByCours_Id(Long libelle);
+    List<Section> findByCategory_Libelle(String libelle);
+
+    int deleteByCours_Id(Long id);
+
 
     int deleteByLibelle(String libelle);
 
