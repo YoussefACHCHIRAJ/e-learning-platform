@@ -7,7 +7,7 @@ import java.time.LocalDate;
 
 @Entity
 @Data
-public class StudentGroup {
+public class  StudentGroup {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
@@ -18,10 +18,10 @@ public class StudentGroup {
     private Prof prof;
 
     @ManyToOne
-    private GroupeEtudiantDetail groupeEtudiantDetail;
+    private StudentGroupDetail studentGroupDetail;
 
     @ManyToOne
-    private StudentInscription inscriptionEtudiant;
+    private StudentInscription studentInscription;
 
     @ManyToOne
     private Parcours parcours;

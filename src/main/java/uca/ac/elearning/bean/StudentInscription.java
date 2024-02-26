@@ -15,13 +15,12 @@ public class StudentInscription {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    private Date dateInscription;
-
+    private Date inscriptionDate;
     @ManyToOne
     private Cours coursActuel;
     @ManyToOne
-    private Student etudiant;
+    private Student student;
     @ManyToOne
-    private GroupeEtudiant groupeEtudiant;
+    private StudentGroup studentGroup;
 }
 

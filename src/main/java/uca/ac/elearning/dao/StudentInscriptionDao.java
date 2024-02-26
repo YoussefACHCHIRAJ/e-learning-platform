@@ -8,7 +8,7 @@ import uca.ac.elearning.bean.StudentInscription;
 import java.util.List;
 
 @Repository
-public interface InscriptionEtudiantDao extends JpaRepository<StudentInscription, Long> {
+public interface StudentInscriptionDao extends JpaRepository<StudentInscription, Long> {
     StudentInscription findByEtudiantUsername(String userName);
 
     StudentInscription findByCoursActuel(Cours coursActuel);

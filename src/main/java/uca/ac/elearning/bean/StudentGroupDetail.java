@@ -10,11 +10,11 @@ import java.time.LocalTime;
 
 @Entity
 @Data
-public class GroupeEtudiantDetail {
+public class StudentGroupDetail {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    private LocalTime trancheHoraireDebut;
-    private LocalTime trancheHoraireFin;
+    private LocalTime startTimeSlot;
+    private LocalTime endTimeSlot;
     private boolean isActive;
 }
