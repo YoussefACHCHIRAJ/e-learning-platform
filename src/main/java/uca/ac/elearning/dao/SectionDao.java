@@ -17,7 +17,6 @@ public interface SectionDao extends JpaRepository<Section,Long> {
 
     int deleteByCours_Id(Long id);
 
-
     int deleteByLibelle(String libelle);
 
 
