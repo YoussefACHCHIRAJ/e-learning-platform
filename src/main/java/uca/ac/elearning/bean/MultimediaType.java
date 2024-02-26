@@ -8,7 +8,7 @@ import lombok.Data;
 
 @Entity
 @Data
-public class TypeMutimedia {
+public class MultimediaType {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
