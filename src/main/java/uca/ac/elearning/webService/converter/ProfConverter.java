@@ -1,14 +1,17 @@
 package uca.ac.elearning.webService.converter;
+
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
 import uca.ac.elearning.bean.Prof;
 import uca.ac.elearning.webService.dto.ProfDto;
+
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Component
 public class ProfConverter {
     private final ModelMapper modelMapper = new ModelMapper();
+
     public Prof toBean(ProfDto dto) {
         return modelMapper.map(dto, Prof.class);
     }

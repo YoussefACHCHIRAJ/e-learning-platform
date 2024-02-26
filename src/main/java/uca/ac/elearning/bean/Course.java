@@ -8,7 +8,6 @@ import lombok.Data;
 public class Course {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-
     private long id;
     private String label;
     private String code;

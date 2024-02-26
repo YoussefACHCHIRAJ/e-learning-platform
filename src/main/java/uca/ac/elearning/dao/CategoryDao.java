@@ -8,5 +8,6 @@ import uca.ac.elearning.bean.Category;
 public interface CategoryDao extends JpaRepository<Category, Long> {
 
     Category findByCode(String code);
+
     int deleteByCode(String code);
 }

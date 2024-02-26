@@ -5,11 +5,11 @@ import uca.ac.elearning.bean.Admin;
 import uca.ac.elearning.bean.PathStatus;
 
 @Data
-public class ParcoursDto {
+public class PathDto {
     private long id;
-    private String libelle;
+    private String label;
     private String description;
-    private PathStatus etatParcours;
+    private PathStatus pathStatus;
     private Admin admin;
 
 }

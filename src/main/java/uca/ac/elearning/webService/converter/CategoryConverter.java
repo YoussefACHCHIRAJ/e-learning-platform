@@ -12,19 +12,20 @@ import java.util.stream.Collectors;
 public class CategoryConverter {
 
     private final ModelMapper modelMapper = new ModelMapper();
-    public Category toBean(CategoryDto dto){
+
+    public Category toBean(CategoryDto dto) {
         return modelMapper.map(dto, Category.class);
     }
 
-    public List<Category> toBean(List<CategoryDto> dtos){
+    public List<Category> toBean(List<CategoryDto> dtos) {
         return dtos.stream().map(this::toBean).collect(Collectors.toList());
     }
 
     public CategoryDto toDto(Category bean) {
-        return modelMapper.map(bean,CategoryDto.class);
+        return modelMapper.map(bean, CategoryDto.class);
     }
 
-    public List<CategoryDto> toDto(List<Category> beans){
+    public List<CategoryDto> toDto(List<Category> beans) {
         return beans.stream().map(this::toDto).collect(Collectors.toList());
     }
 }

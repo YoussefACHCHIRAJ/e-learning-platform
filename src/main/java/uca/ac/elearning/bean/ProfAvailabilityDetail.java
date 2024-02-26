@@ -13,10 +13,9 @@ public class ProfAvailabilityDetail {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private Date day;
-
     private LocalTime startTimeSlot;
     private LocalTime endTimeSlot;
     @ManyToOne
     private ProfAvailability profAvailability;
-    
+
 }

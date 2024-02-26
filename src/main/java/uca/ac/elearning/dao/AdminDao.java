@@ -8,5 +8,6 @@ import uca.ac.elearning.bean.Admin;
 public interface AdminDao extends JpaRepository<Admin, Long> {
 
     Admin findByUsername(String username);
+
     Admin findByEmail(String email);
 }

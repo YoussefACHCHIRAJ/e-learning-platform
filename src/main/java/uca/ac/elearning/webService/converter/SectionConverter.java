@@ -11,6 +11,7 @@ import java.util.stream.Collectors;
 @Component
 public class SectionConverter {
     private final ModelMapper modelMapper = new ModelMapper();
+
     public Section toBean(SectionDto dto) {
         return modelMapper.map(dto, Section.class);
     }
@@ -26,5 +27,5 @@ public class SectionConverter {
     public List<SectionDto> toDto(List<Section> beans) {
         return beans.stream().map(this::toDto).collect(Collectors.toList());
     }
-    
+
 }

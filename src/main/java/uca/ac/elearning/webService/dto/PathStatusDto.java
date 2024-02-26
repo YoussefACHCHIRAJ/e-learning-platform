@@ -7,11 +7,9 @@ import uca.ac.elearning.bean.Path;
 import java.util.List;
 
 @Data
-public class EtatParcoursDto {
-
+public class PathStatusDto {
     private long id;
-    private String libelle;
+    private String label;
     private String code;
-
-    private List<Path> parcours;
+    private List<Path> paths;
 }

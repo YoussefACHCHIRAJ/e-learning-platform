@@ -10,5 +10,6 @@ import java.util.List;
 public interface ProfAvailabilityDetailDao extends JpaRepository<ProfAvailabilityDetail, Long> {
 
     List<ProfAvailabilityDetail> findByProfAvailability_Id(Long id);
+
     List<ProfAvailabilityDetail> findByProfAvailability_Prof_Username(String username);
 }

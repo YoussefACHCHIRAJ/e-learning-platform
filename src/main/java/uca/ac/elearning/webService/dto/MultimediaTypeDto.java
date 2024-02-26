@@ -5,7 +5,7 @@ import lombok.Data;
 @Data
 public class MultimediaTypeDto {
     private long id;
-    private String libelle;
+    private String label;
     private String code;
 
 }

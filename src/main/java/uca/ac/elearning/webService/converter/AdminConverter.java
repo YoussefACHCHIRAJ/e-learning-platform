@@ -11,6 +11,7 @@ import java.util.stream.Collectors;
 @Component
 public class AdminConverter {
     private final ModelMapper modelMapper = new ModelMapper();
+
     public Admin toBean(AdminDto dto) {
         return modelMapper.map(dto, Admin.class);
     }

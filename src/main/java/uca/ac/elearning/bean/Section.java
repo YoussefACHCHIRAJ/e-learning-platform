@@ -1,4 +1,5 @@
 package uca.ac.elearning.bean;
+
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -12,11 +13,11 @@ public class Section {
     private String pathMultimedia;
     private String content;
     @ManyToOne
-    private MultimediaType typeMultimedia;
-   @ManyToOne
+    private MultimediaType multimediaType;
+    @ManyToOne
     private Course course;
-   @ManyToOne
-   private Category category;
+    @ManyToOne
+    private Category category;
 }
 
 

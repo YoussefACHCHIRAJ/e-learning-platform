@@ -14,6 +14,7 @@ public interface StudentInscriptionDao extends JpaRepository<StudentInscription,
     StudentInscription findByCurrentCourse(Course currentCourse);
 
     StudentInscription findByStudentId(Long id);
+
     List<StudentInscription> findByStudentGroupId(Long id);
 
 }

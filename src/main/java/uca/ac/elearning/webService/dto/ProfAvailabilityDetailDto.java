@@ -12,4 +12,4 @@ public class ProfAvailabilityDetailDto {
     private Date startTimeSlot;
     private Date endTimeSlot;
     private ProfAvailability profAvailability;
-    }
+}

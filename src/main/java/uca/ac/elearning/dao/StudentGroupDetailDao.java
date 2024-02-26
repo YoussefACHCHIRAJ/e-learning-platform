@@ -8,6 +8,6 @@ import java.util.List;
 
 
 @Repository
-public interface StudentGroupDetailDao extends JpaRepository<StudentGroupDetail,Long> {
-     List<StudentGroupDetail> findByIsActive(boolean isActive);
+public interface StudentGroupDetailDao extends JpaRepository<StudentGroupDetail, Long> {
+    List<StudentGroupDetail> findByIsActive(boolean isActive);
 }

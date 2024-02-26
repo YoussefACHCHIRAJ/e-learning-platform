@@ -9,8 +9,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Component
-public class CoursConverter {
+public class CourseConverter {
     private final ModelMapper modelMapper = new ModelMapper();
+
     public Course toBean(CourseDto dto) {
         return modelMapper.map(dto, Course.class);
     }

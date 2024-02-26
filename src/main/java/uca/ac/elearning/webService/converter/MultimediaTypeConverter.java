@@ -13,6 +13,7 @@ import java.util.stream.Collectors;
 @Component
 public class MultimediaTypeConverter {
     private final ModelMapper modelMapper = new ModelMapper();
+
     public MultimediaType toBean(MultimediaTypeDto dto) {
         return modelMapper.map(dto, MultimediaType.class);
     }
