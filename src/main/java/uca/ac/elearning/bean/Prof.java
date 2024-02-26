@@ -12,8 +12,7 @@ public class Prof {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    private String nom;
-    private String prenom;
+    private String fullName;
     private String username;
     private String password;
     private String email;
