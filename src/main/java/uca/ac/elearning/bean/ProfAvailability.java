@@ -7,12 +7,12 @@ import java.util.Date;
 
 @Entity
 @Data
-public class DisponibiliteProf {
+public class ProfAvailability {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    private Date dateDebut;
-    private Date dateFin;
+    private Date startDate;
+    private Date endDate;
     @ManyToOne
     private Prof prof;
 }

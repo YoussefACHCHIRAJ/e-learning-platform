@@ -7,7 +7,7 @@ import java.time.LocalDate;
 
 @Entity
 @Data
-public class GroupeEtudiant {
+public class StudentGroup {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;

@@ -5,8 +5,8 @@ import lombok.Data;
 import java.util.Date;
 
 @Data
-public class DisponibiliteProfDto {
+public class ProfAvailabilityDto {
     private long id;
-    private Date dateDebut;
-    private Date dateFin;
+    private Date startDate;
+    private Date endDate;
 }
