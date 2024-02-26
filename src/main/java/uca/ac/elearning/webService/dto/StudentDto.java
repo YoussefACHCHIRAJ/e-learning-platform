@@ -3,8 +3,9 @@ package uca.ac.elearning.webService.dto;
 import lombok.Data;
 
 @Data
-public class EtudiantDto {
+public class StudentDto {
     private long id;
+    private String fullName;
     private String username;
     private String email;
 }

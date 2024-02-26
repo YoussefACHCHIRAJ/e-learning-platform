@@ -11,6 +11,7 @@ import lombok.Data;
 public class Admin {
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
+    private String fullName;
     private String username;
     private String email;
     private String password;

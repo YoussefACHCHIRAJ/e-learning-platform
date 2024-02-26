@@ -11,7 +11,7 @@ import java.util.Date;
 
 @Entity
 @Data
-public class InscriptionEtudiant {
+public class StudentInscription {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
@@ -20,7 +20,7 @@ public class InscriptionEtudiant {
     @ManyToOne
     private Cours coursActuel;
     @ManyToOne
-    private Etudiant etudiant;
+    private Student etudiant;
     @ManyToOne
     private GroupeEtudiant groupeEtudiant;
 }

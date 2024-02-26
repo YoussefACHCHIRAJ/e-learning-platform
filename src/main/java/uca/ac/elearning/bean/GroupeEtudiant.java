@@ -21,7 +21,7 @@ public class GroupeEtudiant {
     private GroupeEtudiantDetail groupeEtudiantDetail;
 
     @ManyToOne
-    private InscriptionEtudiant inscriptionEtudiant;
+    private StudentInscription inscriptionEtudiant;
 
     @ManyToOne
     private Parcours parcours;

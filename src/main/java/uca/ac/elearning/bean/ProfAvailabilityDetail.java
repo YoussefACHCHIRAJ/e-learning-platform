@@ -8,15 +8,15 @@ import java.util.Date;
 
 @Entity
 @Data
-public class DisponibiliteProfDetail {
+public class ProfAvailabilityDetail {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    private String jour;
+    private Date day;
 
-    private LocalTime trancheHoraireDebut;
-    private LocalTime trancheHoraireFin;
+    private LocalTime startTimeSlot;
+    private LocalTime endTimeSlot;
     @ManyToOne
-    private DisponibiliteProf disponibiliteProf;
+    private ProfAvailability profAvailability;
     
 }
