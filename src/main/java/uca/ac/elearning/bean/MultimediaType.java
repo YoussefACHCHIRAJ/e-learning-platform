@@ -13,7 +13,7 @@ public class MultimediaType {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    private String libelle;
+    private String label;
 
     private String code;
 }

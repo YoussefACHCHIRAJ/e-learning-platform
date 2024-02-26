@@ -1,17 +1,12 @@
 package uca.ac.elearning.webService.dto;
 
-
 import lombok.Data;
 import uca.ac.elearning.bean.Path;
 
-import java.util.List;
-
 @Data
-public class EtatParcoursDto {
-
+public class CourseDto {
     private long id;
-    private String libelle;
+    private String label;
     private String code;
-
-    private List<Path> parcours;
+    private Path path;
 }

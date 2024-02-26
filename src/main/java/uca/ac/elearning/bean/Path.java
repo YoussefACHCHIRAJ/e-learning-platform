@@ -5,13 +5,13 @@ import lombok.Data;
 
 @Entity
 @Data
-public class Parcours {
+public class Path {
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    private String libelle;
-    private String description;
+    private String label;
+    private String course;
     @ManyToOne
     private Admin admin;
     @ManyToOne
-    private EtatParcours etatParcours;
+    private PathStatus pathStatus;
 }

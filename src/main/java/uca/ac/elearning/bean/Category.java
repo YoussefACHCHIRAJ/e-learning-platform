@@ -11,6 +11,6 @@ import lombok.Data;
 public class Category {
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    private String libelle;
+    private String label;
     private String code;
 }

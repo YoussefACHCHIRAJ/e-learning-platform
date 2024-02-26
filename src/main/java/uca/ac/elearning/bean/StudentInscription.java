@@ -17,7 +17,7 @@ public class StudentInscription {
     private long id;
     private Date inscriptionDate;
     @ManyToOne
-    private Cours coursActuel;
+    private Course currentCourse;
     @ManyToOne
     private Student student;
     @ManyToOne

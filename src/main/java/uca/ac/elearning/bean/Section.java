@@ -8,13 +8,13 @@ public class Section {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    private String libelle;
+    private String label;
     private String pathMultimedia;
     private String content;
     @ManyToOne
-    private TypeMutimedia typeMultimedia;
+    private MultimediaType typeMultimedia;
    @ManyToOne
-    private Cours cours;
+    private Course course;
    @ManyToOne
    private Category category;
 }

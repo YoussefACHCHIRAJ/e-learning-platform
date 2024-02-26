@@ -11,12 +11,12 @@ import java.util.List;
 
 @Repository
 public interface StudentGroupDao extends JpaRepository<StudentGroup, Long> {
-  StudentGroup findByLibelle(String libelle);
+  StudentGroup findByLabel(String label);
 
     List<StudentGroup> findByProfUsername(String username);
-    List<StudentGroup> findByParcoursLibelle(String libelle);
-    List<StudentGroup> findByGroupeEtudiantDetail_Id(Long id);
+    List<StudentGroup> findByPathLabel(String label);
+    List<StudentGroup> findByStudentGroupDetailId(Long id);
 
-    int deleteByLibelle(String libelle);
+    int deleteByLabel(String label);
 
 }

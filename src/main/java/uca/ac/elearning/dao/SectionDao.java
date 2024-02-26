@@ -10,14 +10,14 @@ import java.util.List;
 
 @Repository
 public interface SectionDao extends JpaRepository<Section,Long> {
-    Section findByLibelle(String libelle);
-    List<Section> findByCours_Id(Long id);
+    Section findByLabel(String label);
+    List<Section> findByCourse_Id(Long id);
 
-    List<Section> findByCategory_Libelle(String libelle);
+    List<Section> findByCategoryLabel(String label);
 
-    int deleteByCours_Id(Long id);
+    int deleteByCourse_Id(Long id);
 
-    int deleteByLibelle(String libelle);
+    int deleteByLabel(String label);
 
 
 

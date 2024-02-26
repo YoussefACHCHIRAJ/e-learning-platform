@@ -7,11 +7,11 @@ import java.util.List;
 
 @Entity
 @Data
-public class EtatParcours {
+public class PathStatus {
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    private String libelle;
+    private String Label;
     private String code;
     @OneToMany
-    private List<Parcours> parcours;
+    private List<Path> paths;
 }

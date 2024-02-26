@@ -5,8 +5,8 @@ import uca.ac.elearning.bean.MultimediaType;
 
 public interface MultimediaTypeDao extends JpaRepository<MultimediaType,Long> {
 
-    MultimediaType FindByLibelle(String libelle);
+    MultimediaType FindByLabel(String label);
     MultimediaType FindByCode(String code);
     int DeleteByCode(String code);
-    int DeleteByLibelle(String libelle);
+    int DeleteByLabel (String label);
 }

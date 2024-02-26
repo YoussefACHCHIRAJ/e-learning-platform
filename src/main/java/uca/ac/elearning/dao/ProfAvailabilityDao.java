@@ -2,15 +2,13 @@ package uca.ac.elearning.dao;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import uca.ac.elearning.bean.DisponibiliteProf;
-
-
+import uca.ac.elearning.bean.ProfAvailability;
 
 
 @Repository
-public interface DisponibiliteProfDao extends JpaRepository {
+public interface ProfAvailabilityDao extends JpaRepository<ProfAvailability, Long> {
 
-    DisponibiliteProf findByProfUsername(String username);
+    ProfAvailability findByProfUsername(String username);
 
     int deleteByProfUsername(String username);
 }

@@ -1,7 +1,7 @@
 package uca.ac.elearning.webService.dto;
 
 import lombok.Data;
-import uca.ac.elearning.bean.Cours;
+import uca.ac.elearning.bean.Course;
 import uca.ac.elearning.bean.Student;
 
 import java.util.Date;
@@ -10,6 +10,6 @@ import java.util.Date;
 public class StudentInscriptionDto {
     private long id;
     private Date inscriptionDate;
-    private Cours currentCours;
+    private Course currentCourse;
     private Student student;
 }

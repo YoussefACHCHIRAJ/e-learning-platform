@@ -11,7 +11,7 @@ public class  StudentGroup {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    private String libelle;
+    private String label;
     private LocalDate date;
 
     @ManyToOne
@@ -24,5 +24,5 @@ public class  StudentGroup {
     private StudentInscription studentInscription;
 
     @ManyToOne
-    private Parcours parcours;
+    private Path path;
 }
