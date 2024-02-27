@@ -16,12 +16,12 @@ public class StudentConverter {
         return modelMapper.map(student, StudentDto.class);
     }
 
-    public Student toBean(StudentDto etudiantDto) {
-        return modelMapper.map(etudiantDto, Student.class);
-    }
-
     public List<StudentDto> toDto(List<Student> students) {
         return students.stream().map(this::toDto).collect(Collectors.toList());
+    }
+
+    public Student toBean(StudentDto studentDto) {
+        return modelMapper.map(studentDto, Student.class);
     }
 
     public List<Student> toBean(List<StudentDto> studentsDtos) {

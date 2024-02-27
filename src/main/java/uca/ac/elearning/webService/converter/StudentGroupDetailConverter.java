@@ -12,19 +12,19 @@ import java.util.stream.Collectors;
 public class StudentGroupDetailConverter {
     private final ModelMapper modelMapper = new ModelMapper();
 
-    public StudentGroupDetail toBean(StudentGroupDetailDto dto) {
-        return modelMapper.map(dto, StudentGroupDetail.class);
+    public StudentGroupDetail toBean(StudentGroupDetailDto studentGroupDetailDto) {
+        return modelMapper.map(studentGroupDetailDto, StudentGroupDetail.class);
     }
 
-    public List<StudentGroupDetail> toBeans(List<StudentGroupDetailDto> dtos) {
-        return dtos.stream().map(this::toBean).collect(Collectors.toList());
+    public List<StudentGroupDetail> toBean(List<StudentGroupDetailDto> studentGroupDetailDtos) {
+        return studentGroupDetailDtos.stream().map(this::toBean).collect(Collectors.toList());
     }
 
-    public StudentGroupDetailDto toDto(StudentGroupDetail beans) {
-        return modelMapper.map(beans, StudentGroupDetailDto.class);
+    public StudentGroupDetailDto toDto(StudentGroupDetail studentGroupDetail) {
+        return modelMapper.map(studentGroupDetail, StudentGroupDetailDto.class);
     }
 
-    public List<StudentGroupDetailDto> toDtos(List<StudentGroupDetail> beans) {
-        return beans.stream().map(this::toDto).collect(Collectors.toList());
+    public List<StudentGroupDetailDto> toDto(List<StudentGroupDetail> studentGroupDetails) {
+        return studentGroupDetails.stream().map(this::toDto).collect(Collectors.toList());
     }
 }

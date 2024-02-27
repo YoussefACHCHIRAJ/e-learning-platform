@@ -12,19 +12,19 @@ import java.util.stream.Collectors;
 public class PathConverter {
     private final ModelMapper modelMapper = new ModelMapper();
 
-    public Path toBean(PathDto dto) {
-        return modelMapper.map(dto, Path.class);
+    public Path toBean(PathDto pathDto) {
+        return modelMapper.map(pathDto, Path.class);
     }
 
-    public List<Path> toBean(List<PathDto> dtos) {
-        return dtos.stream().map(this::toBean).collect(Collectors.toList());
+    public List<Path> toBean(List<PathDto> pathDtos) {
+        return pathDtos.stream().map(this::toBean).collect(Collectors.toList());
     }
 
-    public PathDto toDto(Path bean) {
-        return modelMapper.map(bean, PathDto.class);
+    public PathDto toDto(Path path) {
+        return modelMapper.map(path, PathDto.class);
     }
 
-    public List<PathDto> toDto(List<Path> beans) {
-        return beans.stream().map(this::toDto).collect(Collectors.toList());
+    public List<PathDto> toDto(List<Path> paths) {
+        return paths.stream().map(this::toDto).collect(Collectors.toList());
     }
 }

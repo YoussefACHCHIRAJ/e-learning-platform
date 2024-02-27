@@ -14,19 +14,19 @@ import java.util.stream.Collectors;
 public class ProfAvailabilityConverter {
     private final ModelMapper modelMapper = new ModelMapper();
 
-    public ProfAvailability toBean(ProfAvailabilityDto dto) {
-        return modelMapper.map(dto, ProfAvailability.class);
+    public ProfAvailability toBean(ProfAvailabilityDto profAvailabilityDto) {
+        return modelMapper.map(profAvailabilityDto, ProfAvailability.class);
     }
 
-    public List<ProfAvailability> toBean(List<ProfAvailabilityDto> dtos) {
-        return dtos.stream().map(this::toBean).collect(Collectors.toList());
+    public List<ProfAvailability> toBean(List<ProfAvailabilityDto> profAvailabilityDtos) {
+        return profAvailabilityDtos.stream().map(this::toBean).collect(Collectors.toList());
     }
 
-    public ProfAvailabilityDto toDto(ProfAvailability bean) {
-        return modelMapper.map(bean, ProfAvailabilityDto.class);
+    public ProfAvailabilityDto toDto(ProfAvailability profAvailability) {
+        return modelMapper.map(profAvailability, ProfAvailabilityDto.class);
     }
 
-    public List<ProfAvailabilityDto> toDto(List<ProfAvailability> beans) {
-        return beans.stream().map(this::toDto).collect(Collectors.toList());
+    public List<ProfAvailabilityDto> toDto(List<ProfAvailability> profAvailabilities) {
+        return profAvailabilities.stream().map(this::toDto).collect(Collectors.toList());
     }
 }

@@ -11,9 +11,9 @@ import java.util.List;
 public interface StudentInscriptionDao extends JpaRepository<StudentInscription, Long> {
     StudentInscription findByStudentUsername(String userName);
 
-    StudentInscription findByCurrentCourse(Course currentCourse);
-
     StudentInscription findByStudentId(Long id);
+
+    List<StudentInscription> findByCurrentCourse(Course currentCourse);
 
     List<StudentInscription> findByStudentGroupId(Long id);
 

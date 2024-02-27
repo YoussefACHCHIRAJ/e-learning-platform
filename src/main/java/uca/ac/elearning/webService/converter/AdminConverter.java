@@ -12,19 +12,19 @@ import java.util.stream.Collectors;
 public class AdminConverter {
     private final ModelMapper modelMapper = new ModelMapper();
 
-    public Admin toBean(AdminDto dto) {
-        return modelMapper.map(dto, Admin.class);
+    public Admin toBean(AdminDto adminDto) {
+        return modelMapper.map(adminDto, Admin.class);
     }
 
-    public List<Admin> toBean(List<AdminDto> dtos) {
-        return dtos.stream().map(this::toBean).collect(Collectors.toList());
+    public List<Admin> toBean(List<AdminDto> adminDtos) {
+        return adminDtos.stream().map(this::toBean).collect(Collectors.toList());
     }
 
-    public AdminDto toDto(Admin bean) {
-        return modelMapper.map(bean, AdminDto.class);
+    public AdminDto toDto(Admin admin) {
+        return modelMapper.map(admin, AdminDto.class);
     }
 
-    public List<AdminDto> toDto(List<Admin> beans) {
-        return beans.stream().map(this::toDto).collect(Collectors.toList());
+    public List<AdminDto> toDto(List<Admin> admins) {
+        return admins.stream().map(this::toDto).collect(Collectors.toList());
     }
 }

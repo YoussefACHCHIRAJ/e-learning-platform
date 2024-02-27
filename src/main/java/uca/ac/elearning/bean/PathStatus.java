@@ -11,7 +11,7 @@ public class PathStatus {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    private String Label;
+    private String label;
     private String code;
     @OneToMany
     private List<Path> paths;

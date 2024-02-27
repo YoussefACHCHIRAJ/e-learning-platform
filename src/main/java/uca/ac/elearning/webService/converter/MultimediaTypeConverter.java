@@ -14,20 +14,20 @@ import java.util.stream.Collectors;
 public class MultimediaTypeConverter {
     private final ModelMapper modelMapper = new ModelMapper();
 
-    public MultimediaType toBean(MultimediaTypeDto dto) {
-        return modelMapper.map(dto, MultimediaType.class);
+    public MultimediaType toBean(MultimediaTypeDto multimediaTypeDto) {
+        return modelMapper.map(multimediaTypeDto, MultimediaType.class);
     }
 
-    public List<MultimediaType> toBean(List<MultimediaTypeDto> dtos) {
-        return dtos.stream().map(this::toBean).collect(Collectors.toList());
+    public List<MultimediaType> toBean(List<MultimediaTypeDto> multimediaTypeDtos) {
+        return multimediaTypeDtos.stream().map(this::toBean).collect(Collectors.toList());
     }
 
-    public MultimediaTypeDto toDto(MultimediaType bean) {
-        return modelMapper.map(bean, MultimediaTypeDto.class);
+    public MultimediaTypeDto toDto(MultimediaType multimediaType) {
+        return modelMapper.map(multimediaType, MultimediaTypeDto.class);
     }
 
-    public List<MultimediaTypeDto> toDto(List<MultimediaType> beans) {
-        return beans.stream().map(this::toDto).collect(Collectors.toList());
+    public List<MultimediaTypeDto> toDto(List<MultimediaType> multimediaTypes) {
+        return multimediaTypes.stream().map(this::toDto).collect(Collectors.toList());
 
     }
 }
