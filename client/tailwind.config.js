@@ -6,13 +6,27 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary : "#FF8B00",
-        secondary: "#FFFFFF",
-        accent1: "#252641"
+        primary : "#FDA22D",
+        secondary: {
+          100: "#FFF9F1",
+          200: "#FBEDD9",
+          300: "#F9E5EA",
+        },
+        accent: {
+          100: "#F8F8FF",
+          200: "#E7E6FB",
+          300: "#9A93CA",
+        },
+
       },
       fontFamily: {
-        poppins: ['Poppins', 'sans']
-      }
+        family: ['Lato', 'sans']
+      },
+      fontSize: {
+        h1: "2.333rem",
+        h2: "1.667rem",
+        h3: "1.5rem",
+      },
     },
   },
   plugins: [],
