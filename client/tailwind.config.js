@@ -20,7 +20,7 @@ module.exports = {
 
       },
       fontFamily: {
-        family: ['Lato', 'sans']
+        lato: ['Lato', 'sans']
       },
       fontSize: {
         h1: "2.333rem",
