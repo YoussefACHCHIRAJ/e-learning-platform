@@ -28,7 +28,7 @@ export class CalendarComponent {
     selectMirror: true,
     dayMaxEvents: true,
     dayHeaderClassNames: 'bg-accent-200',
-    height: '35em',
+    height: '100%',
     eventClassNames:
       'border border-accent-200 bg-accent-200 text-gray-900 cursor-pointer hover:bg-primary hover:text-red-600 transition duration-500',
     nowIndicator: true,
