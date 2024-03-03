@@ -9,4 +9,15 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
 
-}
+    mainPanelActive = false;
+
+    onSignUpClick() {
+      this.mainPanelActive = true;
+    }
+
+    onSignInClick() {
+      this.mainPanelActive = false;
+    }
+  }
+
+
