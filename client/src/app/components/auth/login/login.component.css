@@ -7,10 +7,11 @@ body{
   display: flex;
   justify-content: center;
   flex-direction: column; */
-  background: #f6f5f7;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* background: #f6f5f7;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
   /* min-height: 100%; */
   /* margin: 10%; */
+ background-color: red;
 }
 
 .container{
@@ -45,7 +46,8 @@ body{
 }
 
 form{
-  background: #fff;
+  /* background: #fff; */
+
   display: flex;
   align-items: center;
   justify-content: center;
