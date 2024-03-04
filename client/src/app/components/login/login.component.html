@@ -1,0 +1,58 @@
+
+<div class="container transform translate-x-1 box-border bg-accent-100 font-serif min-w-full h-screen overflow-hidden" id="main" [ngClass]="{'right-panel-active': mainPanelActive}">
+  <div class="sign-up opacity-100 z-[5] absolute top-0 left-0 h-full transition  ease-in-out duration[0.6s] w-1/2 opacity-0 z-10 transform translate-x-full ">
+    <form action="#">
+      <h1 class="m-0 font-bold">Create Account</h1>
+      <div class="social-container m-5">
+        <a href="#" class="social text-gray-800 text-sm  my-4 no-underline h-10 w-10 mt-0 mb-0 ml-1.5 mr-1.5 inline-flex justify-center items-center border-2 border-solid border-gray-300 rounded-lg"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="social  text-gray-800 text-sm  my-4 no-underline  h-10 w-10 mt-0 mb-0 ml-1.5 mr-1.5 inline-flex justify-center items-center border-2 border-solid border-gray-300 rounded-lg"><i class="fa-brands fa-google"></i></a>
+        <a href="#" class="social  text-gray-800 text-sm  my-4 no-underline  h-10 w-10 mt-0 mb-0 ml-1.5 mr-1.5 inline-flex justify-center items-center border-2 border-solid border-gray-300 rounded-lg"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      <p class="text-xl font-thin leading-5 tracking-wide my-3 mb-5 mx-0">Or use your Email for registration</p>
+      <input type="text" name="txt" placeholder="Name" required="" class="bg-white p-3 px-5 my-2 mx-3 w-full rounded border-1 border-orange-400 border-none outline-none">
+      <input type="email" name="email" placeholder="Email" required="" class="bg-white p-3 px-5 my-2 mx-3 w-full rounded border-1 border-orange-400 border-none outline-none">
+      <input type="password" name="pswd" placeholder="Password" required="" class="bg-white p-3 px-5 my-2 mx-3 w-full rounded border-1 border-orange-400 border-none outline-none">
+      <button class="text-white bg-orange-400 font-bold p-3 pl-14 m-5 rounded-2xl border-2 border-gray-800 border-solid outline-none tracking-wider uppercase cursor-pointer  transform active:scale-90  transition-transform duration-80 ease-in">Sign Up</button>
+    </form>
+  </div>
+
+  <div class="sign-in  absolute top-0 left-0 h-full transition  ease-in-out duration[0.6s] w-1/2 z-20 transform translate-x-full">
+  <form class="flex bg-white items-center justify-center flex-col py-o px-[50px] h-full text-center" action="#">
+      <h1 class="m-0 font-bold" >Sign in to Laabit Academy</h1>
+      <div class="social-container m-5">
+        <a href="#" class="social  text-gray-800 text-sm  my-4 no-underline h-10 w-10 mt-0 mb-0 ml-1.5 mr-1.5 inline-flex justify-center items-center border-2 border-solid border-gray-300 rounded-lg"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="social  text-gray-800 text-sm  my-4 no-underline h-10 w-10 mt-0 mb-0 ml-1.5 mr-1.5 inline-flex justify-center items-center border-2 border-solid border-gray-300 rounded-lg"><i class="fa-brands fa-google"></i></a>
+        <a href="#" class="social  text-gray-800 text-sm  my-4 no-underline h-10 w-10 mt-0 mb-0 ml-1.5 mr-1.5 inline-flex justify-center items-center border-2 border-solid border-gray-300 rounded-lg"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      <p class="text-xl font-thin leading-5 tracking-wide my-3 mb-5 mx-0">Or use your Account</p>
+      <input type="email" name="email" placeholder="Email" required="" class="bg-white p-3 px-5 my-2 mx-3 w-full rounded border-1 border-orange-400 border-none outline-none">
+      <input type="password" name="pswd" placeholder="Password" required="" class="bg-white p-3 px-5 my-2 mx-3 w-full rounded border-1 border-orange-400 border-none outline-none">
+      <a class=" text-gray-800 text-sm  my-4 no-underline">Forgot your Password?</a>
+      <button class="text-white bg-orange-400 font-bold p-3 pl-14 m-5 rounded-2xl border-2 border-gray-800 border-solid outline-none tracking-wider uppercase cursor-pointer  transform active:scale-90  transition-transform duration-80 ease-in">Login</button>
+    </form>
+  </div>
+
+  <div class="overlay-container absolute top-0 w-2 overflow-hidden h-full left-2 transition -translate-x-full transform duration-700 ease-in-out z-[100]  ">
+    <div class="overlay transform translate-x-2  -left-full relative text-white bg-pink-600 h-full w-8 bg-gradient-to-b from-orange-600 to-orange-500 transition-transform duration-700 ease-in-out  ">
+      <div class="overlay-left transform -translate-x-1 absolute flex items-center justify-center flex-col text-center p-0 top-0 h-full w-2 transition-transform duration-700 ease-in-out">
+        <h2>Welcome Back!</h2>
+        <p class="text-xl font-thin leading-5 tracking-wide my-3 mb-5 mx-0">To keep connected with us please login with your personal info</p>
+        <button id="signIn" (click)="onSignInClick()" class="text-white bg-orange-400 font-bold p-3 pl-14 m-5 rounded-2xl border-2 border-gray-800 border-solid outline-none tracking-wider uppercase cursor-pointer transform active:scale-90 transition-transform duration-80 ease-in bg-transparent "> Sign In</button>
+      </div>
+
+      <div class="overlay-right transform right-0 translate-x-1 absolute flex items-center justify-center flex-col text-center p-0 top-0 h-full w-2 transition-transform duration-700 ease-in-out">
+        <h2>Hello,Friend! </h2>
+        <p class="text-xl font-thin leading-5 tracking-wide my-3 mb-5 mx-0">Enter your personal details and start journey with us</p>
+        <button id="signUp" (click)="onSignUpClick()" class="text-white bg-orange-400 font-bold p-3 pl-14 m-5 rounded-2xl border-2 border-gray-800 border-solid outline-none tracking-wider uppercase cursor-pointer  transform active:scale-90 transition-transform duration-80 ease-in  bg-transparent"> Sign Up</button>
+      </div>
+
+    </div>
+
+  </div>
+
+
+</div>
+
+
+
+
