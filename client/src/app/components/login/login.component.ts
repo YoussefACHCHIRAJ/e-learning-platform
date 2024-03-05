@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-login',
@@ -10,15 +10,7 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
 
-    mainPanelActive = false;
-
-    onSignUpClick() {
-      this.mainPanelActive = true;
-    }
-
-    onSignInClick() {
-      this.mainPanelActive = false;
-    }
+    @Input() isLoginActive!: boolean;
   }
 
 
