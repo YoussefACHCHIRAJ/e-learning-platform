@@ -5,6 +5,8 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { CalendarComponent } from './pages/calendar/calendar.component';
+import { GroupsComponent } from './pages/groups/groups.component';
+
 
 export const routes: Routes = [
   {
@@ -31,6 +33,11 @@ export const routes: Routes = [
         path: 'calendar',
         title: 'Calendar',
         component: CalendarComponent,
+      },
+      {
+        path: 'groups',
+        title: 'groups',
+        component: GroupsComponent,
       },
     ],
   },
