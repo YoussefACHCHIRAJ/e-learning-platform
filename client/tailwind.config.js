@@ -30,6 +30,9 @@ module.exports = {
         h2: "1.667rem",
         p: "1.5rem",
       },
+      gridTemplateRows: {
+        layout: '5em minmax(88vh, 1fr)'
+      }
     },
   },
   plugins: [],

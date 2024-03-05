@@ -4,6 +4,7 @@ import { AuthComponent } from './pages/auth/auth.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { CalendarComponent } from './pages/calendar/calendar.component';
 
 export const routes: Routes = [
   {
@@ -25,6 +26,11 @@ export const routes: Routes = [
         path: 'profile',
         title: 'Profile',
         component: ProfileComponent,
+      },
+      {
+        path: 'calendar',
+        title: 'Calendar',
+        component: CalendarComponent,
       },
     ],
   },
