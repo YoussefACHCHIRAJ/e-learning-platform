@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4c4db4cb-19ab-43ae-9cf4-3051f066dd2c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/auth/auth.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/auth/auth.component.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2caePZ5Sd6QriBpNy5wqpS3paTH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.profs.component.html.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Profs-info",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/User/IdeaProjects/e-learning",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\User\\IdeaProjects\\e-learning\\client\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="ELearningApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="e-learning" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="uca.ac.elearning.ELearningApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-3183f394aec4-7d648f2c" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4c4db4cb-19ab-43ae-9cf4-3051f066dd2c" name="Changes" comment="" />
+      <created>1708354093257</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1708354093257</updated>
+      <workItem from="1708354094359" duration="2332000" />
+      <workItem from="1708356448948" duration="80000" />
+      <workItem from="1708361981337" duration="766000" />
+      <workItem from="1708382176280" duration="520000" />
+      <workItem from="1708382782049" duration="1778000" />
+      <workItem from="1708441205167" duration="582000" />
+      <workItem from="1708441829864" duration="155000" />
+      <workItem from="1708442007351" duration="4135000" />
+      <workItem from="1708468084396" duration="109000" />
+      <workItem from="1708526311643" duration="5228000" />
+      <workItem from="1708543518195" duration="1930000" />
+      <workItem from="1708594593638" duration="2089000" />
+      <workItem from="1708611745101" duration="875000" />
+      <workItem from="1708709518911" duration="5973000" />
+      <workItem from="1708724262502" duration="16000" />
+      <workItem from="1708724303374" duration="7000" />
+      <workItem from="1708779909456" duration="337000" />
+      <workItem from="1708780266562" duration="36000" />
+      <workItem from="1708794474716" duration="41000" />
+      <workItem from="1708948912132" duration="234000" />
+      <workItem from="1708949525188" duration="5000" />
+      <workItem from="1708955756235" duration="581000" />
+      <workItem from="1708984842964" duration="2009000" />
+      <workItem from="1709030112768" duration="4412000" />
+      <workItem from="1709193786461" duration="316000" />
+      <workItem from="1709194182036" duration="2830000" />
+      <workItem from="1709202295715" duration="6000" />
+      <workItem from="1709328043222" duration="430000" />
+      <workItem from="1709328553005" duration="193000" />
+      <workItem from="1709330231239" duration="28000" />
+      <workItem from="1709370202972" duration="72000" />
+      <workItem from="1709379532302" duration="1683000" />
+      <workItem from="1709482568189" duration="399000" />
+      <workItem from="1709483010852" duration="3182000" />
+      <workItem from="1709561246608" duration="8062000" />
+      <workItem from="1709646597049" duration="76000" />
+      <workItem from="1709646710559" duration="1020000" />
+      <workItem from="1709649124571" duration="86000" />
+      <workItem from="1709649237434" duration="14000" />
+      <workItem from="1709649288936" duration="689000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
