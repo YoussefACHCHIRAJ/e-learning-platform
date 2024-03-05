@@ -23,3 +23,5 @@ L
 client/src/app/app.config.ts,2\1\21f00b1884e37c4386e5d63b023f9b19e3f667a8
 L
 client/src/app/app.module.ts,8\5\85dd994975de5d6b12fb5e31a3a6e66cb68d2191
+L
+client/src/app/app.routes.ts,4\3\435a796c05bdd3a7bcdbad61ff9decdc3f9af9ed

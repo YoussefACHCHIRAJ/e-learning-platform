@@ -5,6 +5,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { CalendarComponent } from './pages/calendar/calendar.component';
+import {ProfsComponent} from "./pages/profs/profs.component";
 
 export const routes: Routes = [
   {
@@ -26,6 +27,11 @@ export const routes: Routes = [
         path: 'profile',
         title: 'Profile',
         component: ProfileComponent,
+      },
+      {
+        path: 'profs',
+        title: 'Profs',
+        component: ProfsComponent,
       },
       {
         path: 'calendar',
