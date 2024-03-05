@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, Input, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 
 interface NavigationButtons {
@@ -10,13 +11,14 @@ interface NavigationButtons {
 @Component({
   selector: 'app-side-bar',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './side-bar.component.html',
-  styleUrl: './side-bar.component.css'
+  styleUrl: './side-bar.component.css',
+  encapsulation: ViewEncapsulation.None
 })
 export class SideBarComponent {
 
-  private _navigationButtons: Array<NavigationButtons> = [
+   private _navigationButtons: Array<NavigationButtons> = [
     {
       icon: "fa-solid fa-house",
       content: "Learn",
