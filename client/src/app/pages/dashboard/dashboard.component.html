@@ -1,5 +1,13 @@
 <div class="flex gap-3">
-    <app-side-bar></app-side-bar>
-    <!-- <p>dashboard works!</p> -->
-    <router-outlet></router-outlet>
+  <app-side-bar></app-side-bar>
+  <div>
+    <div class="py-4 px-9">
+      <app-tagline></app-tagline>
+    </div>
+    <div class="w-[70vh] py-4 px-9">
+      <app-dashboard-box></app-dashboard-box>
+    </div>
+  </div>
+  <!-- <p>dashboard works!</p> -->
+  <router-outlet></router-outlet>
 </div>

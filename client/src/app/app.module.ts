@@ -4,8 +4,8 @@ import { LoginComponent } from './components/auth/login/login.component';
 
 @NgModule({
   declarations: [
-    LoginComponent
+
   ],
-  imports: [CommonModule, NgModule],
+  imports: [CommonModule, NgModule, LoginComponent],
 })
 export class AppModule {}
