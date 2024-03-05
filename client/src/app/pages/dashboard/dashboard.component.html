@@ -1,5 +1,18 @@
-<div class="flex gap-3">
+<div class="grid grid-cols-12 grid-rows-[5em,calc(100vh-6em)] gap-y-4 h-screen">
     <app-side-bar></app-side-bar>
-    <!-- <p>dashboard works!</p> -->
-    <router-outlet></router-outlet>
+    <!-- <app-header></app-header> -->
+        <!-- Content with shadow and padding -->
+        <div class="w-full relative col-start-3 col-span-full h-full flex justify-between items-center pr-12 px-6 z-10 bg-white/20 isolate aspect-video backdrop-blur-md">
+          <h2 class="text-2xl font-bold">Calendar</h2>
+          <div class="flex items-center justify-center gap-3">
+            <p class="font-semibold font-lato">Abou baker</p>
+            <div class="w-14 h-14 rounded-full border-2 border-accent-300">
+                <img src="../../../assets/profile_img.jpeg" alt="profile" class="w-full h-full rounded-full object-fill">
+            </div>
+          </div>
+        </div>
+      
+    <div class="overflow-y-auto col-start-3 col-span-full row-start-2 row-span-full ">
+        <router-outlet></router-outlet>
+    </div>
 </div>
