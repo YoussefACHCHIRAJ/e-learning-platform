@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c4db4cb-19ab-43ae-9cf4-3051f066dd2c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_5_2024_3_07_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_5_2024_3_07_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_5_2024_3_54_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_5_2024_3_54_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/b/3bdb36930ddd309b0ed730ab181ebce164c1164b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/b/3bdb36930ddd309b0ed730ab181ebce164c1164b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/pages/profs/profs.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/profs/profs.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/profs-module/profs-module.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/profs-module/profs-module.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +125,9 @@
       <workItem from="1709649288936" duration="689000" />
       <workItem from="1709660833944" duration="32000" />
       <workItem from="1709660875728" duration="266000" />
-      <workItem from="1709661183196" duration="306000" />
+      <workItem from="1709661183196" duration="1951000" />
+      <workItem from="1709710307681" duration="692000" />
+      <workItem from="1709717717576" duration="19000" />
     </task>
     <servers />
   </component>
