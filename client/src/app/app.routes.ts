@@ -5,6 +5,8 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { CalendarComponent } from './pages/calendar/calendar.component';
+
+import { LearnComponent } from './pages/learn/learn.component';
 import {ProfsComponent} from "./pages/profs/profs.component";
 import { GroupsComponent } from './pages/groups/groups.component';
 import { DashboardLayoutComponent } from './layout/dashboard-layout/dashboard-layout.component';
@@ -25,6 +27,7 @@ export const routes: Routes = [
   {
     path: 'dashboard',
     title: 'Dashboard',
+
     component: DashboardLayoutComponent,
     children: [
       {
@@ -46,7 +49,7 @@ export const routes: Routes = [
         path: 'profs',
         title: 'Profs',
         component: ProfsComponent,
-      }, 
+      },
       {
         path: 'students',
         title: 'Students',
