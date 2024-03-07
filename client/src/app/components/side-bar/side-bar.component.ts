@@ -22,7 +22,7 @@ export class SideBarComponent {
     {
       icon: "fa-solid fa-house",
       content: "Learn",
-      path: "dashboard/learn"
+      path: "dashboard"
     },
     {
       icon: "fas fa-user",
