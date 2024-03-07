@@ -37,6 +37,7 @@ module.exports = {
       gridTemplateRows: {
         layout: '5em minmax(88vh, 1fr)'
       }
+      
     },
   },
   plugins: [],
