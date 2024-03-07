@@ -6,7 +6,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary : "#FDA22D",
+        primary : {
+          900:"#FDA22D",
+          800:"#FD9011"
+        },
         secondary: {
           100: "#FFF9F1",
           200: "#FBEDD9",
@@ -25,8 +28,11 @@ module.exports = {
       fontSize: {
         h1: "2.333rem",
         h2: "1.667rem",
-        h3: "1.5rem",
+        p: "1.5rem",
       },
+      gridTemplateRows: {
+        layout: '5em minmax(88vh, 1fr)'
+      }
     },
   },
   plugins: [],
