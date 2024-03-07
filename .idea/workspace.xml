@@ -5,98 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f17bbf6-e87d-473c-9a3d-be2a5737194c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/e-learning-platform.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/components/user-profile/user-profile.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/components/user-profile/user-profile.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/layout/dashboard-layout/dashboard-layout.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/layout/dashboard-layout/dashboard-layout.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/layout/dashboard-layout/dashboard-layout.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/layout/header/header.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/pages/students/students.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/pages/students/students.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/pages/students/students.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/bean/common/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/bean/common/CategorySection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/bean/common/Day.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/bean/common/MultimediaType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/bean/path/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/bean/path/Path.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/bean/path/PathStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/bean/path/Section.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/bean/prof/Prof.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/bean/prof/ProfAvailability.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/bean/prof/ProfAvailabilityDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/bean/student/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/bean/student/StudentGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/bean/student/StudentGroupDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/bean/student/StudentInscription.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/dao/commonDao/AdminDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/dao/commonDao/CategoryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/dao/commonDao/DayDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/dao/commonDao/MultimediaTypeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/dao/pathDao/CourseDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/dao/pathDao/PathDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/dao/pathDao/PathStatusDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/dao/pathDao/SectionDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/dao/profDao/ProfAvailabilityDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/dao/profDao/ProfAvailabilityDetailDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/dao/profDao/ProfDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/dao/studentDao/StudentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/dao/studentDao/StudentGroupDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/dao/studentDao/StudentGroupDetailDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/dao/studentDao/StudentInscriptionDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/converter/commonConverter/AdminConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/converter/commonConverter/CategoryConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/converter/commonConverter/DayConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/converter/commonConverter/MultimediaTypeConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/converter/pathConverter/CourseConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/converter/pathConverter/PathConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/converter/pathConverter/PathStatusConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/converter/pathConverter/SectionConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/converter/profConverter/ProfAvailabilityConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/converter/profConverter/ProfAvailabilityDetailConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/converter/profConverter/ProfConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/converter/studentConverter/StudentConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/converter/studentConverter/StudentGroupConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/converter/studentConverter/StudentGroupDetailConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/converter/studentConverter/StudentInscriptionConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/dto/commonDto/AdminDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/dto/commonDto/CategoryDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/dto/commonDto/DayDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/dto/commonDto/MultimediaTypeDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/dto/pathDto/CourseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/dto/pathDto/PathDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/dto/pathDto/PathStatusDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/dto/pathDto/SectionDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/dto/profDto/ProfAvailabilityDetailDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/dto/profDto/ProfAvailabilityDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/dto/profDto/ProfDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/dto/studentDto/StudentDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/dto/studentDto/StudentGroupDetailDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/dto/studentDto/StudentGroupDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/dto/studentDto/StudentInscriptionDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/e-learning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/e-learning.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/img-page1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/components/dashboard-box/dashboard-box.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/dashboard-box/dashboard-box.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/components/header/header.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/user-profile/user-profile.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/components/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/layout/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/components/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/layout/header/header.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/components/side-bar/side-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/side-bar/side-bar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/components/tagline/tagline.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/tagline/tagline.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/pages/dashboard/dashboard.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/dashboard/dashboard.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/pages/dashboard/dashboard.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/dashboard/dashboard.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/pages/profile/profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/profile/profile.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/pages/profile/profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/profile/profile.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +66,7 @@
       <workItem from="1709637470799" duration="840000" />
       <workItem from="1709648264891" duration="256000" />
       <workItem from="1709812917866" duration="2785000" />
-      <workItem from="1709823434915" duration="7569000" />
+      <workItem from="1709823434915" duration="8138000" />
     </task>
     <servers />
   </component>
