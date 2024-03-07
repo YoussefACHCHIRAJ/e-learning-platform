@@ -1,33 +1,34 @@
 <div
-  class="absolute top-0 left-0 h-full transition ease-in-out duration-700 w-1/2 transform flex items-center justify-center flex-col py-o px-[50px] text-center"
-  [ngClass]="{'opacity-100 z-30 translate-x-full': isLoginActive, 'opacity-0 -z-30 translate-x-0': !isLoginActive}">
-  <h1  class="mb-12 text-4xl font-bold">Sign in to <span class="text-primary-900">Laabit Academy</span></h1>
-  <form class="px-12 w-full">
+  class="absolute  top-0 left-0 h-full transition ease-in-out duration-700 w-full md:w-1/2 transform flex items-center justify-center flex-col py-0 md:px-[50px] text-center"
+  [ngClass]="{'opacity-100 z-30 md:translate-x-full': isLoginActive, 'opacity-0 -z-30 translate-x-0': !isLoginActive}">
+  <h1  class="mb-12 text-lg md:text-lg lg:text-xl font-bold ">Sign in to <span class="text-primary-900 text-lg md:text-lg lg:text-xl">Laabit Academy</span></h1>
+  <form class="px-12 w-full  ">
 
     <div>
-      <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 text-start">Your Email</label>
+      <label for="input-group-1" class="block mb-2 text-sm md:text-lg lg:text-xl font-medium text-gray-900 text-start ">Your Email</label>
       <div class="relative mb-6">
         <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
           <i class="fa-solid fa-envelope text-accent-300"></i>
         </div>
         <input type="text" id="input-group-1" required
-          class="bg-accent-100 border-2 border-accent-300 text-gray-900 text-sm rounded-lg placeholder:text-gray-600 block w-full ps-10 p-2.5"
+          class="bg-accent-100 border-2 border-accent-300 text-gray-900 text-sm md:text-lg lg:text-xl rounded-lg placeholder:text-gray-600 block w-full ps-10 p-2.5"
           placeholder="name@flowbite.com">
       </div>
     </div>
     <div>
-      <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 text-start">Password</label>
-      <div class="relative mb-6">
+      <label for="input-group-1" class="block mb-2 text-sm md:text-lg lg:text-xl font-medium text-gray-900 text-start">Password</label>
+      <div class="relative mb-6 ">
         <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
           <i class="fa-solid fa-lock text-accent-300"></i>
         </div>
         <input type="password" id="website-admin" required
-          class="bg-accent-100 border-2 border-accent-300 text-gray-900 text-sm rounded-lg placeholder:text-gray-600 block w-full ps-10 p-2.5"
+          class=" bg-accent-100 border-2 border-accent-300 text-gray-900 text-sm md:text-lg lg:text-xl rounded-lg placeholder:text-gray-600 block w-full ps-10 p-2.5"
           placeholder="make it stronger">
       </div>
     </div>
     <button
     type="submit"
-      class="text-white bg-primary-800 font-bold px-12 py-3 m-5 rounded-2xl border-2 border-primary-900 border-solid outline-none tracking-wider uppercase cursor-pointer  transform active:scale-90 hover:bg-transparent hover:text-primary-800  transition duration-300 ease-in">Log in</button>
+      class="text-white text-sm md:text-lg lg:text-xl bg-primary-800 font-bold  px-12 py-3 m-5 rounded-2xl border-2 border-primary-900 border-solid outline-none tracking-wider uppercase cursor-pointer  transform active:scale-90 hover:bg-transparent hover:text-primary-800  transition duration-300 ease-in  ">Log in</button>
+      <p class="text-xs md:hidden ">don't have Account? <button class="hover:underline  hover:text-primary-900 ml-2 transition duration-700">Create Account</button></p>
   </form>
 </div>
