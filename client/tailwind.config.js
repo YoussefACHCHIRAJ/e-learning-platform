@@ -15,6 +15,10 @@ module.exports = {
           200: "#FBEDD9",
           300: "#F9E5EA",
         },
+        third: {
+          100: "#FA5155",
+          200: "#F9E5EA",
+        },
         accent: {
           100: "#F8F8FF",
           200: "#E7E6FB",
@@ -33,6 +37,7 @@ module.exports = {
       gridTemplateRows: {
         layout: '5em minmax(88vh, 1fr)'
       }
+      
     },
   },
   plugins: [],
