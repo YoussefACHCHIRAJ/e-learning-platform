@@ -7,6 +7,11 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { CalendarComponent } from './pages/calendar/calendar.component';
 import { LearnComponent } from './pages/learn/learn.component';
 
+import {ProfsComponent} from "./pages/profs/profs.component";
+
+import { GroupsComponent } from './pages/groups/groups.component';
+
+
 export const routes: Routes = [
   {
     path: '',
@@ -35,9 +40,19 @@ export const routes: Routes = [
         component: ProfileComponent,
       },
       {
+        path: 'profs',
+        title: 'Profs',
+        component: ProfsComponent,
+      },
+      {
         path: 'calendar',
         title: 'Calendar',
         component: CalendarComponent,
+      },
+      {
+        path: 'groups',
+        title: 'groups',
+        component: GroupsComponent,
       },
     ],
   },

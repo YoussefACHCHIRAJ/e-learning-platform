@@ -30,7 +30,7 @@ export class CalendarComponent {
     dayHeaderClassNames: 'bg-accent-200',
     height: '100%',
     eventClassNames:
-      'border border-accent-200 bg-accent-200 text-gray-900 cursor-pointer hover:bg-primary hover:text-red-600 transition duration-500',
+      'border border-accent-300 bg-accent-300 text-gray-600 cursor-pointer hover:bg-primary hover:text-black transition duration-500',
     nowIndicator: true,
     firstDay: 1,
     dayCellClassNames: "bg-white",
