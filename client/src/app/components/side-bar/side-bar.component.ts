@@ -1,7 +1,12 @@
 import { CommonModule } from '@angular/common';
+<<<<<<< HEAD
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
+=======
+import { Component, Input, ViewEncapsulation } from '@angular/core';
+import { Router } from '@angular/router';
+>>>>>>> 9fe287b2bff0a3f2e9b003f5f05d1083ca6b8459
 
 interface NavigationButtons {
   icon: string,
@@ -15,7 +20,8 @@ interface NavigationButtons {
   standalone: true,
   imports: [CommonModule],
   templateUrl: './side-bar.component.html',
-  styleUrl: './side-bar.component.css'
+  styleUrl: './side-bar.component.css',
+  encapsulation: ViewEncapsulation.None
 })
 export class SideBarComponent implements OnInit{
 
@@ -28,12 +34,16 @@ export class SideBarComponent implements OnInit{
     this._currentPath = value;
   }
 
-  private _navigationButtons: Array<NavigationButtons> = [
+   private _navigationButtons: Array<NavigationButtons> = [
     {
       icon: "fa-solid fa-house",
       content: "Learn",
+<<<<<<< HEAD
       path: "dashboard",
       isActive: true
+=======
+      path: "dashboard"
+>>>>>>> 9fe287b2bff0a3f2e9b003f5f05d1083ca6b8459
     },
     {
       icon: "fas fa-user",
