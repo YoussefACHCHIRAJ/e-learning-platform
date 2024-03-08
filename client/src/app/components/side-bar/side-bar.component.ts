@@ -1,11 +1,15 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, ViewEncapsulation } from '@angular/core';
-import { Router } from '@angular/router';
+
+import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
+import { filter } from 'rxjs';
+import { navigationButtonsValues } from '../../../constants';
 
 interface NavigationButtons {
-  icon: string,
-  content: string,
-  path: string
+  icon: string;
+  content: string;
+  path: string;
+  isActive: boolean;
 }
 
 @Component({
@@ -14,50 +18,20 @@ interface NavigationButtons {
   imports: [CommonModule],
   templateUrl: './side-bar.component.html',
   styleUrl: './side-bar.component.css',
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
 })
-export class SideBarComponent {
+export class SideBarComponent implements OnInit {
+  private _navigationButtons!: Array<NavigationButtons>;
 
-   private _navigationButtons: Array<NavigationButtons> = [
-    {
-      icon: "fa-solid fa-house",
-      content: "Learn",
-      path: "dashboard"
-    },
-    {
-      icon: "fas fa-user",
-      content: "Profile",
-      path: "dashboard/profile"
+  constructor(private router: Router) {}
 
-    },
-    {
-      icon: "fa-solid fa-users-rectangle",
-      content: "Groups",
-      path: "dashboard/groups"
+  ngOnInit(): void {
+    this.navigationButtons = navigationButtonsValues;
 
-    },
-    {
-      icon: "fa-solid fa-user-tie",
-      content: "Profs",
-      path: "dashboard/profs"
-
-    },
-    {
-      icon: "fa-solid fa-user-group",
-      content: "Students",
-      path: "dashboard/students"
-
-    },
-    {
-      icon: "fa-solid fa-calendar-days",
-      content: "Calender",
-      path: "dashboard/calendar"
-
-    },
-  ];
-
-
-  constructor (private router:Router){}
+    this.router.events
+      .pipe(filter((event) => event instanceof NavigationEnd))
+      .subscribe(() => this?.updateNavigationButton());
+  }
 
   public get navigationButtons(): Array<NavigationButtons> {
     return this._navigationButtons;
@@ -66,8 +40,15 @@ export class SideBarComponent {
     this._navigationButtons = value;
   }
 
-  navigateTo(path: string){
+  navigateTo(path: string) {
     this.router.navigate([path]);
   }
 
+  getCurrentRoute() {
+    return this.router.url;
+  }
+
+  updateNavigationButton() {
+    this.navigationButtons.forEach(navigateButton => navigateButton.isActive = `/${navigateButton?.path}` === this.getCurrentRoute());
+  }
 }
