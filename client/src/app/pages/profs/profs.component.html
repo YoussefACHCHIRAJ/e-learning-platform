@@ -1,5 +1,7 @@
 <div class="flex flex-wrap justify-between px-12">
   @for(item of [1,2,3,4,5]; track $index){
-  <app-profs-module></app-profs-module>
+    <app-profs-module 
+      class="w-full md:w-[calc(50%-1rem)] odd:bg-secondary-200 odd:border-primary-900 even:bg-accent-200 even:border-accent-300 p-6 rounded-2xl shadow-md mb-6 border-2"
+    ></app-profs-module>
   }
 </div>

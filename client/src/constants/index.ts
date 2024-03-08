@@ -25,3 +25,49 @@ export const eventList = [
     end: '2024-03-01T10:45:00',
   },
 ];
+
+
+export const navigationButtonsValues = [
+  {
+    icon: "fa-solid fa-house",
+    content: "Learn",
+    path: "dashboard",
+    isActive: true
+
+  },
+  {
+    icon: "fas fa-user",
+    content: "Profile",
+    path: "dashboard/profile",
+    isActive:  false
+
+  },
+  {
+    icon: "fa-solid fa-users-rectangle",
+    content: "Groups",
+    path: "dashboard/groups",
+    isActive: false
+
+  },
+  {
+    icon: "fa-solid fa-user-tie",
+    content: "Profs",
+    path: "dashboard/profs",
+    isActive: false
+
+  },
+  {
+    icon: "fa-solid fa-user-group",
+    content: "Students",
+    path: "dashboard/students",
+    isActive: false
+
+  },
+  {
+    icon: "fa-solid fa-calendar-days",
+    content: "Calender",
+    path: "dashboard/calendar",
+    isActive: false
+
+  },
+]

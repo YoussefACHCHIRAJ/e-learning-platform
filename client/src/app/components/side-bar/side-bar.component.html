@@ -1,13 +1,15 @@
-<div class="h-screen col-span-2 bg-secondary-100">
+<div class="h-screen w-full bg-secondary-200">
   <div class="w-full h-full p-6 ">
-    <h1 class="text-2xl font-semibold mb-6">
+    <h1 class="text-2xl font-semibold mb-6 cursor-pointer" (click)="navigateTo('dashboard')">
       <i class="fas fa-graduation-cap mr-3 text-primary-900"></i>
       <span class="text-primary-900">Laabit</span> academy
     </h1>
     <ul class="space-y-4">
       @for (item of navigationButtons; track $index) {
       <li>
-        <a (click)="navigateTo(item?.path!)" class="cursor-pointer flex items-center text-gray-700 hover:text-gray-900 hover:bg-gray-100 p-2 rounded">
+        <a (click)="navigateTo(item?.path!)"
+          class="rounded-xl border-2 cursor-pointer flex items-center text-gray-700 hover:text-gray-900 hover:bg-gray-100 py-2 px-4"
+          [ngClass]="{'bg-third-200 border-primary-900': item?.isActive, 'border-secondary-200': !item?.isActive}">
           <i class="{{ item?.icon }} mr-3"></i>
           {{ item?.content }}
         </a>
