@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="4c4db4cb-19ab-43ae-9cf4-3051f066dd2c" name="Changes" comment="" />
 =======
     <list default="true" id="3f17bbf6-e87d-473c-9a3d-be2a5737194c" name="Changes" comment="">
@@ -18,27 +19,42 @@
       <change beforePath="$PROJECT_DIR$/client/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.html" afterDir="false" />
     </list>
 >>>>>>> b345ef7071e2dbab097755f9334cc2a123404e63
+=======
+    <list default="true" id="d361f613-21c1-4c7b-b318-22304bd2c6f9" name="Changes" comment="" />
+=======
+    <list default="true" id="4c4db4cb-19ab-43ae-9cf4-3051f066dd2c" name="Changes" comment="" />
+>>>>>>> c420c1e1bc505fe4af12e3cc05f08e4cdb94b2bf
+>>>>>>> 0b9f61ed5c055615d57069b09c71159136b0b5f2
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+<<<<<<< HEAD
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="dashboard" />
       </map>
     </option>
+=======
+>>>>>>> 0b9f61ed5c055615d57069b09c71159136b0b5f2
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
+<<<<<<< HEAD
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2dGbfPewq94CvNHMxE5cJWp5FEp" />
+=======
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2dJU2vJL2FweWzBiC1txlxbcYE0" />
+>>>>>>> 0b9f61ed5c055615d57069b09c71159136b0b5f2
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -47,26 +63,47 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+<<<<<<< HEAD
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "Merging dashboard",
     "last_opened_file_path": "/Users/HT/Desktop/e-learning-platform",
+=======
+    "git-widget-placeholder": "develop",
+>>>>>>> 0b9f61ed5c055615d57069b09c71159136b0b5f2
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+<<<<<<< HEAD
     "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+=======
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.2.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+>>>>>>> 0b9f61ed5c055615d57069b09c71159136b0b5f2
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="3f17bbf6-e87d-473c-9a3d-be2a5737194c" name="Changes" comment="" />
       <created>1709637467912</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
 <<<<<<< HEAD
+=======
+      <changelist id="d361f613-21c1-4c7b-b318-22304bd2c6f9" name="Changes" comment="" />
+      <created>1709725470984</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+<<<<<<< HEAD
+      <updated>1709725470984</updated>
+      <workItem from="1709725472238" duration="307000" />
+      <workItem from="1709742678536" duration="8000" />
+      <workItem from="1709819446165" duration="3153000" />
+=======
+>>>>>>> 0b9f61ed5c055615d57069b09c71159136b0b5f2
       <updated>1708354093257</updated>
       <workItem from="1708354094359" duration="2332000" />
       <workItem from="1708356448948" duration="80000" />
@@ -114,6 +151,7 @@
       <workItem from="1709710307681" duration="692000" />
       <workItem from="1709717717576" duration="19000" />
       <workItem from="1709720960472" duration="381000" />
+<<<<<<< HEAD
 =======
       <updated>1709637467912</updated>
       <workItem from="1709637470799" duration="840000" />
@@ -121,6 +159,9 @@
       <workItem from="1709812917866" duration="2785000" />
       <workItem from="1709823434915" duration="8138000" />
 >>>>>>> b345ef7071e2dbab097755f9334cc2a123404e63
+=======
+>>>>>>> c420c1e1bc505fe4af12e3cc05f08e4cdb94b2bf
+>>>>>>> 0b9f61ed5c055615d57069b09c71159136b0b5f2
     </task>
     <servers />
   </component>
