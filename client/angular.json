@@ -91,17 +91,11 @@
         }
       }
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 
   },
   "cli": {
-    "analytics": "be181cdc-5911-4fd8-9c0f-0afd5b8775dd"
+    "analytics": "4ba9fe9d-6c0a-498e-990b-fbde60f3a5b5"
   }
-=======
-  },
->>>>>>> 29c26733f91384203041bb70d44a6bf84d9a62af
-=======
-  },
->>>>>>> 5bddf6e464c7d18a7b8d88aff4f7f9fc3f9e2c4e
+
 }

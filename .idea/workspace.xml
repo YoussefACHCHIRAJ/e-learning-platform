@@ -5,7 +5,130 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c4db4cb-19ab-43ae-9cf4-3051f066dd2c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/pages/learn/learn.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/pages/learn/learn.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/e-learning-platform.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/e-learning.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_5_2024_3_07_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_5_2024_3_07_PM_[Changes]1/shelved.patch" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/learn/learn.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_5_2024_3_07_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_5_2024_3_54_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_5_2024_3_54_PM_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_5_2024_3_54_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/4/043fcd974e7ffb16349f4ef8bd1c1864b0517fc8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/1/21f00b1884e37c4386e5d63b023f9b19e3f667a8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/2/22472af7b80f80dd437d099ba8bd5afff56623ee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/6/26358a865a03c1b42a0e3450353a13b8c1047bea" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/9/2938a3234253c3053cec47ab1aee86f08bdc03dc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/b/3bdb36930ddd309b0ed730ab181ebce164c1164b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/3/435a796c05bdd3a7bcdbad61ff9decdc3f9af9ed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/f/5f011985a6ffafbef6d7556c20884d8f5e916b7a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/7/673750d39a9a297592839cb0fda9775a8314c54a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/5/85dd994975de5d6b12fb5e31a3a6e66cb68d2191" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/4/a4dd56664eddc26de3268a201e2bb212d15bed92" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/dfd11a06262e96f3cd670adda25464ac3c49526b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/f/ef0f1877f744ba91f94b9ab122ab7abac3475966" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/4/043fcd974e7ffb16349f4ef8bd1c1864b0517fc8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/1/21f00b1884e37c4386e5d63b023f9b19e3f667a8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/2/22472af7b80f80dd437d099ba8bd5afff56623ee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/6/26358a865a03c1b42a0e3450353a13b8c1047bea" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/9/2938a3234253c3053cec47ab1aee86f08bdc03dc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/b/3bdb36930ddd309b0ed730ab181ebce164c1164b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/3/435a796c05bdd3a7bcdbad61ff9decdc3f9af9ed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/f/5f011985a6ffafbef6d7556c20884d8f5e916b7a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/7/673750d39a9a297592839cb0fda9775a8314c54a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/5/85dd994975de5d6b12fb5e31a3a6e66cb68d2191" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/4/a4dd56664eddc26de3268a201e2bb212d15bed92" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/f/dfd11a06262e96f3cd670adda25464ac3c49526b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/f/ef0f1877f744ba91f94b9ab122ab7abac3475966" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/dashboard-box/dashboard-box.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/dashboard-box/dashboard-box.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/profs-module/profs-module.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/profs-module/profs-module.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/side-bar/side-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/side-bar/side-bar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/side-bar/side-bar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/side-bar/side-bar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/tagline/tagline.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/tagline/tagline.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/user-profile/user-profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/user-profile/user-profile.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/layout/dashboard-layout/dashboard-layout.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/layout/dashboard-layout/dashboard-layout.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/layout/dashboard-layout/dashboard-layout.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/layout/dashboard-layout/dashboard-layout.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/layout/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/layout/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/dashboard/dashboard.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/dashboard/dashboard.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/profs/profs.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/profs/profs.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/constants/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/constants/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/bean/common/Admin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/bean/common/CategorySection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/bean/common/Day.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/bean/common/MultimediaType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/bean/path/Course.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/bean/path/Path.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/bean/path/PathStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/bean/path/Section.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/bean/prof/Prof.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/bean/prof/ProfAvailability.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/bean/prof/ProfAvailabilityDetail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/bean/student/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/bean/student/StudentGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/bean/student/StudentGroupDetail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/bean/student/StudentInscription.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/dao/commonDao/AdminDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/dao/commonDao/CategoryDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/dao/commonDao/DayDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/dao/commonDao/MultimediaTypeDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/dao/pathDao/CourseDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/dao/pathDao/PathDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/dao/pathDao/PathStatusDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/dao/pathDao/SectionDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/dao/profDao/ProfAvailabilityDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/dao/profDao/ProfAvailabilityDetailDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/dao/profDao/ProfDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/dao/studentDao/StudentDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/dao/studentDao/StudentGroupDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/dao/studentDao/StudentGroupDetailDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/dao/studentDao/StudentInscriptionDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/converter/commonConverter/AdminConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/converter/commonConverter/CategoryConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/converter/commonConverter/DayConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/converter/commonConverter/MultimediaTypeConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/converter/pathConverter/CourseConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/converter/pathConverter/PathConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/converter/pathConverter/PathStatusConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/converter/pathConverter/SectionConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/converter/profConverter/ProfAvailabilityConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/converter/profConverter/ProfAvailabilityDetailConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/converter/profConverter/ProfConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/converter/studentConverter/StudentConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/converter/studentConverter/StudentGroupConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/converter/studentConverter/StudentGroupDetailConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/converter/studentConverter/StudentInscriptionConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/dto/commonDto/AdminDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/dto/commonDto/CategoryDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/dto/commonDto/DayDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/dto/commonDto/MultimediaTypeDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/dto/pathDto/CourseDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/dto/pathDto/PathDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/dto/pathDto/PathStatusDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/dto/pathDto/SectionDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/dto/profDto/ProfAvailabilityDetailDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/dto/profDto/ProfAvailabilityDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/dto/profDto/ProfDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/dto/studentDto/StudentDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/dto/studentDto/StudentGroupDetailDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/dto/studentDto/StudentGroupDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uca/ac/elearning/webService/dto/studentDto/StudentInscriptionDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,23 +171,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JavaScript Debug.profs.component.html.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;user-profile&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/IdeaProjects/e-learning&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\PC\\WebstormProjects\\e-learning-platform\\client\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.profs.component.html.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Merging user-profile",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/User/IdeaProjects/e-learning",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\PC\\WebstormProjects\\e-learning-platform\\client\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="ELearningApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="e-learning" />
@@ -132,6 +255,7 @@
       <workItem from="1710077039159" duration="776000" />
       <workItem from="1710109090233" duration="2252000" />
       <workItem from="1710163879331" duration="63000" />
+      <workItem from="1710166162935" duration="733000" />
     </task>
     <servers />
   </component>
