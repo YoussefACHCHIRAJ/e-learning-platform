@@ -1,69 +1,86 @@
 <!-- Container -->
-<div class="flex">
+<div class="flex h-full p-4">
   <div class="flex flex-1 flex-col justify-center items-center md:justify-start md:items-start">
     <div
-      class="w-[18em] md:w-[20em] lg:w-[28em] font-lato bg-accent-200 border-2 border-accent-300 items-start justify-between p-4 shadow-md rounded-md">
+      class="relative flex w-[18em] md:w-[20em] lg:w-[34em] font-lato card-gradient items-start justify-between px-4 pt-2 pb-6 shadow-md rounded-3xl">
 
-      <!-- Content -->
-      <h2 class="text-lg mb-4 text-end">Course: 3</h2>
-      <h2 class="text-lg font-bold mb-4 text-center">Course Title</h2>
-      <div class="flex items-center justify-around text-sm text-gray-500 mt-3">
-        <span>Progress: 0%</span>
-        <span>section: 4/6</span>
+      <div>
+        <!-- Content -->
+        <h2 class="text-lg mb-2 text-gray-900">Course: 3</h2>
+        <h2 class="text-2xl font-bold mb-4 text-white text-center">Course Title</h2>
+        <div class="flex items-center justify-around flex-col text-md mt-3 text-white space-y-6">
+          <div class="relative  flex items-center gap-3">
+            <i
+              class="fa-solid flex-1 size-full fa-spinner backdrop-blur-md isolate bg-white/10 p-2 rounded-xl aspect-video"></i>
+            <p class="w-full flex flex-col text-center text-sm">Progress <span class="font-bold text-lg">30%</span></p>
+          </div>
+          <div class="relative  flex items-center gap-3">
+            <i class="fa-solid fa-list-check backdrop-blur-md isolate bg-white/10 p-2 rounded-xl aspect-video"></i>
+            <p class="w-full flex flex-col text-center text-sm">section: <span class="font-bold text-lg">4/6</span></p>
+          </div>
+        </div>
       </div>
-    </div>
-    <!-- Buttons -->
-    <div class="flex ">
+      <div class=" size-[10em] mt-6 mx-auto">
+        <img src="assets/img-page1.svg" alt="object-fill">
+      </div>
       <button
-        class="m-2 mt-4 px-4 py-2 bg-primary-800 border-2 border-primary-900 text-white rounded-md hover:bg-transparent hover:text-black font-lato transition-color duration-500">
+        class="absolute -bottom-0 -right-0 px-12 py-4 bg-primary-900 border-2 border-primary-900 text-white rounded-br-3xl rounded-tl-3xl hover:bg-primary-700  font-lato transition-color duration-500">
         Let's Start
       </button>
-      <button
-        class="m-2 mt-4 px-4 py-2 bg-secondary-200 text-primary rounded-md border-2 hover:bg-transparent border-primary-900  font-lato transition-color duration-500">
-        Next Unit
-      </button>
     </div>
-
+    <!-- Buttons -->
     <div>
-      <p>
-        Description
+      <p class="mt-4 mx-4 text-gray-700 leading-loose">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit temporibus amet quis, blanditiis aliquam praesentium sapiente, officia recusandae minus necessitatibus, eaque nostrum et non? Quaerat ratione provident delectus unde facilis!
       </p>
-    </div>
-    <!-- Photo -->
-    <div class="mb-2 w-96 h-96  mx-auto">
-      <img src="assets/img-page1.png" alt="dash picture object-fill">
     </div>
   </div>
 
-<!--  Cards-->
-  <div class=" flex-col gap-10 mt-12 ml-auto hidden md:flex  ">
-    <div >
-
-      <div
-        class=" lg:w-80 md:w-60 h-[11em] font-lato bg-secondary-200  border-2 border-primary-900 p-4 shadow-md rounded-md">
-
-        <!-- Content -->
-        <h2 class="text-lg mb-4 text-end">
-          <i class="fa-solid fa-gem text-accent-300"></i>
-          Progress</h2>
-        <p class="text-gray-800 mb-2 font-bold text-lg text-center">Path: Beginner</p>
-        <div class="flex items-center justify-between text-sm text-gray-500 mt-3">
-          <span>30%</span>
-          <span>course: 3/15</span>
-          <span>section: 2/6</span>
+  <!--  Cards-->
+  <div class=" flex-col gap-2 self-end ml-auto hidden md:flex">
+    <div
+      class=" lg:w-[24em] md:w-60 font-lato bg-gradient-to-bl card-gradient px-12 py-6  shadow-md rounded-3xl">
+      <!-- Content -->
+      <h2 class="text-lg mb-2 text-end text-gray-900">
+        <i class="fa-solid fa-gem"></i>
+        Progress
+      </h2>
+      <p class="text-white mb-4 font-bold text-lg text-center">Path: Beginner</p>
+      <div class="flex items-center justify-between text-sm text-gray-600 mt-2">
+        <div class="flex flex-col items-center">
+          <i
+            class="fa-solid   fa-spinner backdrop-blur-md isolate bg-white/40 text-center p-2 rounded-xl aspect-video"></i>
+          <p class="flex flex-col items-center">Progress <span class="font-bold">30%</span></p>
+        </div>
+        <div class="flex flex-col items-center">
+          <i class="fa-solid fa-book backdrop-blur-md isolate bg-white/40 text-center p-2 rounded-xl aspect-video"></i>
+          <p class="flex flex-col items-center">course: <span class="font-bold">3/15</span></p>
+        </div>
+        <div class="flex flex-col items-center">
+          <i
+            class="fa-solid fa-list-check backdrop-blur-md isolate bg-white/40 text-center p-2 rounded-xl aspect-video"></i>
+          <p class="flex flex-col items-center">section: <span class="font-bold">2/6</span></p>
         </div>
       </div>
     </div>
 
-    <div class="">
-      <div
-        class="lg:w-80 h-[11em] md:w-60 font-lato bg-third-200  border-2 border-third-100 items-start justify-between p-4 shadow-md rounded-md">
-        <!-- Content -->
-        <h2 class="text-lg mb-4 text-end">Next Course</h2>
-        <h2 class="text-lg mb-4 text-center font-bold">Next Course: Title</h2>
-        <p>Description....</p>
-        <div class="flex justify-end text-sm text-gray-500 mt-3">
-          <span>section: 2/6</span>
+    <div
+      class=" lg:w-[24em] md:w-60 font-lato card-gradient px-12 py-6  shadow-md rounded-3xl">
+
+      <!-- Content -->
+      <h2 class="text-lg mb-2 text-end text-gray-900">
+        Next course
+      </h2>
+      <p class=" mb-2 text-white text-lg text-center">Course: <span class="font-bold ">course title</span></p>
+      <div class="flex items-center justify-around text-sm text-gray-700 mt-2">
+        <div class="flex flex-col items-center">
+          <i class="fa-solid fa-book backdrop-blur-md isolate bg-white/40 text-center p-2 rounded-xl aspect-video"></i>
+          <p class="flex flex-col items-center">course: <span class="font-bold">8</span></p>
+        </div>
+        <div class="flex flex-col items-center">
+          <i
+            class="fa-solid fa-list-check backdrop-blur-md isolate bg-white/40 text-center p-2 rounded-xl aspect-video"></i>
+          <p class="flex flex-col items-center">section: <span class="font-bold">6</span></p>
         </div>
       </div>
     </div>
