@@ -6,11 +6,11 @@ import { HomeComponent } from './pages/home/home.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { CalendarComponent } from './pages/calendar/calendar.component';
 
-import { LearnComponent } from './pages/learn/learn.component';
 import {ProfsComponent} from "./pages/profs/profs.component";
 import { GroupsComponent } from './pages/groups/groups.component';
 import { DashboardLayoutComponent } from './layout/dashboard-layout/dashboard-layout.component';
 import { StudentsComponent } from './pages/students/students.component';
+import { PathsComponent } from './pages/paths/paths.component';
 
 
 export const routes: Routes = [
@@ -34,6 +34,11 @@ export const routes: Routes = [
         path: '',
         title: 'Learn',
         component: DashboardComponent,
+      },
+      {
+        path: 'paths',
+        title: 'Paths',
+        component: PathsComponent,
       },
       {
         path: 'profile',
