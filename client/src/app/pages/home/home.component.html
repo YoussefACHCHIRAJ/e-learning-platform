@@ -1,6 +1,29 @@
-<p class="mx-3 my-4">home works!</p>
-<div class="flex gap-3 flex-col w-32 mt-4 mx-3">
-    <a (click)="navigateToDashboard()" class="cursor-pointer border-2 border-accent-300 bg-accent-200 px-3 py-2 rounded-xl font-bold hover:bg-accent-300 hover:text-secondary-100 transition duration-700 ease-in-out">Dashboad</a>
-    <a (click)="navigateToAuth()" class="cursor-pointer border-2 border-accent-300 bg-accent-200 px-3 py-2 rounded-xl font-bold hover:bg-accent-300 hover:text-secondary-100 transition duration-700 ease-in-out">Auth</a>
-</div>
+<div class="w-full h-screen gradient-background px-12">
+    <header class="flex justify-between py-4">
+        <h1 class="lg:text-3xl md:text-lg text-md  font-semibold mb-6 cursor-pointer">
+            <i class="fas fa-graduation-cap mr-3 text-white"></i>
+            <span class="text-white">Laabit</span> academy
+          </h1>
 
+          <div class="flex items-center gap-x-2">
+            <button routerLink="auth"  class="px-6 py-2 rounded-2xl text-black font-bold font-lato border-2 border-primary-700 hover:bg-primary-700  transition duration-500">Log in</button>
+            <button routerLink="auth" class="px-6 py-2 bg-primary-900 rounded-2xl text-secondary-300 font-bold font-lato border-2 border-primary-700 hover:bg-primary-700  transition duration-500">Register</button>
+          </div>
+    </header>
+    <main class=" h-fit">
+        <section class="flex items-center">
+            <div>
+                <h1 class="text-white text-4xl font-bold font-lato leading-loose text-end tracking-widest">
+                    <span class="border-2 px-4 py-2 rounded-xl bg-primary-700 border-primary-900">LAABIT ACADEMY</span> LANGUAGE 
+                    <br>
+                    EDUCATION PLATFORM
+                    
+                </h1>
+                <button routerLink="auth" class="px-8 py-4 bg-primary-900 rounded-xl text-white font-bold font-lato text-lg border-2 border-primary-900 hover:bg-transparent transition duration-500 ml-auto mt-4 block">Enroll now</button>
+            </div>
+            <div class="size-1/2">
+                <img src="assets/home-page.svg" alt="home page" class="object-contain">
+            </div>
+        </section>
+    </main>
+</div>
