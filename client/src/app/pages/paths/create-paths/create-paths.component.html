@@ -1,0 +1,91 @@
+<div class="w-full h-full flex items-center">
+    <div class="w-[40%] h-[calc(100vh-8em)] flex flex-col items-center ">
+        <h2 class="text-4xl font-bold font-lato mb-auto tracking-widest text-end leading-relaxed text-gray-800"><span
+                class="text-secondary-300">Crafting</span> Educational<br> Horizons</h2>
+        <img src="assets/create-path.svg" alt="">
+    </div>
+    <div class="flex-1 ">
+        <form class="w-3/4 mx-auto space-y-4">
+            <div>
+                <label for="path-label" class="block mb-2 text-sm font-medium text-gray-700 ">
+                    Path name :
+                </label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                        <i class="fa-solid fa-route text-gray-600"></i>
+                    </div>
+                    <input type="text" id="path-label"
+                        class="bg-gray-50 border border-gray-300 text-gray-700 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5"
+                        placeholder="path name">
+                </div>
+            </div>
+
+            <div>
+                <label for="path-label" class="block mb-2 text-sm font-medium text-gray-700 ">
+                    Path description :
+                </label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 start-0 flex items-start ps-3.5 mt-4 pointer-events-none">
+                        <i class="fa-solid fa-text-width text-gray-600"></i>
+                    </div>
+                    <textarea type="text" id="path-label" rows="4" cols="3"
+                        class="bg-gray-50 border border-gray-300 text-gray-700 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5"
+                        placeholder="give a small description to this path..."></textarea>
+                </div>
+            </div>
+
+            <div>
+                <label for="countries" class="block mb-2 text-sm font-medium text-gray-700 ">
+                    Path status :
+                </label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                        <i class="fas fa-sitemap text-gray-600"></i>
+                    </div>
+                    <select id="countries"
+                        class="bg-gray-50 border border-gray-300 text-gray-700 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5">
+
+                        <option>Begginer</option>
+                        <option>Intermediate</option>
+                        <option>Advanced</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 md:gap-6">
+                <div class="relative z-0 w-full mb-5 group">
+                    <label for="floating_phone" class="block mb-2 text-sm font-medium text-gray-700">Numbers of courses
+                        :</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                            <i class="fa-solid fa-book-open text-gray-600"></i>
+                        </div>
+                        <input type="number"
+                            class="bg-gray-50 border border-gray-300 text-gray-700 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5"
+                            placeholder="4" />
+                    </div>
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                    <label for="floating_company" class="block mb-2 text-sm font-medium text-gray-700 ">Numbers of
+                        sections in each course :</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                            <i class="fa-solid fa-list-check text-gray-600"></i>
+                        </div>
+                        <input type="number"
+                            class="bg-gray-50 border border-gray-300 text-gray-700 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5"
+                            placeholder="4" />
+                    </div>
+                </div>
+            </div>
+
+            <button (click)="incrementStepper()" type="button"
+                class="py-2 px-6 bg-primary-900 rounded-xl ml-auto font-lato text-white font-bold flex items-center gap-2">
+                Next
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </form>
+
+    </div>
+</div>
