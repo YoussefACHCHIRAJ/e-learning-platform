@@ -38,7 +38,7 @@ export const navigationButtonsValues = [
   {
     icon: "fa-solid fa-route",
     content: "Paths",
-    path: "dashboard",
+    path: "dashboard/paths",
     title: "Paths",
     isActive: false
 
