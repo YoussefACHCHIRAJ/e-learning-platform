@@ -1,12 +1,13 @@
 <div class="h-screen w-full p-6 pr-0 flex flex-col">
-  <h1 class="lg:text-2xl md:text-lg text-md  font-semibold mb-6 cursor-pointer" (click)="navigateTo('dashboard')">
+  <h1 class="lg:text-2xl md:text-lg text-md  font-semibold mb-6 cursor-pointer" (click)="navigateTo('dashboard', 'Learn')">
+
     <i class="fas fa-graduation-cap mr-3 text-white"></i>
     <span class="text-white">Laabit</span> academy
   </h1>
   <ul class="space-y-1">
     @for (item of navigationButtons; track $index) {
     <li>
-      <a (click)="navigateTo(item?.path!)"
+      <a (click)="navigateTo(item?.path!, item?.title!)"
         class="rounded-r-none rounded-xl cursor-pointer flex items-center  hover:text-gray-900  py-3 w-full pl-2"
         [ngClass]="{'bg-white': item?.isActive, 'border-[#34495e] text-white hover:bg-white/90': !item?.isActive}">
         <i class="{{ item?.icon }} mr-3"></i>
@@ -15,7 +16,7 @@
     </li>
     }
   </ul>
-  <button class="border-t w-full pt-4 text-start font-bold text-white pl-2 space-x-2 mt-auto">
+  <button routerLink="" class="border-t w-full pt-4 text-start font-bold text-white pl-2 space-x-2 mt-auto">
     <i class="fa-solid fa-arrow-right-from-bracket"></i>
     Log out
   </button>
