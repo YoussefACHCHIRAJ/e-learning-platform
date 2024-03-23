@@ -1,7 +1,7 @@
 <div
   class="absolute  top-0 left-0 h-full transition ease-in-out duration-700 md:w-1/2 flex items-center justify-center flex-col py-0 md:px-[50px] text-center"
   [ngClass]="{'opacity-100 z-30 translate-x-0': !isLoginActive, 'opacity-0 -z-30 translate-x-full': isLoginActive}">
-  <h1 class="mb-12 text-4xl font-bold">Create Account</h1>
+  <h1 class="mb-4 text-4xl font-bold">Create Account</h1>
   <form class="px-12 w-full">
     <div>
       <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 text-start">Full name</label>
@@ -39,6 +39,7 @@
     </div>
     <div>
       <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 text-start">Password</label>
+
       <div class="relative mb-6">
         <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
           <i class="fa-solid fa-lock text-primary-700"></i>
@@ -47,13 +48,20 @@
           class="bg-accent-100 border-2 border-primary-700 text-gray-900 text-sm rounded-lg placeholder:text-gray-900 block w-full ps-10 p-2.5"
           placeholder="make it stronger">
       </div>
-    </div>
+      <div class="flex items-center space-x-5 border border-2 bg-secondary-200 border-primary-700  rounded-lg">
+        <p>Are you Prof Or Student?</p>
+         <input type="checkbox" class="h-4 w-4 text-primary-700 focus:ring-primary-900 border-primary-900 rounded-lg">
+        <label for="input-group-1" class="text-gray-900 font-bold">Prof</label>
+        <input type="checkbox" class="h-4 w-4 text-primary-700 focus:ring-primary-900 border-primary-900 rounded-lg">
+        <label for="input-group-1" class="text-gray-900 font-bold">Student</label>
+        </div>
+
+      </div>
 
 
-    <button
-    type="submit"
-      class="text-secondary-300 bg-primary-900 font-bold px-12 py-3 m-5 rounded-2xl border-2 border-primary-700 border-solid outline-none tracking-wider uppercase cursor-pointer  transform active:scale-90  hover:bg-primary-700  transition duration-300 ease-in">Sign
-      Up</button>
+      <button type="submit"
+        class="text-secondary-300 bg-primary-900 font-bold px-12 py-3 m-5 rounded-2xl border-2 border-primary-700 border-solid outline-none tracking-wider uppercase cursor-pointer  transform active:scale-90  hover:bg-primary-700  transition duration-300 ease-in">Sign
+        Up</button>
   </form>
 </div>
 
