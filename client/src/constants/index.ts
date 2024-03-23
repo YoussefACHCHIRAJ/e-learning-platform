@@ -32,13 +32,22 @@ export const navigationButtonsValues = [
     icon: "fa-solid fa-house",
     content: "Learn",
     path: "dashboard",
+    title: "Learn",
     isActive: true
+  },
+  {
+    icon: "fa-solid fa-route",
+    content: "Paths",
+    path: "dashboard/paths",
+    title: "Paths",
+    isActive: false
 
   },
   {
     icon: "fas fa-user",
     content: "Profile",
     path: "dashboard/profile",
+    title: "Your Profile",
     isActive:  false
 
   },
@@ -46,6 +55,7 @@ export const navigationButtonsValues = [
     icon: "fa-solid fa-users-rectangle",
     content: "Groups",
     path: "dashboard/groups",
+    title: "Groups List",
     isActive: false
 
   },
@@ -53,6 +63,7 @@ export const navigationButtonsValues = [
     icon: "fa-solid fa-user-tie",
     content: "Profs",
     path: "dashboard/profs",
+    title: "Profs List",
     isActive: false
 
   },
@@ -60,6 +71,7 @@ export const navigationButtonsValues = [
     icon: "fa-solid fa-user-group",
     content: "Students",
     path: "dashboard/students",
+    title: "Students List",
     isActive: false
 
   },
@@ -67,7 +79,9 @@ export const navigationButtonsValues = [
     icon: "fa-solid fa-calendar-days",
     content: "Calender",
     path: "dashboard/calendar",
+    title: "Calendar",
     isActive: false
 
   },
+ 
 ]

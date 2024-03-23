@@ -1,8 +1,14 @@
-<div class="w-full relative  h-full flex justify-between items-center pr-12 px-6 z-10 bg-white/20 isolate aspect-video backdrop-blur-md">
-    <h2 class="text-2xl font-bold">Calendar</h2>
-    <div class="flex items-center justify-center gap-3">
-      <p class="font-semibold font-lato">Abou baker</p>
-      <div class="w-14 h-14 rounded-full border-2 border-accent-300">
+<div class="w-full relative h-full flex justify-between items-center md:pr-12  px-2 md:px-6 z-10 ">
+
+    <div class="flex items-center gap-2 ml-6 md:mr-0">
+      <h2 class="text-sm lg:text-2xl font-bold text-gray-700">
+        {{ title }} :
+      </h2>
+    </div>
+    <div routerLink="/dashboard/profile"  class="flex items-center justify-center gap-3 cursor-pointer">
+      <p class="font-bold font-lato text-sm md:text-md text-gray-800">Abou baker</p>
+
+      <div class="md:w-14 md:h-14 size-6 rounded-full border-2 border-accent-300">
           <img src="../../../assets/profile_img.jpeg" alt="profile" class="w-full h-full rounded-full object-fill">
       </div>
     </div>
