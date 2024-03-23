@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="4c4db4cb-19ab-43ae-9cf4-3051f066dd2c" name="Changes" comment="" />
 =======
     <list default="true" id="3f17bbf6-e87d-473c-9a3d-be2a5737194c" name="Changes" comment="">
@@ -25,12 +26,18 @@
     <list default="true" id="4c4db4cb-19ab-43ae-9cf4-3051f066dd2c" name="Changes" comment="" />
 >>>>>>> c420c1e1bc505fe4af12e3cc05f08e4cdb94b2bf
 >>>>>>> 0b9f61ed5c055615d57069b09c71159136b0b5f2
+=======
+    <list default="true" id="d361f613-21c1-4c7b-b318-22304bd2c6f9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+>>>>>>> 1df50833a145fbe6ae13d176bbd839a2b0033bfd
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -39,12 +46,15 @@
     </option>
 =======
 >>>>>>> 0b9f61ed5c055615d57069b09c71159136b0b5f2
+=======
+>>>>>>> 1df50833a145fbe6ae13d176bbd839a2b0033bfd
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
+<<<<<<< HEAD
 <<<<<<< HEAD
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 1
@@ -55,10 +65,16 @@
 }</component>
   <component name="ProjectId" id="2dJU2vJL2FweWzBiC1txlxbcYE0" />
 >>>>>>> 0b9f61ed5c055615d57069b09c71159136b0b5f2
+=======
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2dJU2vJL2FweWzBiC1txlxbcYE0" />
+>>>>>>> 1df50833a145fbe6ae13d176bbd839a2b0033bfd
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -81,11 +97,26 @@
     "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.2.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
 >>>>>>> 0b9f61ed5c055615d57069b09c71159136b0b5f2
     "vue.rearranger.settings.migration": "true"
+=======
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Profs-info&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.2.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+>>>>>>> 1df50833a145fbe6ae13d176bbd839a2b0033bfd
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
 <<<<<<< HEAD
       <changelist id="3f17bbf6-e87d-473c-9a3d-be2a5737194c" name="Changes" comment="" />
       <created>1709637467912</created>
@@ -93,15 +124,17 @@
       <option name="presentableId" value="Default" />
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 1df50833a145fbe6ae13d176bbd839a2b0033bfd
       <changelist id="d361f613-21c1-4c7b-b318-22304bd2c6f9" name="Changes" comment="" />
       <created>1709725470984</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-<<<<<<< HEAD
       <updated>1709725470984</updated>
       <workItem from="1709725472238" duration="307000" />
       <workItem from="1709742678536" duration="8000" />
       <workItem from="1709819446165" duration="3153000" />
+<<<<<<< HEAD
 =======
 >>>>>>> 0b9f61ed5c055615d57069b09c71159136b0b5f2
       <updated>1708354093257</updated>
@@ -162,10 +195,29 @@
 =======
 >>>>>>> c420c1e1bc505fe4af12e3cc05f08e4cdb94b2bf
 >>>>>>> 0b9f61ed5c055615d57069b09c71159136b0b5f2
+=======
+      <workItem from="1709825007154" duration="3602000" />
+      <workItem from="1709835101016" duration="66000" />
+      <workItem from="1709835294694" duration="731000" />
+      <workItem from="1709900974491" duration="292000" />
+      <workItem from="1709905650783" duration="244000" />
+      <workItem from="1709910021439" duration="9000" />
+>>>>>>> 1df50833a145fbe6ae13d176bbd839a2b0033bfd
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

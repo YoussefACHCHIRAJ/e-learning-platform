@@ -1,21 +1,23 @@
-<div class="h-screen w-full bg-secondary-200">
-  <div class="w-full h-full p-6 ">
-    <h1 class="text-2xl font-semibold mb-6 cursor-pointer" (click)="navigateTo('dashboard')">
-      <i class="fas fa-graduation-cap mr-3 text-primary-900"></i>
-      <span class="text-primary-900">Laabit</span> academy
-    </h1>
-    <ul class="space-y-4">
-      @for (item of navigationButtons; track $index) {
-      <li>
-        <a (click)="navigateTo(item?.path!)"
-          class="rounded-xl border-2 cursor-pointer flex items-center text-gray-700 hover:text-gray-900 hover:bg-gray-100 py-2 px-4"
-          [ngClass]="{'bg-third-200 border-primary-900': item?.isActive, 'border-secondary-200': !item?.isActive}">
-          <i class="{{ item?.icon }} mr-3"></i>
-          {{ item?.content }}
-        </a>
-      </li>
-      }
-    </ul>
-  </div>
+<div class="h-screen w-full p-6 pr-0 flex flex-col">
+  <h1 class="lg:text-2xl md:text-lg text-md  font-semibold mb-6 cursor-pointer" (click)="navigateTo('dashboard', 'Learn')">
 
+    <i class="fas fa-graduation-cap mr-3 text-white"></i>
+    <span class="text-white">Laabit</span> academy
+  </h1>
+  <ul class="space-y-1">
+    @for (item of navigationButtons; track $index) {
+    <li>
+      <a (click)="navigateTo(item?.path!, item?.title!)"
+        class="rounded-r-none rounded-xl cursor-pointer flex items-center  hover:text-gray-900  py-3 w-full pl-2"
+        [ngClass]="{'bg-white': item?.isActive, 'border-[#34495e] text-white hover:bg-white/90': !item?.isActive}">
+        <i class="{{ item?.icon }} mr-3"></i>
+        {{ item?.content }}
+      </a>
+    </li>
+    }
+  </ul>
+  <button routerLink="" class="border-t w-full pt-4 text-start font-bold text-white pl-2 space-x-2 mt-auto">
+    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+    Log out
+  </button>
 </div>
