@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
-import { ProfsModuleComponent } from '../../components/profs-module/profs-module.component';
+import { ProfCardComponent } from '../../components/prof-card/prof-card.component';
 
 @Component({
   selector: 'app-profs',
   standalone: true,
-  imports: [ProfsModuleComponent],
+  imports: [ProfCardComponent],
   templateUrl: './profs.component.html',
-  styleUrl: './profs.component.css'
+  styleUrl: './profs.component.css',
 })
-export class ProfsComponent {
-
-}
+export class ProfsComponent {}
