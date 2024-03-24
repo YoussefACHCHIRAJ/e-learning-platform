@@ -14,3 +14,7 @@ body {
 .card-gradient {
   @apply bg-gradient-to-br from-primary-900 from-20% to-80% via-primary-800 to-secondary-300
 }
+
+.gradient-background {
+  @apply bg-gradient-to-br from-primary-900  via-primary-800 to-secondary-200
+}

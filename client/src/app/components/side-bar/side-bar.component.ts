@@ -1,21 +1,23 @@
 import { CommonModule } from '@angular/common';
 
 import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
+import { NavigationEnd, Router, RouterLink } from '@angular/router';
 import { filter } from 'rxjs';
 import { navigationButtonsValues } from '../../../constants';
+import { HeaderService } from '../../controller/service/header.service';
 
 interface NavigationButtons {
   icon: string;
   content: string;
   path: string;
   isActive: boolean;
+  title: string
 }
 
 @Component({
   selector: 'app-side-bar',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './side-bar.component.html',
   styleUrl: './side-bar.component.css',
   encapsulation: ViewEncapsulation.None,
@@ -23,7 +25,7 @@ interface NavigationButtons {
 export class SideBarComponent implements OnInit {
   private _navigationButtons!: Array<NavigationButtons>;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private headerService: HeaderService) {}
 
   ngOnInit(): void {
     this.navigationButtons = navigationButtonsValues;
@@ -40,8 +42,9 @@ export class SideBarComponent implements OnInit {
     this._navigationButtons = value;
   }
 
-  navigateTo(path: string) {
+  navigateTo(path: string, title: string) {
     this.router.navigate([path]);
+    this.headerService.headerTitle = title;
   }
 
   getCurrentRoute() {
