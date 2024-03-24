@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class StepperService {
 
-  private _stepperCounter : 0 | 1 | 2 = 0;
+  private _stepperCounter : 0 | 1 | 2 | 3 = 0;
   
   constructor() { }
 

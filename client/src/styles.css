@@ -6,9 +6,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+/* body {
   @apply bg-primary-700;
-}
+} */
 
 
 .card-gradient {
