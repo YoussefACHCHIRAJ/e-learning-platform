@@ -13,8 +13,9 @@ import { StudentsComponent } from './pages/students/students.component';
 import { PathsComponent } from './pages/learn/paths/paths.component';
 import { CreatePathsComponent } from './pages/learn/paths/create-paths/create-paths.component';
 import { CreatePathsLayoutComponent } from './layout/create-paths-layout/create-paths-layout.component';
-import { CreateCourseComponent } from './pages/learn/course/create-course/create-course.component';
-import { CreateSectionComponent } from './pages/learn/section/create-section/create-section.component';
+import {StudentRegisterComponent} from "./pages/student-register/student-register.component";
+import {CreateCourseComponent} from "./pages/learn/course/create-course/create-course.component";
+import {CreateSectionComponent} from "./pages/learn/section/create-section/create-section.component";
 
 
 
@@ -28,6 +29,11 @@ export const routes: Routes = [
     path: 'auth',
     title: 'Authentication',
     component: AuthComponent,
+  },
+  {
+    path: 'student-register',
+    title: 'student-register',
+    component: StudentRegisterComponent,
   },
   {
     path: 'dashboard',
@@ -75,7 +81,7 @@ export const routes: Routes = [
   {
     path: "paths/create",
     title: "Create new Path",
-    component: CreatePathsLayoutComponent, 
+    component: CreatePathsLayoutComponent,
     children: [
       {
         path: 'path-info',
