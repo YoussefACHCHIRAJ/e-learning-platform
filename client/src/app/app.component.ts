@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
@@ -13,6 +13,16 @@ import { AuthComponent } from './pages/auth/auth.component';
     imports: [RouterOutlet, LoginComponent, SideBarComponent, DashboardComponent, ProfsComponent,AuthComponent]
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'e-learning';
+
+  constructor(private router: Router) {}
+
+  ngOnInit() {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        window.scrollTo(0, 0); // Scroll to top on route change
+      }
+    });
+  }
 }
