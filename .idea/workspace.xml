@@ -5,6 +5,12 @@
   </component>
   <component name="ChangeListManager">
 <<<<<<< HEAD
+    <list default="true" id="4c4db4cb-19ab-43ae-9cf4-3051f066dd2c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/user-profile/user-profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/user-profile/user-profile.component.html" afterDir="false" />
+    </list>
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <list default="true" id="4c4db4cb-19ab-43ae-9cf4-3051f066dd2c" name="Changes" comment="" />
@@ -31,11 +37,28 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
 >>>>>>> 1df50833a145fbe6ae13d176bbd839a2b0033bfd
+>>>>>>> 38b729e72517fa894a28562e644f5736af841133
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
+=======
   <component name="Git.Settings">
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -48,11 +71,27 @@
 >>>>>>> 0b9f61ed5c055615d57069b09c71159136b0b5f2
 =======
 >>>>>>> 1df50833a145fbe6ae13d176bbd839a2b0033bfd
+>>>>>>> 38b729e72517fa894a28562e644f5736af841133
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+<<<<<<< HEAD
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2caePZ5Sd6QriBpNy5wqpS3paTH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+=======
   <component name="ProjectColorInfo">{
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -70,10 +109,21 @@
 }</component>
   <component name="ProjectId" id="2dJU2vJL2FweWzBiC1txlxbcYE0" />
 >>>>>>> 1df50833a145fbe6ae13d176bbd839a2b0033bfd
+>>>>>>> 38b729e72517fa894a28562e644f5736af841133
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.profs.component.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feat/ELJP-59&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/IdeaProjects/e-learning&quot;,
+=======
 <<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
@@ -103,11 +153,34 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;Profs-info&quot;,
+>>>>>>> 38b729e72517fa894a28562e644f5736af841133
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+<<<<<<< HEAD
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\PC\\WebstormProjects\\e-learning-platform\\client\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="ELearningApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="e-learning" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="uca.ac.elearning.ELearningApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4c4db4cb-19ab-43ae-9cf4-3051f066dd2c" name="Changes" comment="" />
+      <created>1708354093257</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+=======
     &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.2.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
 >>>>>>> 1df50833a145fbe6ae13d176bbd839a2b0033bfd
@@ -137,6 +210,7 @@
 <<<<<<< HEAD
 =======
 >>>>>>> 0b9f61ed5c055615d57069b09c71159136b0b5f2
+>>>>>>> 38b729e72517fa894a28562e644f5736af841133
       <updated>1708354093257</updated>
       <workItem from="1708354094359" duration="2332000" />
       <workItem from="1708356448948" duration="80000" />
@@ -185,6 +259,22 @@
       <workItem from="1709717717576" duration="19000" />
       <workItem from="1709720960472" duration="381000" />
 <<<<<<< HEAD
+      <workItem from="1709911261084" duration="431000" />
+      <workItem from="1710077039159" duration="776000" />
+      <workItem from="1710109090233" duration="2252000" />
+      <workItem from="1710163879331" duration="63000" />
+      <workItem from="1710166162935" duration="1887000" />
+      <workItem from="1710174092073" duration="41000" />
+      <workItem from="1710175570717" duration="184000" />
+      <workItem from="1710180575129" duration="1866000" />
+      <workItem from="1710213707706" duration="885000" />
+      <workItem from="1710551776022" duration="387000" />
+      <workItem from="1710602008182" duration="332000" />
+      <workItem from="1710604022116" duration="711000" />
+      <workItem from="1710708745756" duration="129000" />
+      <workItem from="1711248940619" duration="2871000" />
+=======
+<<<<<<< HEAD
 =======
       <updated>1709637467912</updated>
       <workItem from="1709637470799" duration="840000" />
@@ -203,6 +293,7 @@
       <workItem from="1709905650783" duration="244000" />
       <workItem from="1709910021439" duration="9000" />
 >>>>>>> 1df50833a145fbe6ae13d176bbd839a2b0033bfd
+>>>>>>> 38b729e72517fa894a28562e644f5736af841133
     </task>
     <servers />
   </component>
