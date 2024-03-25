@@ -2,7 +2,7 @@
 
     <div class="flex-1">
         <form class="w-3/4 mx-auto space-y-4">
-            @for (item of [1, 2, 3, 4, 6]; track $index) {
+            @for (item of [1, 2, 3]; track $index) {
             <div class="bg-primary-800/20 p-2 space-y-2 rounded-xl">
                 <h3>Course {{ item }}</h3>
                 <div>
@@ -14,7 +14,7 @@
                             <i class="fa-solid fa-route text-gray-600"></i>
                         </div>
                         <input type="text" id="path-label"
-                            class="bg-gray-300 border border-gray-500 text-black placeholder:text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5"
+                            class="bg-gray-50 border border-gray-300 text-gray-700 placeholder:text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5"
                             placeholder="path name">
                     </div>
                 </div>
@@ -28,7 +28,7 @@
                             <i class="fa-solid fa-text-width text-gray-600"></i>
                         </div>
                         <textarea type="text" id="path-label" rows="4" cols="3"
-                            class="bg-gray-300 border border-gray-500 text-black placeholder:text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5"
+                            class="bg-gray-50 border border-gray-300 text-gray-700 placeholder:text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5"
                             placeholder="give a small description to this path..."></textarea>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
                             <i class="fa-solid fa-list-check text-gray-600"></i>
                         </div>
                         <input type="number"
-                            class="bg-gray-300 border border-gray-500 text-black placeholder:text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5"
+                            class="bg-gray-50 border border-gray-300 text-gray-700 placeholder:text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5"
                             placeholder="4" />
                     </div>
                 </div>

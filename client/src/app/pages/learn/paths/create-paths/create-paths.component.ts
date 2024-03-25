@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { StepperService } from '../../../controller/service/stepper.service';
+import { StepperService } from '../../../../controller/service/stepper.service';
 import { Router } from '@angular/router';
 
 @Component({

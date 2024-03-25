@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
-import { StepperService } from '../../../controller/service/stepper.service';
+import { StepperService } from '../../../../controller/service/stepper.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-create-cours',
+  selector: 'app-create-course',
   standalone: true,
   imports: [],
-  templateUrl: './create-cours.component.html',
-  styleUrl: './create-cours.component.css'
+  templateUrl: './create-course.component.html',
+  styleUrl: './create-course.component.css'
 })
-export class CreateCoursComponent {
+export class CreateCourseComponent {
   constructor(private stepperService: StepperService, private router: Router) {}
 
   incrementStepper() {
