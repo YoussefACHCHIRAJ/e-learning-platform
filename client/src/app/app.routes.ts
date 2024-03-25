@@ -15,7 +15,7 @@ import { CreatePathsComponent } from './pages/paths/create-paths/create-paths.co
 import { CreatePathsLayoutComponent } from './layout/create-paths-layout/create-paths-layout.component';
 import { CreateCoursComponent } from './pages/paths/create-cours/create-cours.component';
 import { CreateSectionComponent } from './pages/paths/create-section/create-section.component';
-
+import {StudentRegisterComponent} from "./pages/student-register/student-register.component";
 
 
 export const routes: Routes = [
@@ -28,6 +28,11 @@ export const routes: Routes = [
     path: 'auth',
     title: 'Authentication',
     component: AuthComponent,
+  },
+  {
+    path: 'student-register',
+    title: 'student-register',
+    component: StudentRegisterComponent,
   },
   {
     path: 'dashboard',
@@ -75,7 +80,7 @@ export const routes: Routes = [
   {
     path: "paths/create",
     title: "Create new Path",
-    component: CreatePathsLayoutComponent, 
+    component: CreatePathsLayoutComponent,
     children: [
       {
         path: 'path-info',
