@@ -7,14 +7,14 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-dashboard-layout',
   standalone: true,
-  imports: [RouterOutlet, CommonModule , SideBarComponent, HeaderComponent],
+  imports: [RouterOutlet, CommonModule, SideBarComponent, HeaderComponent],
   templateUrl: './dashboard-layout.component.html',
   styleUrl: './dashboard-layout.component.css'
 })
 export class DashboardLayoutComponent {
   private _isSideActive = false;
-  
-  
+
+
   public get isSideActive() {
     return this._isSideActive;
   }

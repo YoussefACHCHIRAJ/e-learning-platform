@@ -5,6 +5,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { CalendarComponent } from './pages/calendar/calendar.component';
+import {StartComponent} from "./pages/start/start.component";
 
 import {ProfsComponent} from "./pages/profs/profs.component";
 import { GroupsComponent } from './pages/groups/groups.component';
@@ -23,6 +24,11 @@ export const routes: Routes = [
     path: 'auth',
     title: 'Authentication',
     component: AuthComponent,
+  },
+  {
+    path :'start',
+    title :'lets start',
+    component :StartComponent,
   },
   {
     path: 'dashboard',
