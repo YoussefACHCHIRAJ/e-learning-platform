@@ -2,10 +2,10 @@
 
     <div class="flex-1">
         <form class="w-3/4 mx-auto space-y-4">
-            @for (item of [1, 2, 3, 4, 6]; track $index) {
+            @for (item of [1, 2, 3]; track $index) {
             <div class="bg-primary-800/20 p-2 space-y-2 rounded-xl">
                 <h3 class="">Course {{ item }}</h3>
-                @for (item of [1, 2, 3]; track $index) {
+                @for (item of [1, 2]; track $index) {
                 <div class="bg-primary-800/30 rounded-xl   mx-4 space-y-2  p-2 border-black">
                     <h4>Section: {{ item }}</h4>
                     <div>
