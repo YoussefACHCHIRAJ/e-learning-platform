@@ -1,16 +1,16 @@
 <div
-  class="absolute top-0 left-0 h-full transition ease-in-out duration-700 w-1/2 flex items-center justify-center flex-col py-o px-[50px] text-center"
+  class="absolute  top-0 left-0 h-full transition ease-in-out duration-700 md:w-1/2 flex items-center justify-center flex-col py-0 md:px-[50px] text-center"
   [ngClass]="{'opacity-100 z-30 translate-x-0': !isLoginActive, 'opacity-0 -z-30 translate-x-full': isLoginActive}">
-  <h1 class="mb-12 text-4xl font-bold">Create Account</h1>
+  <h1 class="mb-4 text-4xl font-bold">Create Account</h1>
   <form class="px-12 w-full">
     <div>
       <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 text-start">Full name</label>
       <div class="relative mb-6">
         <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-          <i class="fa-solid fa-user text-accent-300"></i>
+          <i class="fa-solid fa-user text-primary-700"></i>
         </div>
         <input type="text" id="website-admin"
-          class="bg-accent-100 border-2 border-accent-300 text-gray-900 text-sm rounded-lg placeholder:text-gray-600 block w-full ps-10 p-2.5"
+          class="bg-accent-100 border-2 border-primary-700 text-gray-900 text-sm rounded-lg placeholder:text-gray-600 block w-full ps-10 p-2.5"
           placeholder="elonmusk">
       </div>
     </div>
@@ -19,10 +19,10 @@
       <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 text-start">Username</label>
       <div class="relative mb-6">
         <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-          <i class="fa-solid fa-user text-accent-300"></i>
+          <i class="fa-solid fa-user text-primary-700"></i>
         </div>
         <input type="text" id="website-admin" required
-          class="bg-accent-100 border-2 border-accent-300 text-gray-900 text-sm rounded-lg placeholder:text-gray-600 block w-full ps-10 p-2.5"
+          class="bg-accent-100 border-2 border-primary-700 text-gray-900 text-sm rounded-lg placeholder:text-gray-600 block w-full ps-10 p-2.5"
           placeholder="elonmusk">
       </div>
     </div>
@@ -30,29 +30,47 @@
       <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 text-start">Your Email</label>
       <div class="relative mb-6">
         <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-          <i class="fa-solid fa-envelope text-accent-300"></i>
+          <i class="fa-solid fa-envelope text-primary-700"></i>
         </div>
         <input type="email" id="input-group-1" required
-          class="bg-accent-100 border-2 border-accent-300 text-gray-900 text-sm rounded-lg placeholder:text-gray-600 block w-full ps-10 p-2.5"
+          class="bg-accent-100 border-2 border-primary-700 text-gray-900 text-sm rounded-lg placeholder:text-gray-600 block w-full ps-10 p-2.5"
           placeholder="name@flowbite.com">
       </div>
     </div>
     <div>
       <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 text-start">Password</label>
+
       <div class="relative mb-6">
         <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-          <i class="fa-solid fa-lock text-accent-300"></i>
+          <i class="fa-solid fa-lock text-primary-700"></i>
         </div>
         <input type="password" id="website-admin" required
-          class="bg-accent-100 border-2 border-accent-300 text-gray-900 text-sm rounded-lg placeholder:text-gray-600 block w-full ps-10 p-2.5"
+          class="bg-accent-100 border-2 border-primary-700 text-gray-900 text-sm rounded-lg placeholder:text-gray-900 block w-full ps-10 p-2.5"
           placeholder="make it stronger">
       </div>
+      <div class="space-y-2">
+        <p class="text-start">Are you Prof Or Student?</p>
+
+
+        <div class="flex items-center">
+          <input checked id="default-radio-1" type="radio" value="" name="default-radio"
+            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+          <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900">Student</label>
+        </div>
+        <div class="flex items-center">
+          <input  id="default-radio-2" type="radio" value="" name="default-radio"
+            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+          <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900">Prof</label>
+        </div>
+
+
+      </div>
+
     </div>
 
 
-    <button
-    type="submit"
-      class="text-white bg-primary-800 font-bold px-12 py-3 m-5 rounded-2xl border-2 border-primary-900 border-solid outline-none tracking-wider uppercase cursor-pointer  transform active:scale-90 hover:bg-transparent hover:text-primary-800  transition duration-300 ease-in">Sign
+    <button type="submit"
+      class="text-white bg-primary-900 font-bold px-12 py-3 m-5 rounded-2xl border-2 border-primary-700 border-solid outline-none tracking-wider uppercase cursor-pointer  transform active:scale-90 hover:text-primary-900 hover:bg-transparent transition duration-300 ease-in">Sign
       Up</button>
   </form>
 </div>
