@@ -11,6 +11,11 @@ import { GroupsComponent } from './pages/groups/groups.component';
 import { DashboardLayoutComponent } from './layout/dashboard-layout/dashboard-layout.component';
 import { StudentsComponent } from './pages/students/students.component';
 import { PathsComponent } from './pages/paths/paths.component';
+import { CreatePathsComponent } from './pages/paths/create-paths/create-paths.component';
+import { CreatePathsLayoutComponent } from './layout/create-paths-layout/create-paths-layout.component';
+import { CreateCoursComponent } from './pages/paths/create-cours/create-cours.component';
+import { CreateSectionComponent } from './pages/paths/create-section/create-section.component';
+
 
 
 export const routes: Routes = [
@@ -66,6 +71,25 @@ export const routes: Routes = [
         component: CalendarComponent,
       },
     ],
+  },
+  {
+    path: "paths/create",
+    title: "Create new Path",
+    component: CreatePathsLayoutComponent, 
+    children: [
+      {
+        path: 'path-info',
+        component: CreatePathsComponent
+      },
+      {
+        path: 'cours-info',
+        component: CreateCoursComponent
+      },
+      {
+        path: 'section-info',
+        component: CreateSectionComponent
+      }
+    ]
   },
   {
     path: "404",
