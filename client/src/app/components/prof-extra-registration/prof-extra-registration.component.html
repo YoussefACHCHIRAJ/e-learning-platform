@@ -1,0 +1,69 @@
+<div class="flex flex-col items-center mt-[5%]">
+
+  <h1 class="mb-12 text-4xl font-bold text-primary-900">Prof Registration</h1>
+
+  <div class="w-[40em] input-container">
+      <label class="block mb-2 text-sm font-medium text-gray-900 text-start">Availability Period</label>
+      <div class="relative mb-6">
+          <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+              <i class="fa-solid fa-calendar text-accent-300"></i>
+          </div>
+          <input class="bg-accent-100 border-2 border-accent-300 text-gray-900 text-sm rounded-lg block w-full ps-10 p-2.5" type="date" name="start-date" id="start-date">
+      </div>
+      <div class="relative mb-6">
+          <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+              <i class="fa-solid fa-calendar text-accent-300"></i>
+          </div>
+          <input class="bg-accent-100 border-2 border-accent-300 text-gray-900 text-sm rounded-lg block w-full ps-10 p-2.5" type="date" name="end-date" id="end-date">
+      </div>
+  </div>
+
+  <div class="w-[40em]">
+      <label class="block mb-2 text-sm font-medium text-gray-900 text-start">
+        <i class="fa-solid fa-calendar-days text-accent-300"></i>
+        Days of the Week</label>
+      <div class="flex items-center">
+          <div class="relative mb-6">
+              <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                 
+              </div>
+              <div class="flex items-center ml-4">
+                  <input id="monday" type="checkbox" name="day-of-week" value="Monday" (change)="toggleAvailability($event, 'Monday')" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                  <label for="monday" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-600">Monday</label>
+              </div>
+              <div class="flex items-center ml-4">
+                  <input id="monday" type="checkbox" name="day-of-week" value="Monday" (change)="toggleAvailability($event, 'Tuesday')" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                  <label for="monday" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-600">Tuesday</label>
+              </div>
+              <div class="flex items-center ml-4">
+                  <input id="monday" type="checkbox" name="day-of-week" value="Monday" (change)="toggleAvailability($event, 'Wednesday')" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                  <label for="monday" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-600">Wednesday</label>
+              </div>
+              <div class="flex items-center ml-4">
+                  <input id="monday" type="checkbox" name="day-of-week" value="Monday" (change)="toggleAvailability($event, 'Thursday')" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                  <label for="monday" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-600">Thursday</label>
+              </div>
+              <div class="flex items-center ml-4">
+                  <input id="monday" type="checkbox" name="day-of-week" value="Monday" (change)="toggleAvailability($event, 'Friday')" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                  <label for="monday" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-600">Friday</label>
+              </div>
+
+          </div>
+      </div>
+  </div>
+
+  <div *ngFor="let day of selectedDays" class="w-[40em]">
+    <label class="block mb-2 text-sm font-medium text-gray-900 text-start">Available Time for {{ day }}</label>
+    <div class="flex items-center">
+        <div class="flex items-center">
+            <label for="start-time-{{day}}" class="text-sm font-medium text-gray-900 dark:text-gray-300">Select Start Time:</label>
+            <input type="time" id="start-time-{{day}}" name="start-time-{{day}}" class="border-2 border-gray-300 rounded-md ml-2 p-1.5">
+        </div>
+        <div class="flex items-center ml-4">
+            <label for="end-time-{{day}}" class="text-sm font-medium text-gray-900 dark:text-gray-300">Select End Time:</label>
+            <input type="time" id="end-time-{{day}}" name="end-time-{{day}}" class="border-2 border-gray-300 rounded-md ml-2 p-1.5">
+        </div>
+    </div>
+</div>
+<img class="w-[40em]" src="assets/register.svg" alt="img">
+</div>
