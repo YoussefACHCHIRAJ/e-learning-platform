@@ -9,6 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './prof-extra-registration.component.css',
 })
 export class ProfExtraRegistrationComponent {
+
   selectedDays: string[] = [];
 
   toggleAvailability(event: Event, day: string) {
