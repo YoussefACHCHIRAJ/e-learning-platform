@@ -6,13 +6,13 @@ import { CommonModule } from '@angular/common';
 import {LetsStartComponent} from "../../components/lets-start/lets-start.component";
 
 @Component({
-  selector: 'app-dashboard-layout',
+  selector: 'app-start-layout',
   standalone: true,
   imports: [RouterOutlet, CommonModule, SideBarComponent, HeaderComponent, LetsStartComponent],
-  templateUrl: './dashboard-layout.component.html',
-  styleUrl: './dashboard-layout.component.css'
+  templateUrl: './start-layout.component.html',
+  styleUrl: './start-layout.component.css'
 })
-export class DashboardLayoutComponent {
+export class StartLayoutComponent {
   private _isSideActive = false;
 
 

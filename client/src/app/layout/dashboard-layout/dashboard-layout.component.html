@@ -1,4 +1,4 @@
-<div class="grid grid-cols-12 grid-rows-[4em,calc(100vh-5em)] h-screen relative">
+<div class="grid grid-cols-12 grid-rows-[4em,calc(100vh-5em)] h-screen relative bg-primary-700">
     <button class="z-30 w-4 h-4 absolute left-1 top-7 cursor-pointer md:hidden text-primary-900"
         (click)="isSideActive = !isSideActive">
         <i class="fa-solid fa-bars absolute left-0 top-1"
@@ -10,7 +10,7 @@
         [ngClass]="{'-translate-x-0': isSideActive, '-translate-x-[100%] md:translate-x-0': !isSideActive}"></app-side-bar>
 
     <app-header class="md:col-start-3 col-span-full"></app-header>
-    <div class="overflow-y-auto md:col-start-3 col-span-full row-start-2 row-span-full bg-white rounded-xl mr-2">
+  <div class="overflow-y-auto md:col-start-3 col-span-full row-start-2 row-span-full bg-white rounded-xl mr-2">
 
       <router-outlet></router-outlet>
     </div>

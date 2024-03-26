@@ -11,7 +11,13 @@ import {ProfsComponent} from "./pages/profs/profs.component";
 import { GroupsComponent } from './pages/groups/groups.component';
 import { DashboardLayoutComponent } from './layout/dashboard-layout/dashboard-layout.component';
 import { StudentsComponent } from './pages/students/students.component';
-import { PathsComponent } from './pages/paths/paths.component';
+import { PathsComponent } from './pages/learn/paths/paths.component';
+import { CreatePathsComponent } from './pages/learn/paths/create-paths/create-paths.component';
+import { CreatePathsLayoutComponent } from './layout/create-paths-layout/create-paths-layout.component';
+import { CreateCourseComponent } from './pages/learn/course/create-course/create-course.component';
+import { CreateSectionComponent } from './pages/learn/section/create-section/create-section.component';
+import {StartLayoutComponent} from "./layout/start-layout/start-layout.component";
+
 
 
 export const routes: Routes = [
@@ -25,11 +31,7 @@ export const routes: Routes = [
     title: 'Authentication',
     component: AuthComponent,
   },
-  {
-    path :'start',
-    title :'lets start',
-    component :StartComponent,
-  },
+
   {
     path: 'dashboard',
     title: 'Dashboard',
@@ -72,6 +74,47 @@ export const routes: Routes = [
         component: CalendarComponent,
       },
     ],
+  },
+  {
+    path: 'start',
+    title: 'start',
+    component: StartLayoutComponent,
+    children: [
+      {
+        path: 'dashboard',
+        title: 'Dashboard',
+        component: DashboardLayoutComponent,
+      },
+      {
+        path: 'paths',
+        title: 'Paths',
+        component: PathsComponent,
+      },
+      {
+        path :'start',
+        title :'lets start',
+        component :StartComponent,
+      },
+    ],
+  },
+  {
+    path: "paths/create",
+    title: "Create new Path",
+    component: CreatePathsLayoutComponent,
+    children: [
+      {
+        path: 'path-info',
+        component: CreatePathsComponent
+      },
+      {
+        path: 'cours-info',
+        component: CreateCourseComponent
+      },
+      {
+        path: 'section-info',
+        component: CreateSectionComponent
+      }
+    ]
   },
   {
     path: "404",

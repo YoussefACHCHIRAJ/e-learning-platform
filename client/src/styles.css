@@ -6,9 +6,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+/* body {
   @apply bg-primary-700;
-}
+} */
 
 
 .card-gradient {
@@ -16,5 +16,13 @@ body {
 }
 
 .gradient-background {
-  @apply bg-gradient-to-br from-primary-900  via-primary-800 to-secondary-200
+  @apply bg-gradient-to-b from-primary-900  via-primary-800 to-secondary-200
+}
+
+.stepper-done {
+  @apply after:border-sky-900
+}
+
+.stepper {
+ @apply after:content-[''] after:w-full after:h-1 after:border-b after:backdrop-blur-md after:isolate after:bg-white/10 after:aspect-video after:border-4 after:inline-block
 }
