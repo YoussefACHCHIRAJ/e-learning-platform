@@ -16,6 +16,7 @@ import { CreatePathsLayoutComponent } from './layout/create-paths-layout/create-
 import {StudentRegisterComponent} from "./pages/student-register/student-register.component";
 import {CreateCourseComponent} from "./pages/learn/course/create-course/create-course.component";
 import {CreateSectionComponent} from "./pages/learn/section/create-section/create-section.component";
+import { ProfRegisterComponent } from './pages/prof-register/prof-register.component';
 
 
 
@@ -34,6 +35,11 @@ export const routes: Routes = [
     path: 'student-register',
     title: 'student-register',
     component: StudentRegisterComponent,
+  },
+  {
+    path: 'prof-register',
+    title: 'prof-register',
+    component: ProfRegisterComponent,
   },
   {
     path: 'dashboard',
