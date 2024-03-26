@@ -6,9 +6,10 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './prof-extra-registration.component.html',
-  styleUrl: './prof-extra-registration.component.css'
+  styleUrl: './prof-extra-registration.component.css',
 })
-export class ProfExtraRegistrationComponent { 
+export class ProfExtraRegistrationComponent {
+
   selectedDays: string[] = [];
 
   toggleAvailability(event: Event, day: string) {
@@ -16,9 +17,7 @@ export class ProfExtraRegistrationComponent {
     if (target.checked) {
       this.selectedDays.push(day);
     } else {
-      this.selectedDays = this.selectedDays.filter(d => d !== day);
+      this.selectedDays = this.selectedDays.filter((d) => d !== day);
     }
-    console.log(this.selectedDays); // Just for debugging
   }
-
 }
