@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ProfExtraRegistrationComponent } from '../../components/prof-extra-registration/prof-extra-registration.component';
+import { ProfExtraRegistrationComponent } from '../../../components/prof-extra-registration/prof-extra-registration.component';
 @Component({
   selector: 'app-prof-register',
   standalone: true,
