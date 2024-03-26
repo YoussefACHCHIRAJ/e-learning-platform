@@ -1,10 +1,10 @@
 <div class="bg-white ">
-  <div class="flex justify-end mr-16 space-x-2">
-    <button class="bg-primary-900 border-2 border-primary-800 rounded-xl px-10 hover:bg-transparent hover:text-black flex items-center gap-2 text-white">
+  <div class="flex justify-end mr-16 my-4 space-x-2">
+    <button class="bg-primary-900 border-2 rounded-xl px-10 py-1 hover:bg-transparent hover:text-black flex items-center gap-2 text-white">
       <span>Filter by Prof</span>
       <i class="fa-solid fa-sort-down place-self-stretch"></i>
     </button>
-    <button class="bg-primary-900 border-2 border-primary-800 rounded-xl px-10 hover:bg-transparent hover:text-black flex items-center gap-2 text-white">
+    <button class="bg-primary-900 border-2 rounded-xl px-10 hover:bg-transparent hover:text-black flex items-center gap-2 text-white">
       <span>Filter by Path</span>
       <i class="fa-solid fa-sort-down self-stretch"></i>
     </button>
@@ -12,7 +12,7 @@
   <div class="flex flex-wrap justify-between px-12 ">
         @for(item of [1,2,3,4,5]; track $index){
       <app-groups-card
-      class="w-full xl:w-[calc(50%-1rem)] mt-2 bord    er-primary-900 bg-slate-200/30 p-6 rounded-2xl shadow-md mb-6 border">
+      class="w-full xl:w-[calc(50%-1rem)] mt-2 border-primary-900 bg-slate-200/30 p-2 rounded-2xl shadow-md border">
       </app-groups-card>
         }
   </div>
