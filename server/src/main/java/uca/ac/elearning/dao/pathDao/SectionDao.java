@@ -10,7 +10,6 @@ import java.util.List;
 public interface SectionDao extends JpaRepository<Section, Long> {
 
     Section findByCode(String code);
-
     int deleteByCode(String code);
 
 }

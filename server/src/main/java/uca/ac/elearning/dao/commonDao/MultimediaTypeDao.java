@@ -9,5 +9,4 @@ public interface MultimediaTypeDao extends JpaRepository<MultimediaType, Long> {
     MultimediaType findByCode(String code);
 
     int deleteByCode(String code);
-
 }

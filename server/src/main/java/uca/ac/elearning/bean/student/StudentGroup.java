@@ -22,7 +22,12 @@ public class StudentGroup {
     private Prof prof;
     @ManyToOne
     private Path path;
+
+    @OneToOne
+    private StudentGroupDetail studentGroupDetail;
+
     @ManyToOne
     private StudentGroupCategory studentGroupCategory;
+
 
 }

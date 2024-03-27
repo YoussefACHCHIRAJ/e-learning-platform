@@ -23,5 +23,6 @@ public class StudentInscription {
     @ManyToOne
     private User student;
 
+
 }
 
