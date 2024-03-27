@@ -7,6 +7,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.*;
 import lombok.Data;
 import uca.ac.elearning.bean.path.Course;
+import uca.ac.elearning.bean.users.User;
 
 import java.time.LocalDate;
 
@@ -20,9 +21,8 @@ public class StudentInscription {
     @ManyToOne
     private Course currentCourse;
     @ManyToOne
-    private Student student;
-    @ManyToOne
-    private StudentGroup studentGroup;
+    private User student;
+
 
 }
 
