@@ -1,20 +1,11 @@
-<div class="flex flex-col items-center mt-[5%]">
-  <h1 class="mb-12 text-4xl font-bold text-primary-900">Student Registration</h1>
 
-  <div class="w-[40em] input-container">
-    <label class="block mb-2 text-sm font-medium text-gray-900 text-start">Path</label>
-    <div class="relative mb-6">
-      <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-        <i class="fa-solid fa-route text-accent-300"></i>
-      </div>
-      <select
-        class="bg-accent-100 border-2 border-accent-300 text-gray-900 text-sm rounded-lg block w-full ps-10 p-2.5">
-        <option value="" disabled selected>Select a path</option>
-        <option value="path1">Path 1</option>
-        <option value="path2">Path 2</option>
-        <option value="path3">Path 3</option>
-      </select>
-    </div>
+<div class="flex justify-center items-center h-screen px-4 bg-gray-300/10">
+  <div class="px-2 max-w-2xl">
+    <h1 class=" text-5xl font-bold text-primary-900 leading-relaxed">Welcome to Your <br/> Academic Journey!</h1>
+    <p>Choose your path, join a group, and select a professor to tailor your academic journey. Your decisions shape your
+      success.</p>
+    <img class="" src="assets/register.svg" alt="img">
+
   </div>
 
   <div class="w-[40em]">
@@ -33,21 +24,57 @@
     </div>
   </div>
 
-  <div class="w-[40em]">
-    <label class="block mb-2 text-sm font-medium text-gray-900 text-start">Prof</label>
-    <div class="relative mb-6">
-      <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-        <i class="fa-solid fa-chalkboard-teacher text-accent-300"></i>
+    <div class="">
+      <label class="block mb-2 text-sm font-medium text-gray-900 text-start">Prof</label>
+      <div class="relative mb-6">
+        <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+          <i class="fa-solid fa-chalkboard-teacher text-accent-300"></i>
+        </div>
+        <select
+          class="bg-accent-100 border-2 border-accent-300 text-gray-900 text-sm rounded-lg block w-full ps-10 p-2.5">
+          <option value="" disabled selected>Select a Prof</option>
+          <option value="Prof1">Prof 1</option>
+          <option value="Prof2">Prof 2</option>
+          <option value="Prof3">Prof 3</option>
+        </select>
       </div>
-      <select
-        class="bg-accent-100 border-2 border-accent-300 text-gray-900 text-sm rounded-lg block w-full ps-10 p-2.5">
-        <option value="" disabled selected>Select a Prof</option>
-        <option value="Prof1">Prof 1</option>
-        <option value="Prof2">Prof 2</option>
-        <option value="Prof3">Prof 3</option>
-      </select>
     </div>
-  </div>
-<img class="w-[40em]" src="assets/register.svg" alt="img">
-</div>
 
+    <div class=" input-container">
+      <label class="block mb-2 text-sm font-medium text-gray-900 text-start">Number of students in the group</label>
+      <div class="relative mb-6">
+        <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+          <i class="fa-solid fa-graduation-cap text-accent-300"></i>
+        </div>
+        <select
+          class="bg-accent-100 border-2 border-accent-300 text-gray-900 text-sm rounded-lg block w-full ps-10 p-2.5">
+          <option value="" disabled selected>Select a number</option>
+          <option value="number1">2 Students</option>
+          <option value="number2">4 Students</option>
+          <option value="number3">6 Students</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="">
+      <label class="block mb-2 text-sm font-medium text-gray-900 text-start">Group</label>
+      <div class="relative mb-6">
+        <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+          <i class="fa-solid fa-user-friends text-accent-300"></i>
+        </div>
+        <select
+          class="bg-accent-100 border-2 border-accent-300 text-gray-900 text-sm rounded-lg block w-full ps-10 p-2.5">
+          <option value="" disabled selected>Select a Group</option>
+          <option value="Group1">Group 1</option>
+          <option value="Group2">Group 2</option>
+          <option value="Group3">Group 3</option>
+        </select>
+      </div>
+    </div>
+
+    <button
+      class="text-white text-sm md:text-lg bg-primary-900 font-bold  px-6 py-2 m-5 rounded-2xl border-2 border-primary-700 border-solid outline-none tracking-wider uppercase cursor-pointer  transform active:scale-90  hover:bg-transparent hover:text-primary-900  transition duration-300 ease-in">
+      Get Start
+    </button>
+  </form>
+</div>
