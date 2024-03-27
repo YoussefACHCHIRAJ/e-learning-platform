@@ -16,9 +16,12 @@ public class StudentGroup {
     private long id;
     private String label;
     private LocalDate dateCreation;
+    private int availablePlaces;
     @ManyToOne
     private Prof prof;
     @ManyToOne
     private Path path;
+    @ManyToOne
+    private StudentGroupCategory studentGroupCategory;
 
 }
