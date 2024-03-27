@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="4c4db4cb-19ab-43ae-9cf4-3051f066dd2c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/user-profile/user-profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/user-profile/user-profile.component.html" afterDir="false" />
+    </list>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <list default="true" id="4c4db4cb-19ab-43ae-9cf4-3051f066dd2c" name="Changes" comment="" />
+=======
+    <list default="true" id="3f17bbf6-e87d-473c-9a3d-be2a5737194c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/img-page1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/dashboard/dashboard.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/dashboard/dashboard.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.html" afterDir="false" />
+    </list>
+>>>>>>> b345ef7071e2dbab097755f9334cc2a123404e63
+=======
+    <list default="true" id="d361f613-21c1-4c7b-b318-22304bd2c6f9" name="Changes" comment="" />
+=======
+    <list default="true" id="4c4db4cb-19ab-43ae-9cf4-3051f066dd2c" name="Changes" comment="" />
+>>>>>>> c420c1e1bc505fe4af12e3cc05f08e4cdb94b2bf
+>>>>>>> 0b9f61ed5c055615d57069b09c71159136b0b5f2
+=======
+    <list default="true" id="d361f613-21c1-4c7b-b318-22304bd2c6f9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+>>>>>>> 1df50833a145fbe6ae13d176bbd839a2b0033bfd
+>>>>>>> 38b729e72517fa894a28562e644f5736af841133
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+<<<<<<< HEAD
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
+=======
+  <component name="Git.Settings">
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dashboard" />
+      </map>
+    </option>
+=======
+>>>>>>> 0b9f61ed5c055615d57069b09c71159136b0b5f2
+=======
+>>>>>>> 1df50833a145fbe6ae13d176bbd839a2b0033bfd
+>>>>>>> 38b729e72517fa894a28562e644f5736af841133
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+<<<<<<< HEAD
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2caePZ5Sd6QriBpNy5wqpS3paTH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+=======
+  <component name="ProjectColorInfo">{
+<<<<<<< HEAD
+<<<<<<< HEAD
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2dGbfPewq94CvNHMxE5cJWp5FEp" />
+=======
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2dJU2vJL2FweWzBiC1txlxbcYE0" />
+>>>>>>> 0b9f61ed5c055615d57069b09c71159136b0b5f2
+=======
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2dJU2vJL2FweWzBiC1txlxbcYE0" />
+>>>>>>> 1df50833a145fbe6ae13d176bbd839a2b0033bfd
+>>>>>>> 38b729e72517fa894a28562e644f5736af841133
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+<<<<<<< HEAD
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.profs.component.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feat/ELJP-59&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/IdeaProjects/e-learning&quot;,
+=======
+<<<<<<< HEAD
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+<<<<<<< HEAD
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "Merging dashboard",
+    "last_opened_file_path": "/Users/HT/Desktop/e-learning-platform",
+=======
+    "git-widget-placeholder": "develop",
+>>>>>>> 0b9f61ed5c055615d57069b09c71159136b0b5f2
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+<<<<<<< HEAD
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+=======
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.2.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+>>>>>>> 0b9f61ed5c055615d57069b09c71159136b0b5f2
+    "vue.rearranger.settings.migration": "true"
+=======
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Profs-info&quot;,
+>>>>>>> 38b729e72517fa894a28562e644f5736af841133
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+<<<<<<< HEAD
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\PC\\WebstormProjects\\e-learning-platform\\client\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="ELearningApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="e-learning" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="uca.ac.elearning.ELearningApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4c4db4cb-19ab-43ae-9cf4-3051f066dd2c" name="Changes" comment="" />
+      <created>1708354093257</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+=======
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.2.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+>>>>>>> 1df50833a145fbe6ae13d176bbd839a2b0033bfd
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <changelist id="3f17bbf6-e87d-473c-9a3d-be2a5737194c" name="Changes" comment="" />
+      <created>1709637467912</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 1df50833a145fbe6ae13d176bbd839a2b0033bfd
+      <changelist id="d361f613-21c1-4c7b-b318-22304bd2c6f9" name="Changes" comment="" />
+      <created>1709725470984</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1709725470984</updated>
+      <workItem from="1709725472238" duration="307000" />
+      <workItem from="1709742678536" duration="8000" />
+      <workItem from="1709819446165" duration="3153000" />
+<<<<<<< HEAD
+=======
+>>>>>>> 0b9f61ed5c055615d57069b09c71159136b0b5f2
+>>>>>>> 38b729e72517fa894a28562e644f5736af841133
+      <updated>1708354093257</updated>
+      <workItem from="1708354094359" duration="2332000" />
+      <workItem from="1708356448948" duration="80000" />
+      <workItem from="1708361981337" duration="766000" />
+      <workItem from="1708382176280" duration="520000" />
+      <workItem from="1708382782049" duration="1778000" />
+      <workItem from="1708441205167" duration="582000" />
+      <workItem from="1708441829864" duration="155000" />
+      <workItem from="1708442007351" duration="4135000" />
+      <workItem from="1708468084396" duration="109000" />
+      <workItem from="1708526311643" duration="5228000" />
+      <workItem from="1708543518195" duration="1930000" />
+      <workItem from="1708594593638" duration="2089000" />
+      <workItem from="1708611745101" duration="875000" />
+      <workItem from="1708709518911" duration="5973000" />
+      <workItem from="1708724262502" duration="16000" />
+      <workItem from="1708724303374" duration="7000" />
+      <workItem from="1708779909456" duration="337000" />
+      <workItem from="1708780266562" duration="36000" />
+      <workItem from="1708794474716" duration="41000" />
+      <workItem from="1708948912132" duration="234000" />
+      <workItem from="1708949525188" duration="5000" />
+      <workItem from="1708955756235" duration="581000" />
+      <workItem from="1708984842964" duration="2009000" />
+      <workItem from="1709030112768" duration="4412000" />
+      <workItem from="1709193786461" duration="316000" />
+      <workItem from="1709194182036" duration="2830000" />
+      <workItem from="1709202295715" duration="6000" />
+      <workItem from="1709328043222" duration="430000" />
+      <workItem from="1709328553005" duration="193000" />
+      <workItem from="1709330231239" duration="28000" />
+      <workItem from="1709370202972" duration="72000" />
+      <workItem from="1709379532302" duration="1683000" />
+      <workItem from="1709482568189" duration="399000" />
+      <workItem from="1709483010852" duration="3182000" />
+      <workItem from="1709561246608" duration="8062000" />
+      <workItem from="1709646597049" duration="76000" />
+      <workItem from="1709646710559" duration="1020000" />
+      <workItem from="1709649124571" duration="86000" />
+      <workItem from="1709649237434" duration="14000" />
+      <workItem from="1709649288936" duration="689000" />
+      <workItem from="1709660833944" duration="32000" />
+      <workItem from="1709660875728" duration="266000" />
+      <workItem from="1709661183196" duration="1951000" />
+      <workItem from="1709710307681" duration="692000" />
+      <workItem from="1709717717576" duration="19000" />
+      <workItem from="1709720960472" duration="381000" />
+<<<<<<< HEAD
+      <workItem from="1709911261084" duration="431000" />
+      <workItem from="1710077039159" duration="776000" />
+      <workItem from="1710109090233" duration="2252000" />
+      <workItem from="1710163879331" duration="63000" />
+      <workItem from="1710166162935" duration="1887000" />
+      <workItem from="1710174092073" duration="41000" />
+      <workItem from="1710175570717" duration="184000" />
+      <workItem from="1710180575129" duration="1866000" />
+      <workItem from="1710213707706" duration="885000" />
+      <workItem from="1710551776022" duration="387000" />
+      <workItem from="1710602008182" duration="332000" />
+      <workItem from="1710604022116" duration="711000" />
+      <workItem from="1710708745756" duration="129000" />
+      <workItem from="1711248940619" duration="2871000" />
+=======
+<<<<<<< HEAD
+=======
+      <updated>1709637467912</updated>
+      <workItem from="1709637470799" duration="840000" />
+      <workItem from="1709648264891" duration="256000" />
+      <workItem from="1709812917866" duration="2785000" />
+      <workItem from="1709823434915" duration="8138000" />
+>>>>>>> b345ef7071e2dbab097755f9334cc2a123404e63
+=======
+>>>>>>> c420c1e1bc505fe4af12e3cc05f08e4cdb94b2bf
+>>>>>>> 0b9f61ed5c055615d57069b09c71159136b0b5f2
+=======
+      <workItem from="1709825007154" duration="3602000" />
+      <workItem from="1709835101016" duration="66000" />
+      <workItem from="1709835294694" duration="731000" />
+      <workItem from="1709900974491" duration="292000" />
+      <workItem from="1709905650783" duration="244000" />
+      <workItem from="1709910021439" duration="9000" />
+>>>>>>> 1df50833a145fbe6ae13d176bbd839a2b0033bfd
+>>>>>>> 38b729e72517fa894a28562e644f5736af841133
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

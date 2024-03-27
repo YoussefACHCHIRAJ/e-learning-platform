@@ -1,0 +1,33 @@
+<ol class="flex items-center w-full my-1 justify-center transition duration-700">
+    <li
+        class="flex w-[40%] items-center text-blue-600 stepper transition duration-700"
+        [ngClass]="{'stepper-done': stepperCounter > 0}"
+        >
+        <span
+            class="flex items-center justify-center w-10 h-10 backdrop-blur-xl isolate p-2 aspect-video rounded-full lg:h-12 lg:w-12 shrink-0 transition duration-700"
+            [ngClass]="{'bg-sky-900': stepperCounter > 0, 'bg-white/10' : stepperCounter == 0}"
+            >
+            <i class="fa-solid fa-route text-white"></i>
+        </span>
+    </li>
+    <li
+        class="flex w-[40%] items-center stepper"
+        [ngClass]="{'stepper-done': stepperCounter > 1}"
+        >
+        <span
+            class="flex items-center justify-center w-10 h-10 backdrop-blur-xl isolate bg-white/10 p-2 aspect-video rounded-full lg:h-12 lg:w-12 shrink-0"
+            [ngClass]="{'bg-sky-900': stepperCounter > 1, 'bg-white/10' : stepperCounter < 1}"
+            >
+            <i class="fa-solid fa-book-open text-white"></i>
+        </span>
+    </li>
+    <li class="flex items-center ">
+        <span
+            class="flex items-center justify-center w-10 h-10 backdrop-blur-xl isolate bg-white/10 p-2 aspect-video rounded-full lg:h-12 lg:w-12 shrink-0"
+            [ngClass]="{'bg-sky-900': stepperCounter > 2, 'bg-white/10' : stepperCounter < 2}"
+            
+            >
+            <i class="fa-solid fa-list-check text-white"></i>
+        </span>
+    </li>
+</ol>

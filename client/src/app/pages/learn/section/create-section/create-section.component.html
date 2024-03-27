@@ -1,0 +1,79 @@
+<div class="w-full h-full flex items-center mt-4 mb-2">
+
+    <div class="flex-1">
+        <form class="w-3/4 mx-auto space-y-4">
+            @for (item of [1, 2, 3]; track $index) {
+            <div class="bg-primary-800/20 p-2 space-y-2 rounded-xl">
+                <h3 class="">Course {{ item }}</h3>
+                @for (item of [1, 2]; track $index) {
+                <div class="bg-primary-800/30 rounded-xl   mx-4 space-y-2  p-2 border-black">
+                    <h4>Section: {{ item }}</h4>
+                    <div>
+                        <label for="section-label" class="block mb-2 text-sm font-medium text-gray-700 ">
+                            Section label :
+                        </label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                <i class="fa-solid fa-route text-gray-600"></i>
+                            </div>
+                            <input type="text" id="section-label"
+                                class="bg-gray-50 border border-gray-300 text-gray-700 placeholder:text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5"
+                                placeholder="section label">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="countries" class="block mb-2 text-sm font-medium text-gray-700 ">
+                            Multimedia type :
+                        </label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                <i class="fas fa-sitemap text-gray-600"></i>
+                            </div>
+                            <select id="countries"
+                                class="bg-gray-50 border border-gray-300 text-gray-700 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5">
+
+                                <option>Text</option>
+                                <option>Video</option>
+                                <option>Image</option>
+                                <option>file</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="section-label" class="block mb-2 text-sm font-medium text-gray-700 ">
+                            content :
+                        </label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 start-0 flex items-start ps-3.5 mt-4 pointer-events-none">
+                                <i class="fa-solid fa-text-width text-gray-600"></i>
+                            </div>
+                            <textarea type="text" id="section-label" rows="4" cols="3"
+                                class="bg-gray-50 border border-gray-300 text-gray-700 placeholder:text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5"
+                                placeholder="give a content to this section..."></textarea>
+                        </div>
+                    </div>
+
+                </div>
+                }
+            </div>
+            }
+
+            <div class="flex items-center justify-end gap-3">
+                <button type="button" (click)="descrementStepper()"
+                    class="py-2 px-6 bg-primary-900 rounded-xl  font-lato text-white font-bold flex items-center gap-2">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    back
+                </button>
+                <button type="button" (click)="incrementStepper()"
+                    class="py-2 px-6 bg-primary-900 rounded-xl  font-lato text-white font-bold flex items-center gap-2">
+                    Done
+                    <i class="fa-solid fa-check"></i>
+                </button>
+            </div>
+
+        </form>
+
+    </div>
+</div>
