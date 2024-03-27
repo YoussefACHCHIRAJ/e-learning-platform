@@ -10,11 +10,16 @@ import {ProfsComponent} from "./pages/profs/profs.component";
 import { GroupsComponent } from './pages/groups/groups.component';
 import { DashboardLayoutComponent } from './layout/dashboard-layout/dashboard-layout.component';
 import { StudentsComponent } from './pages/students/students.component';
-import { PathsComponent } from './pages/paths/paths.component';
-import { CreatePathsComponent } from './pages/paths/create-paths/create-paths.component';
+import { PathsComponent } from './pages/learn/paths/paths.component';
+import { CreatePathsComponent } from './pages/learn/paths/create-paths/create-paths.component';
 import { CreatePathsLayoutComponent } from './layout/create-paths-layout/create-paths-layout.component';
-import { CreateCoursComponent } from './pages/paths/create-cours/create-cours.component';
-import { CreateSectionComponent } from './pages/paths/create-section/create-section.component';
+
+import {CreateCourseComponent} from "./pages/learn/course/create-course/create-course.component";
+import {CreateSectionComponent} from "./pages/learn/section/create-section/create-section.component";
+
+import { StudentRegisterComponent } from './pages/auth/student-register/student-register.component';
+import { ProfRegisterComponent } from './pages/auth/prof-register/prof-register.component';
+
 
 
 
@@ -28,6 +33,16 @@ export const routes: Routes = [
     path: 'auth',
     title: 'Authentication',
     component: AuthComponent,
+  },
+  {
+    path: 'student-register',
+    title: 'student-register',
+    component: StudentRegisterComponent,
+  },
+  {
+    path: 'prof-register',
+    title: 'prof-register',
+    component: ProfRegisterComponent,
   },
   {
     path: 'dashboard',
@@ -75,7 +90,7 @@ export const routes: Routes = [
   {
     path: "paths/create",
     title: "Create new Path",
-    component: CreatePathsLayoutComponent, 
+    component: CreatePathsLayoutComponent,
     children: [
       {
         path: 'path-info',
@@ -83,7 +98,7 @@ export const routes: Routes = [
       },
       {
         path: 'cours-info',
-        component: CreateCoursComponent
+        component: CreateCourseComponent
       },
       {
         path: 'section-info',
