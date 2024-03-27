@@ -16,8 +16,10 @@ import { CreatePathsLayoutComponent } from './layout/create-paths-layout/create-
 
 import {CreateCourseComponent} from "./pages/learn/course/create-course/create-course.component";
 import {CreateSectionComponent} from "./pages/learn/section/create-section/create-section.component";
+
 import { StudentRegisterComponent } from './pages/auth/student-register/student-register.component';
 import { ProfRegisterComponent } from './pages/auth/prof-register/prof-register.component';
+
 
 
 
