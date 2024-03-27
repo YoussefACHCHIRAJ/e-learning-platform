@@ -40,7 +40,6 @@ export const routes: Routes = [
     component: StudentRegisterComponent,
   },
   {
-
     path: 'prof-register',
     title: 'prof-register',
     component: ProfRegisterComponent,
