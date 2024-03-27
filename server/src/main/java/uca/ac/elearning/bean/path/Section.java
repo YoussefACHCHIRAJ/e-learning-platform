@@ -13,6 +13,7 @@ public class Section {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private String label;
+    private String code;
     private String pathMultimedia;
     @Column(length = 1000)
     private String content;
