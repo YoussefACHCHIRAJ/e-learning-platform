@@ -10,8 +10,8 @@
         [ngClass]="{'-translate-x-0': isSideActive, '-translate-x-[100%] md:translate-x-0': !isSideActive}"></app-side-bar>
 
     <app-header class="md:col-start-3 col-span-full"></app-header>
-  <div class="overflow-y-auto md:col-start-3 col-span-full row-start-2 row-span-full bg-white rounded-xl mr-2">
 
-      <router-outlet></router-outlet>
+    <div class="overflow-y-auto md:col-start-3 col-span-full row-start-2 row-span-full bg-white rounded-xl mr-2">
+        <router-outlet></router-outlet>
     </div>
 </div>

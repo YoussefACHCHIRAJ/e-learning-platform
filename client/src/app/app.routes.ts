@@ -18,7 +18,6 @@ import { CreatePathsLayoutComponent } from './layout/create-paths-layout/create-
 import {StudentRegisterComponent} from "./pages/student-register/student-register.component";
 import {CreateCourseComponent} from "./pages/learn/course/create-course/create-course.component";
 import {CreateSectionComponent} from "./pages/learn/section/create-section/create-section.component";
-import {StartLayoutComponent} from "./layout/start-layout/start-layout.component";
 
 
 
@@ -79,23 +78,6 @@ export const routes: Routes = [
         path: 'calendar',
         title: 'Calendar',
         component: CalendarComponent,
-      },
-    ],
-  },
-  {
-    path: 'start',
-    title: 'start',
-    component: StartLayoutComponent,
-    children: [
-      {
-        path: 'dashboard',
-        title: 'Dashboard',
-        component: DashboardLayoutComponent,
-      },
-      {
-        path: 'paths',
-        title: 'Paths',
-        component: PathsComponent,
       },
       {
         path :'start',

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import {LetsStartComponent} from "../../components/lets-start/lets-start.component";
-import {RouterOutlet} from "@angular/router";
 import {DashboardLayoutComponent} from "../../layout/dashboard-layout/dashboard-layout.component";
 
 @Component({
