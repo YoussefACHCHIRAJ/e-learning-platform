@@ -4,7 +4,7 @@ import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 import { NavigationEnd, Router, RouterLink } from '@angular/router';
 import { filter } from 'rxjs';
 import { navigationButtonsValues } from '../../../constants';
-import { HeaderService } from '../../controller/service/header.service';
+import { HeaderService } from '../../shared/service/header.service';
 
 interface NavigationButtons {
   icon: string;
