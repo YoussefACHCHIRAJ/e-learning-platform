@@ -8,15 +8,9 @@ import java.util.List;
 
 @Repository
 public interface SectionDao extends JpaRepository<Section, Long> {
-    Section findByLabel(String label);
 
-    List<Section> findByCourse_Id(Long id);
+    Section findByCode(String code);
 
-    List<Section> findByCategoryLabel(String label);
-
-    int deleteByCourse_Id(Long id);
-
-    int deleteByLabel(String label);
-
+    int deleteByCode(String code);
 
 }
