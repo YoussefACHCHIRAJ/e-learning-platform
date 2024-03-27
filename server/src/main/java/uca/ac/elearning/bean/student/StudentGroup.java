@@ -15,10 +15,19 @@ public class StudentGroup {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private String label;
+    private String code;
     private LocalDate dateCreation;
+    private int availablePlaces;
     @ManyToOne
     private Prof prof;
     @ManyToOne
     private Path path;
+
+    @OneToOne
+    private StudentGroupDetail studentGroupDetail;
+
+    @ManyToOne
+    private StudentGroupCategory studentGroupCategory;
+
 
 }

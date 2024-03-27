@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './prof-extra-registration.component.html',
+
   styleUrl: './prof-extra-registration.component.css',
 })
 export class ProfExtraRegistrationComponent {
@@ -17,6 +18,7 @@ export class ProfExtraRegistrationComponent {
     if (target.checked) {
       this.selectedDays.push(day);
     } else {
+
       this.selectedDays = this.selectedDays.filter((d) => d !== day);
     }
   }
