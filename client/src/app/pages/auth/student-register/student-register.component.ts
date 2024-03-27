@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {StudentRegisterFormComponent} from "../../components/student-register-form/student-register-form.component";
+import { StudentRegisterFormComponent } from '../../../components/student-register-form/student-register-form.component';
 
 @Component({
   selector: 'app-student-register',
