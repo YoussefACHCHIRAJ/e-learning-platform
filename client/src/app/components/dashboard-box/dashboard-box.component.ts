@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import {Router, RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-dashboard-box',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './dashboard-box.component.html',
   styleUrl: './dashboard-box.component.css'
 })

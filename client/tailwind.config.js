@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     "./src/**/*.{html,ts}",
+    "./node_modules/flowbite/**/*.js"
   ],
   theme: {
     extend: {
@@ -38,8 +39,10 @@ module.exports = {
       gridTemplateRows: {
         layout: '5em minmax(88vh, 1fr)'
       }
-      
+
     },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 }

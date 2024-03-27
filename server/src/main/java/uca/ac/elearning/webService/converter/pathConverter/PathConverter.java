@@ -16,7 +16,7 @@ public class PathConverter {
         return modelMapper.map(pathDto, Path.class);
     }
 
-    public List<Path> toBean(List<PathDto> pathDtos) {
+    public List<Path> toBeans(List<PathDto> pathDtos) {
         return pathDtos.stream().map(this::toBean).collect(Collectors.toList());
     }
 
@@ -24,7 +24,7 @@ public class PathConverter {
         return modelMapper.map(path, PathDto.class);
     }
 
-    public List<PathDto> toDto(List<Path> paths) {
+    public List<PathDto> toDtos(List<Path> paths) {
         return paths.stream().map(this::toDto).collect(Collectors.toList());
     }
 }
