@@ -22,6 +22,7 @@ import { ProfRegisterComponent } from './pages/auth/prof-register/prof-register.
 
 
 
+
 export const routes: Routes = [
   {
     path: '',
