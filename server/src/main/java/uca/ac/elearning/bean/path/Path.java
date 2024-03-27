@@ -11,6 +11,7 @@ public class Path {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private String label;
+    private String code;
     @Column(length = 500)
     private String description;
     @ManyToOne

@@ -9,14 +9,6 @@ import java.util.List;
 
 @Repository
 public interface StudentGroupDao extends JpaRepository<StudentGroup, Long> {
-    StudentGroup findByLabel(String label);
-
-    List<StudentGroup> findByProfUsername(String username);
-
-    List<StudentGroup> findByPathLabel(String label);
-
-    List<StudentGroup> findByStudentGroupDetailId(Long id);
-
-    int deleteByLabel(String label);
-
+    StudentGroup findByCode(String code);
+    int deleteByCode(String code);
 }
