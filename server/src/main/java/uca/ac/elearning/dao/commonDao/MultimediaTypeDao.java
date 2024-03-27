@@ -1,15 +1,17 @@
 package uca.ac.elearning.dao.commonDao;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 import uca.ac.elearning.bean.common.MultimediaType;
 
+@Repository
 public interface MultimediaTypeDao extends JpaRepository<MultimediaType, Long> {
 
-    MultimediaType FindByLabel(String label);
+    MultimediaType findByLabel(String label);
 
-    MultimediaType FindByCode(String code);
+    MultimediaType findByCode(String code);
 
-    int DeleteByCode(String code);
+    int deleteByCode(String code);
 
-    int DeleteByLabel(String label);
+    int deleteByLabel(String label);
 }

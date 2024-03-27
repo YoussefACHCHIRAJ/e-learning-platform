@@ -11,8 +11,8 @@ public interface SectionDao extends JpaRepository<Section, Long> {
     Section findByLabel(String label);
 
     List<Section> findByCourse_Id(Long id);
-
-    List<Section> findByCategoryLabel(String label);
+    
+    List<Section> findByCategorySectionLabel(String label);
 
     int deleteByCourse_Id(Long id);
 

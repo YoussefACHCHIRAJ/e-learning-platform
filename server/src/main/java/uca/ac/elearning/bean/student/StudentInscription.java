@@ -21,6 +21,8 @@ public class StudentInscription {
     private Course currentCourse;
     @ManyToOne
     private Student student;
+    @ManyToOne
+    private StudentGroup studentGroup;
 
 }
 
