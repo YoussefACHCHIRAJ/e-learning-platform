@@ -8,11 +8,8 @@ import java.util.*;
 
 @Repository
 public interface CourseDao extends JpaRepository<Course, Long> {
-    Course findByLabel(String label);
+    Course findByCode(String code);
 
-    int deleteByLabel(String label);
+    int deleteByCode(String code);
 
-    List<Course> findByPathId(Long id);
-
-    int deleteByPathId(Long id);
 }

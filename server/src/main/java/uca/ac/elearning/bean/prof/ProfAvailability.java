@@ -2,6 +2,7 @@ package uca.ac.elearning.bean.prof;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import uca.ac.elearning.bean.users.User;
 
 import java.time.LocalDate;
 
@@ -14,5 +15,5 @@ public class ProfAvailability {
     private LocalDate startDate;
     private LocalDate endDate;
     @ManyToOne
-    private Prof prof;
+    private User prof;
 }
