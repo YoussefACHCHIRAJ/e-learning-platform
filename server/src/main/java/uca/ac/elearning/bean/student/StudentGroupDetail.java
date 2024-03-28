@@ -14,7 +14,6 @@ public class StudentGroupDetail {
     private LocalTime startTimeSlot;
     private LocalTime endTimeSlot;
     private boolean active;
-
     @ManyToOne
     private StudentGroup studentGroup;
     @ManyToOne

@@ -5,6 +5,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { CalendarComponent } from './pages/calendar/calendar.component';
+import {StartComponent} from "./pages/start/start.component";
 
 import {ProfsComponent} from "./pages/profs/profs.component";
 import { GroupsComponent } from './pages/groups/groups.component';
@@ -13,6 +14,7 @@ import { StudentsComponent } from './pages/students/students.component';
 import { PathsComponent } from './pages/learn/paths/paths.component';
 import { CreatePathsComponent } from './pages/learn/paths/create-paths/create-paths.component';
 import { CreatePathsLayoutComponent } from './layout/create-paths-layout/create-paths-layout.component';
+
 
 import {CreateCourseComponent} from "./pages/learn/course/create-course/create-course.component";
 import {CreateSectionComponent} from "./pages/learn/section/create-section/create-section.component";
@@ -34,6 +36,7 @@ export const routes: Routes = [
     title: 'Authentication',
     component: AuthComponent,
   },
+
   {
     path: 'student-register',
     title: 'student-register',
@@ -84,6 +87,11 @@ export const routes: Routes = [
         path: 'calendar',
         title: 'Calendar',
         component: CalendarComponent,
+      },
+      {
+        path :'start',
+        title :'lets start',
+        component :StartComponent,
       },
     ],
   },

@@ -7,6 +7,5 @@ import uca.ac.elearning.bean.common.Day;
 @Repository
 public interface DayDao extends JpaRepository<Day, Long> {
     Day findByCode(String code);
-
     int deleteByCode(String code);
 }
