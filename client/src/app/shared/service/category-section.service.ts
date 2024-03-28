@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { CategorySection } from '../../controller/model/category-section.model';
+import { HttpClient } from '@angular/common/http';
 
 
 @Injectable({
@@ -9,5 +10,10 @@ export class CategorySectionService {
   private categorySetcion:CategorySection;
   private categorysections:Array<CategorySection>;
 
-  constructor() { }
+  constructor(private http :HttpClient) { }
+
+
+
+
+
 }

@@ -11,7 +11,24 @@ import { Course } from '../../controller/model/course.model';
 export class CourseService {
 private course :Course;
 private courses :Array<Course>;
+constructor(private http :HttpClient) { }
+    public getCourse(): :Course {
+        return this.course;
+    }
 
-  constructor(private http :HttpClient) { }
+    public setCourse(course: :Course): void {
+        this.course = course;
+    }
+
+    public getCourses(): :Array<Course> {
+        return this.courses;
+    }
+
+    public setCourses(courses: :Array<Course>): void {
+        this.courses = courses;
+    }
+
+
+  
   
 }
