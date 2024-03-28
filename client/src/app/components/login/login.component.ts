@@ -31,7 +31,7 @@ export class LoginComponent {
       .subscribe(data => {
         console.log({data});
         
-        if(data?.statusCode === 400){
+        if(data?.statusCode === 403){
             this.loginService.error = data?.message; 
             return;      
         }
