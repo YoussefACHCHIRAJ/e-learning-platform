@@ -10,13 +10,12 @@ import java.time.LocalTime;
 @Data
 public class ProfAvailabilityDetail {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue
     private long id;
     private LocalTime startTimeSlot;
     private LocalTime endTimeSlot;
     @ManyToOne
     private ProfAvailability profAvailability;
-    @ManyToOne
-    private Day day;
+
 
 }
