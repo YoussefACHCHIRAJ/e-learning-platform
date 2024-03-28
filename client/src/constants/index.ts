@@ -83,5 +83,4 @@ export const navigationButtonsValues = [
     isActive: false
 
   },
- 
 ]
