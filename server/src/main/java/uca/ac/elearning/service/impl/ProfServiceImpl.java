@@ -15,7 +15,6 @@ import uca.ac.elearning.service.facade.ProfService;
 import uca.ac.elearning.utils.ProfRequest;
 import uca.ac.elearning.utils.ProfResponse;
 
-import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 
