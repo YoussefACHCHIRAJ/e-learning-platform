@@ -5,13 +5,15 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+
+import java.util.List;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class RegisterRequest {
-    private String firstname;
-    private String lastname;
-    private String email;
-    private String password;
+public class ProfRequest {
+    private String profEmail;
+    private List<RequestProfAvailabilityDetail> profAvailabilitiesDetails;
 }
+

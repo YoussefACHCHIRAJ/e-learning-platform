@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { HeaderService } from '../../controller/service/header.service';
+import { HeaderService } from '../../shared/service/header.service';
 
 @Component({
   selector: 'app-header',
