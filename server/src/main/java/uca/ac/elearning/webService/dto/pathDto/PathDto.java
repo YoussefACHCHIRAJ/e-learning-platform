@@ -1,8 +1,8 @@
 package uca.ac.elearning.webService.dto.pathDto;
 
 import lombok.Data;
-import uca.ac.elearning.bean.common.Admin;
 import uca.ac.elearning.bean.path.PathStatus;
+import uca.ac.elearning.webService.dto.userDto.UserDto;
 
 @Data
 public class PathDto {
@@ -10,6 +10,6 @@ public class PathDto {
     private String label;
     private String description;
     private PathStatus pathStatus;
-    private Admin admin;
+    private UserDto admin;
 
 }
