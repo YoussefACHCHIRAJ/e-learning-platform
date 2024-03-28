@@ -22,7 +22,7 @@ import { ProfRegisterComponent } from './pages/prof-register/prof-register.compo
 
 
 import { StudentRegisterComponent } from './pages/auth/student-register/student-register.component';
-import { ProfRegisterComponent } from './pages/auth/prof-register/prof-register.component';
+
 
 
 
