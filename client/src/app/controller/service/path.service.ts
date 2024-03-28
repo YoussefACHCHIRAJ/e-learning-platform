@@ -1,9 +1,13 @@
 import { Injectable } from '@angular/core';
+import { Path } from '../model/path.model';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PathService {
+  private path:Path;
+  private paths:Array<Path>;
 
-  constructor() { }
+  constructor(private http:HttpClient) { }
 }

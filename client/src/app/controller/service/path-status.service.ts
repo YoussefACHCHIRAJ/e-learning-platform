@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
-import { Section } from '../model/section.model';
+import { PathStatus } from '../model/path-status.model';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
-export class SectionService {
-  private section:Section;
-  private sections:Array<Section>;
+export class PathStatusService {
+  private pathStatus:PathStatus;
+  private pathStatuss:Array<PathStatus>;
+  
 
   constructor(private http:HttpClient) { }
 }
