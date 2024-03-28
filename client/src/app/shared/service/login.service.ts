@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { User } from '../model/user.model';
-import {Observable} from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-export class LoginServiceService {
+export class LoginService {
 
   private _user!: User;
   private _url = 'http://localhost:8090/api/auth/authenticate';
@@ -35,5 +35,4 @@ export class LoginServiceService {
   public set user(value: User) {
     this._user = value;
   }
-
 }

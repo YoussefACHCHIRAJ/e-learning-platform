@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -27,8 +28,12 @@ public class AuthServiceImpl implements AuthService {
 
     @Override
     public AuthenticationResponse register(@RequestBody RegisterRequest request){
+//        if(userDao.findByEmail(request.getEmail()) != null){
+//            return AuthenticationResponse.builder().token("").build();
+//        }
         var user = User.builder()
-                .fullName(request.getFullName())
+                .firstname(request.getFirstname())
+                .lastname(request.getLastname())
                 .email(request.getEmail())
                 .password(passwordEncoder.encode(request.getPassword()))
                 .role(Role.STUDENT)
@@ -48,7 +53,7 @@ public class AuthServiceImpl implements AuthService {
                 )
         );
         var user = userDao.findByEmail(request.getEmail())
-                .orElseThrow();
+                .orElseThrow(() -> new UsernameNotFoundException("User not found"));
         var jwtToken = jwtService.generateToken(user);
         return AuthenticationResponse.builder().token(jwtToken).build();
     }

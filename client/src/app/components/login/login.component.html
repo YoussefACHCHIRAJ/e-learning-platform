@@ -10,7 +10,7 @@
         <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
           <i class="fa-solid fa-envelope text-primary-700"></i>
         </div>
-        <input type="text" id="input-group-1" required
+        <input type="text" id="input-group-1" required [(ngModel)]="user.email" name="email"
           class="bg-accent-100 border-2 border-primary-700 text-gray-900 text-sm md:text-lg lg:text-xl rounded-lg placeholder:text-gray-600 block w-full ps-10 p-2.5"
           placeholder="name@flowbite.com">
       </div>
@@ -21,14 +21,14 @@
         <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
           <i class="fa-solid fa-lock text-primary-700"></i>
         </div>
-        <input type="password" id="website-admin" required
+        <input type="password" id="website-admin" required [(ngModel)]="user.password" name="password"
           class=" bg-accent-100 border-2 border-primary-700 text-gray-900 text-sm md:text-lg lg:text-xl rounded-lg placeholder:text-gray-600 block w-full ps-10 p-2.5"
           placeholder="make it stronger">
       </div>
     </div>
     <button
-    type="submit"
-
+    type="button"
+    (click)="login()"
       class="text-white text-sm md:text-lg lg:text-xl bg-primary-900 font-bold  px-12 py-3 m-5 rounded-2xl border-2 border-primary-700 border-solid outline-none tracking-wider uppercase cursor-pointer  transform active:scale-90  hover:bg-transparent hover:text-primary-900  transition duration-300 ease-in">Log in</button>
       <p class="text-xs md:hidden ">don't have Account? <button class="hover:underline  hover:text-primary-900 ml-2 transition duration-700">Create Account</button></p>
   </form>
