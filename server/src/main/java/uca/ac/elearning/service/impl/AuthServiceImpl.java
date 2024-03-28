@@ -71,7 +71,7 @@ public class AuthServiceImpl implements AuthService {
             // Handle authentication failure
             return AuthenticationResponse.builder()
                     .token(null)
-                    .statusCode(400)
+                    .statusCode(403)
                     .message("incorrect credentials")
                     .role(null)
                     .build();

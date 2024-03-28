@@ -2,6 +2,7 @@ package uca.ac.elearning.bean.prof;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import uca.ac.elearning.bean.common.Day;
 import uca.ac.elearning.bean.users.User;
 
 import java.time.LocalDate;
@@ -10,10 +11,10 @@ import java.time.LocalDate;
 @Data
 public class ProfAvailability {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue
     private long id;
-    private LocalDate startDate;
-    private LocalDate endDate;
+    @ManyToOne
+    private Day day;
     @ManyToOne
     private User prof;
 }
