@@ -89,23 +89,6 @@ export const routes: Routes = [
         title: 'Calendar',
         component: CalendarComponent,
       },
-    ],
-  },
-  {
-    path: 'start',
-    title: 'start',
-    component: StartLayoutComponent,
-    children: [
-      {
-        path: 'dashboard',
-        title: 'Dashboard',
-        component: DashboardLayoutComponent,
-      },
-      {
-        path: 'paths',
-        title: 'Paths',
-        component: PathsComponent,
-      },
       {
         path :'start',
         title :'lets start',
@@ -113,6 +96,7 @@ export const routes: Routes = [
       },
     ],
   },
+
   {
     path: "paths/create",
     title: "Create new Path",
