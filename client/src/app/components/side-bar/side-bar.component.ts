@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 
-import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { NavigationEnd, Router, RouterLink } from '@angular/router';
 import { filter } from 'rxjs';
 import { navigationButtonsValues } from '../../../constants';
-import { HeaderService } from '../../controller/service/header.service';
+import { HeaderService } from '../../shared/service/header.service';
+import { auth } from '../../utils/functions';
 
 interface NavigationButtons {
   icon: string;
@@ -28,7 +29,7 @@ export class SideBarComponent implements OnInit {
   constructor(private router: Router, private headerService: HeaderService) {}
 
   ngOnInit(): void {
-    this.navigationButtons = navigationButtonsValues;
+    this.navigationButtons = navigationButtonsValues.filter(nav => nav.authorities?.some(role => role === auth()?.user?.role));
 
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
@@ -53,5 +54,10 @@ export class SideBarComponent implements OnInit {
 
   updateNavigationButton() {
     this.navigationButtons.forEach(navigateButton => navigateButton.isActive = `/${navigateButton?.path}` === this.getCurrentRoute());
+  }
+
+  logout(){
+    localStorage.removeItem('auth');
+    this.router.navigate([""]);
   }
 }

@@ -5,9 +5,9 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { CalendarComponent } from './pages/calendar/calendar.component';
-import {StartComponent} from "./pages/start/start.component";
+import { StartComponent } from './pages/start/start.component';
 
-import {ProfsComponent} from "./pages/profs/profs.component";
+import { ProfsComponent } from './pages/profs/profs.component';
 import { GroupsComponent } from './pages/groups/groups.component';
 import { DashboardLayoutComponent } from './layout/dashboard-layout/dashboard-layout.component';
 import { StudentsComponent } from './pages/students/students.component';
@@ -16,16 +16,15 @@ import { CreatePathsComponent } from './pages/learn/paths/create-paths/create-pa
 import { CreatePathsLayoutComponent } from './layout/create-paths-layout/create-paths-layout.component';
 
 
-import {CreateCourseComponent} from "./pages/learn/course/create-course/create-course.component";
-import {CreateSectionComponent} from "./pages/learn/section/create-section/create-section.component";
-import { ProfRegisterComponent } from './pages/prof-register/prof-register.component';
-
+import { CreateCourseComponent } from './pages/learn/course/create-course/create-course.component';
+import { CreateSectionComponent } from './pages/learn/section/create-section/create-section.component';
 
 import { StudentRegisterComponent } from './pages/auth/student-register/student-register.component';
-
-
-
-
+import { ProfRegisterComponent } from './pages/auth/prof-register/prof-register.component';
+import { hasRoleGuard } from './shared/authorization/has-role.guard';
+import { Roles } from './shared/authorization/roles';
+import { authenticatedGuard } from './shared/authorization/authenticated.guard';
+import { unAuthenticatedGuard } from './shared/authorization/un-authenticated.guard';
 
 export const routes: Routes = [
   {
@@ -36,6 +35,7 @@ export const routes: Routes = [
   {
     path: 'auth',
     title: 'Authentication',
+    canActivate: [unAuthenticatedGuard],
     component: AuthComponent,
   },
 
@@ -52,7 +52,7 @@ export const routes: Routes = [
   {
     path: 'dashboard',
     title: 'Dashboard',
-
+    canActivate: [authenticatedGuard],
     component: DashboardLayoutComponent,
     children: [
       {
@@ -73,16 +73,28 @@ export const routes: Routes = [
       {
         path: 'groups',
         title: 'Groups',
+        canActivate: [hasRoleGuard],
+        data: {
+          roles: [Roles.ADMIN, Roles.PROF],
+        },
         component: GroupsComponent,
       },
       {
         path: 'profs',
         title: 'Profs',
+        canActivate: [hasRoleGuard],
+        data: {
+          roles: [Roles.ADMIN],
+        },
         component: ProfsComponent,
       },
       {
         path: 'students',
         title: 'Students',
+        canActivate: [hasRoleGuard],
+        data: {
+          roles: [Roles.ADMIN, Roles.PROF],
+        },
         component: StudentsComponent,
       },
       {
@@ -91,38 +103,42 @@ export const routes: Routes = [
         component: CalendarComponent,
       },
       {
-        path :'start',
-        title :'lets start',
-        component :StartComponent,
+        path: 'start',
+        title: 'lets start',
+        component: StartComponent,
       },
     ],
   },
   {
-    path: "paths/create",
-    title: "Create new Path",
+    path: 'paths/create',
+    title: 'Create new Path',
+    canActivate: [hasRoleGuard],
+    data: {
+      roles: [Roles.ADMIN],
+    },
     component: CreatePathsLayoutComponent,
     children: [
       {
         path: 'path-info',
-        component: CreatePathsComponent
+        component: CreatePathsComponent,
       },
       {
         path: 'cours-info',
-        component: CreateCourseComponent
+        component: CreateCourseComponent,
       },
       {
         path: 'section-info',
-        component: CreateSectionComponent
-      }
-    ]
+        component: CreateSectionComponent,
+      },
+    ],
   },
   {
-    path: "404",
-    component: NotFoundComponent
+    path: '404',
+    component: NotFoundComponent,
   },
   {
-    path: "**",
-    redirectTo: "/404",
-    pathMatch: "full"
-  }
+    path: '**',
+    redirectTo: '/404',
+    pathMatch: 'full',
+  },
 ];

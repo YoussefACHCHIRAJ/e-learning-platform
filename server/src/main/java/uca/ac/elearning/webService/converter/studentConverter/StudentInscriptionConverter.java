@@ -21,10 +21,10 @@ public class StudentInscriptionConverter {
     }
 
     public List<StudentInscriptionDto> toDto(List<StudentInscription> studentsInscription) {
-        return studentsInscription.stream().map(this::toDto).collect(Collectors.toList());
+        return studentsInscription.stream().map(this::toDto).toList();
     }
 
     public List<StudentInscription> toBean(List<StudentInscriptionDto> studentsInscriptionDtos) {
-        return studentsInscriptionDtos.stream().map(this::toBean).collect(Collectors.toList());
+        return studentsInscriptionDtos.stream().map(this::toBean).toList();
     }
 }
