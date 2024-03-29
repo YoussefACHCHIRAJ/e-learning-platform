@@ -14,8 +14,6 @@ import uca.ac.elearning.dao.users.UserDao;
 import uca.ac.elearning.service.facade.ProfService;
 import uca.ac.elearning.utils.ProfRequest;
 import uca.ac.elearning.utils.ProfResponse;
-
-import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 @Service
@@ -37,8 +35,6 @@ public class ProfServiceImpl implements ProfService {
         String profEmail = request.getProfEmail();
         User prof =  userDao.findByEmail(profEmail).orElseThrow();
         var profAvailabilities = request.getProfAvailabilitiesDetails();
-
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("hh:mm");
         profAvailabilities.forEach(detail -> {
 
             var profAvailability = ProfAvailability.builder()

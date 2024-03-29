@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ProfService } from '../../shared/service/prof.service';
 import { Day } from '../../shared/model/day.model';
 import { Router } from '@angular/router';
+import { auth } from '../../utils/functions';
 
 @Component({
   selector: 'app-prof-extra-registration',
@@ -21,25 +22,13 @@ export class ProfExtraRegistrationComponent implements OnInit {
   }
 
   public save() {
-    this.profService.profAvailabltiesDetails = [];
-    for (const day of this.selectedDays) {
-      const startTime = (
-        document.getElementById(`start-time-${day}`) as HTMLInputElement
-      ).value;
-      const endTime = (
-        document.getElementById(`end-time-${day}`) as HTMLInputElement
-      ).value;
-      this.addAvailabilityDetail(day, startTime, endTime);
-    }
+    this.extractAvailabilitiesDetails()
 
-    this.profService.requstBody = {
-      profEmail: 'youssef1@gmail.com',
+    this.profService.requestBody = {
+      profEmail: auth()?.user.email,
       profAvailabilitiesDetails: this.profService.profAvailabltiesDetails,
     };
 
-    console.log({
-      profAvailabltiesDetails: this.profService.profAvailabltiesDetails,
-    });
 
     return this.profService
       .saveProfAvailability()
@@ -81,4 +70,17 @@ export class ProfExtraRegistrationComponent implements OnInit {
       this.selectedDays = this.selectedDays.filter((d) => d !== day);
     }
   }
+  extractAvailabilitiesDetails() {
+    this.profService.profAvailabltiesDetails = [];
+      for (const day of this.selectedDays) {
+        const startTime = (
+          document.getElementById(`start-time-${day}`) as HTMLInputElement
+        ).value;
+        const endTime = (
+          document.getElementById(`end-time-${day}`) as HTMLInputElement
+        ).value;
+        this.addAvailabilityDetail(day, startTime, endTime);
+      }
+  }
 }
+
