@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { CategorySection } from '../../controller/model/category-section.model';
+import { CategorySection } from '../model/category-section.model';
 import { HttpClient } from '@angular/common/http';
 
 

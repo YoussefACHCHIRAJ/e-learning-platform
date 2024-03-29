@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 import { HttpClient } from '@angular/common/http';
-import { PathStatus } from '../../controller/model/path-status.model';
+import { PathStatus } from '../model/path-status.model';
 
 @Injectable({
   providedIn: 'root'

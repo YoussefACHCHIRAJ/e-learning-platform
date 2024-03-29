@@ -1,14 +1,43 @@
 import { Injectable } from '@angular/core';
 
 import { HttpClient } from '@angular/common/http';
-import { Path } from '../../controller/model/path.model';
+import { Path } from '../model/path.model';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PathService {
-  private path:Path;
-  private paths:Array<Path>;
+ public _path:Path | undefined ;
+  public _paths:Array<Path> | undefined ;
+  private url = '';
+  constructor(private http:HttpClient) {}
+  public save(): Observable<number> {
+    return this.http.post<number>(this.url, this.item);
+  }
 
-  constructor(private http:HttpClient) { }
+  get item(): Path {
+      if (this._path == null) {
+        this._path = new Path;
+      }
+      return this._path;
+    }
+
+    set item (path: Path) {
+        this._path = path;
+    }
+
+    get items(): Array<Path> {
+      if (this._paths == null) {
+        this._paths = new Array<Path>();
+      }
+      return this._paths;
+    }
+
+    set items(paths: Array<Path>){
+        this._paths = paths;
+    }
+
+
+  
 }

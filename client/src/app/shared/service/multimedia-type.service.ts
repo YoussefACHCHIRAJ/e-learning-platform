@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { MultimediaType } from '../../controller/model/multimedia-type.model';
+import { MultimediaType } from '../model/multimedia-type.model';
 
 
 @Injectable({
