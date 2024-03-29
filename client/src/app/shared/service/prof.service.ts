@@ -1,4 +1,5 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+
 import { Injectable } from '@angular/core';
 import { AvailabilityProf } from '../model/availabilityprof.model';
 import { AvailabilityProfDetails } from '../model/availability-prof-details.model';
@@ -13,6 +14,7 @@ interface ResponseType {
 interface RequestBodyType {
   profEmail: string;
   profAvailabilitiesDetails: AvailabilityProfDetails[];
+
 }
 
 @Injectable({
@@ -23,6 +25,7 @@ export class ProfService {
   private headers!: HttpHeaders;
 
   private _requestBody!: RequestBodyType;
+
 
   private _profAvailability!: AvailabilityProf;
   private _profAvailabilities!: AvailabilityProf[];

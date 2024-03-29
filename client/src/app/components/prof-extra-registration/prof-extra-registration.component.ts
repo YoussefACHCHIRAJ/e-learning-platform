@@ -29,6 +29,7 @@ export class ProfExtraRegistrationComponent implements OnInit {
       profAvailabilitiesDetails: this.profService.profAvailabltiesDetails,
     };
 
+
     return this.profService
       .saveProfAvailability()
       .subscribe((data) => {

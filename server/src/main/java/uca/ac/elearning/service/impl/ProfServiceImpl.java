@@ -35,7 +35,6 @@ public class ProfServiceImpl implements ProfService {
         String profEmail = request.getProfEmail();
         User prof =  userDao.findByEmail(profEmail).orElseThrow();
         var profAvailabilities = request.getProfAvailabilitiesDetails();
-
         profAvailabilities.forEach(detail -> {
 
             var profAvailability = ProfAvailability.builder()
