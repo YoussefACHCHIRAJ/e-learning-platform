@@ -18,6 +18,7 @@ import uca.ac.elearning.service.facade.AuthService;
 import uca.ac.elearning.utils.AuthenticationRequest;
 import uca.ac.elearning.utils.AuthenticationResponse;
 import uca.ac.elearning.utils.RegisterRequest;
+import uca.ac.elearning.webService.converter.usersConverter.UserConverter;
 
 @Service
 @RequiredArgsConstructor
@@ -27,6 +28,7 @@ public class AuthServiceImpl implements AuthService {
     private final PasswordEncoder passwordEncoder;
     private final JwtService jwtService;
     private final AuthenticationManager authenticationManager;
+    private final UserConverter userConverter;
 
     @Override
     public AuthenticationResponse register(@RequestBody RegisterRequest request){
@@ -58,14 +60,14 @@ public class AuthServiceImpl implements AuthService {
 
             var user = userDao.findByEmail(request.getEmail())
                     .orElseThrow(() -> new UsernameNotFoundException("User not found"));
-
+            var authUser = userConverter.toDto(user);
             var jwtToken = jwtService.generateToken(user);
 
             return AuthenticationResponse.builder()
                     .token(jwtToken)
                     .statusCode(200)
                     .message("successfully")
-                    .role(user.getRole())
+                    .authUser(authUser)
                     .build();
         } catch (AuthenticationException e) {
             // Handle authentication failure
@@ -73,7 +75,7 @@ public class AuthServiceImpl implements AuthService {
                     .token(null)
                     .statusCode(403)
                     .message("incorrect credentials")
-                    .role(null)
+                    .authUser(null)
                     .build();
         }
     }
