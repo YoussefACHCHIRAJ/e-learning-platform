@@ -29,7 +29,6 @@ export class LoginComponent {
   public login(){
     this.loginService.login()
       .subscribe(data => {
-        console.log({data});
         
         if(data?.statusCode === 403){
             this.loginService.error = data?.message; 
@@ -37,9 +36,9 @@ export class LoginComponent {
         }
         const authUser = {
           token: data?.token,
-          role: data?.role,
+          user: data?.authUser,
         }
-        localStorage.setItem("authUser", JSON.stringify(authUser));
+        localStorage.setItem("auth", JSON.stringify(authUser));
         this.router.navigate(["/dashboard"]);
       });
     

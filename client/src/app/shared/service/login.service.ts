@@ -2,14 +2,8 @@ import { Injectable } from '@angular/core';
 import { User } from '../model/user.model';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { AuthResponseType } from '../../types';
 
-
-interface ResponseType { 
-  statusCode: number;
-  token: string | null;
-  message: string;
-  role: string | null;
-}
 
 @Injectable({
   providedIn: 'root'
@@ -24,8 +18,8 @@ export class LoginService {
   constructor(private http: HttpClient) { }
   
 
-  login(): Observable<ResponseType>{
-    return this.http.post<ResponseType>(this.url, this.user);
+  login(): Observable<AuthResponseType>{
+    return this.http.post<AuthResponseType>(this.url, this.user);
   }
 
 
