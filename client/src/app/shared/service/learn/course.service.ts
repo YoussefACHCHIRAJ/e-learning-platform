@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import { Course } from '../../model/learn/course.model';
+
 import { HttpClient } from '@angular/common/http';
+import { Course } from '../../model/learn/course.model';
 
 @Injectable({
   providedIn: 'root'
@@ -8,9 +9,29 @@ import { HttpClient } from '@angular/common/http';
  
 
 export class CourseService {
-private course :Course;
-private courses :Array<Course>;
+private course! :Course;
+private courses! :Array<Course>;
 
-  constructor(private http :HttpClient) { }
+    constructor(private http :HttpClient) { }
+    
+
+    public getCourse(): Course {
+        return this.course;
+    }
+
+    public setCourse(course: Course): void {
+        this.course = course;
+    }
+
+    public getCourses():Array<Course> {
+        return this.courses;
+    }
+
+    public setCourses(courses:Array<Course>): void {
+        this.courses = courses;
+    }
+
+
+  
   
 }

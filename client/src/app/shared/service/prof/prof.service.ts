@@ -6,11 +6,9 @@ import { AvailabilityProfDetails } from '../../model/prof/availability-prof-deta
 import { Observable } from 'rxjs';
 import { Day } from '../../model/common/day.model';
 import { token } from '../../../utils/functions';
+import { AuthResponseType } from '../../../types';
 
-interface ResponseType {
-  statusCode: number;
-  message: string;
-}
+
 interface RequestBodyType {
   profEmail: string;
   profAvailabilitiesDetails: AvailabilityProfDetails[];
@@ -40,11 +38,10 @@ export class ProfService {
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${token()}`,
     });
-    console.log(this.headers)
   }
 
-  saveProfAvailability(): Observable<ResponseType> {
-    return this.http.post<ResponseType>(
+  saveProfAvailability(): Observable<AuthResponseType> {
+    return this.http.post<AuthResponseType>(
       this.url + 'availability',
       this.requestBody,
       { headers: this.headers }

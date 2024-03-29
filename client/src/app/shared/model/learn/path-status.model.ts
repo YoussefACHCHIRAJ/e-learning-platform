@@ -1,5 +1,7 @@
 export class PathStatus {
-  public id!: number;
-  public label!: String;
-  public code!: string;
+   
+    public label!: String;
+    public code!: string;
+
 }
+

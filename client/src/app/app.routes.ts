@@ -42,11 +42,13 @@ export const routes: Routes = [
   {
     path: 'student-register',
     title: 'student-register',
+    canActivate: [authenticatedGuard],
     component: StudentRegisterComponent,
   },
   {
     path: 'prof-register',
     title: 'prof-register',
+    canActivate: [authenticatedGuard],
     component: ProfRegisterComponent,
   },
   {

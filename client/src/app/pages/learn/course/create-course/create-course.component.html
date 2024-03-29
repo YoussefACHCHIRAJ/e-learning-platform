@@ -2,7 +2,7 @@
 
     <div class="flex-1">
         <form class="w-3/4 mx-auto space-y-4">
-            @for (item of [1, 2, 3]; track $index) {
+            @for (item of courseNumbers(); track $index) {
             <div class="bg-primary-800/20 p-2 space-y-2 rounded-xl">
                 <h3>Course {{ item }}</h3>
                 <div>
@@ -20,7 +20,7 @@
                 </div>
 
                 <div>
-                    <label for="path-label" class="block mb-2 text-sm font-medium text-gray-700 ">
+                    <label for="path-label" class="block mb-2 text-sm font-medium text-gray-700">
                         Course description :
                     </label>
                     <div class="relative">

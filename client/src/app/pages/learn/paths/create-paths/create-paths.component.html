@@ -44,17 +44,30 @@
                     </div>
                     <select id="path-status" name="pathStatus" [(ngModel)]="item.pathStatus"
                         class="bg-gray-50 border border-gray-300 text-gray-700 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5">
-
-                        <option>Begginer</option>
-                        <option>Intermediate</option>
-                        <option>Advanced</option>
+                        
+                        @for (pathStatus of pathStatuses; track $index) {
+                            <option [value]="pathStatus.code">{{ pathStatus.label }}</option>
+                        }
                     </select>
                 </div>
             </div>
+            <div class="grid md:grid-cols-2 md:gap-6">
+                <div class="relative z-0 w-full mb-5 group">
+                    <label for="number-of-courses" class="block mb-2 text-sm font-medium text-gray-700">Numbers of courses
+                        :</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                            <i class="fa-solid fa-book-open text-gray-600"></i>
+                        </div>
+                        <input type="number" id="number-of-courses" name="numberOfCourses" [(ngModel)]="item.courseNumbers"
+                            class="bg-gray-50 border border-gray-300 text-gray-700 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5"
+                            placeholder="4" />
+                    </div>
+                </div>
+            </div>
 
-            
 
-            <button (click)="incrementStepper()" type="button"
+            <button (click)="save()" type="button"
                 class="py-2 px-6 bg-primary-900 rounded-xl ml-auto font-lato text-white font-bold flex items-center gap-2">
                 Next
                 <i class="fa-solid fa-arrow-right"></i>
