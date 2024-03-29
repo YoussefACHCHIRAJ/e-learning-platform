@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { StepperService } from '../../../../shared/service/stepper.service';
 import { Router } from '@angular/router';
-
+import {FormsModule} from "@angular/forms";
 @Component({
   selector: 'app-create-course',
   standalone: true,
-  imports: [],
+  imports: [FormsModule
+  ],
   templateUrl: './create-course.component.html',
   styleUrl: './create-course.component.css'
 })
