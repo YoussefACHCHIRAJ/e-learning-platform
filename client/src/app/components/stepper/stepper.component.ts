@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { StepperService } from '../../controller/service/stepper.service';
+import { StepperService } from '../../shared/service/stepper.service';
 import { CommonModule } from '@angular/common';
 
 @Component({

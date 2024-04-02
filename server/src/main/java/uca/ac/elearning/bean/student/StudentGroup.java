@@ -3,7 +3,7 @@ package uca.ac.elearning.bean.student;
 import jakarta.persistence.*;
 import lombok.Data;
 import uca.ac.elearning.bean.path.Path;
-import uca.ac.elearning.bean.prof.Prof;
+import uca.ac.elearning.bean.users.User;
 
 import java.time.LocalDate;
 
@@ -19,10 +19,15 @@ public class StudentGroup {
     private LocalDate dateCreation;
     private int availablePlaces;
     @ManyToOne
-    private Prof prof;
+    private User prof;
     @ManyToOne
     private Path path;
+
+    @OneToOne
+    private StudentGroupDetail studentGroupDetail;
+
     @ManyToOne
     private StudentGroupCategory studentGroupCategory;
+
 
 }

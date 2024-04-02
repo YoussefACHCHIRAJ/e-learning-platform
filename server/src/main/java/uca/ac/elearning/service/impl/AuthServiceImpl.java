@@ -3,7 +3,10 @@ package uca.ac.elearning.service.impl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -15,6 +18,7 @@ import uca.ac.elearning.service.facade.AuthService;
 import uca.ac.elearning.utils.AuthenticationRequest;
 import uca.ac.elearning.utils.AuthenticationResponse;
 import uca.ac.elearning.utils.RegisterRequest;
+import uca.ac.elearning.webService.converter.usersConverter.UserConverter;
 
 @Service
 @RequiredArgsConstructor
@@ -24,11 +28,16 @@ public class AuthServiceImpl implements AuthService {
     private final PasswordEncoder passwordEncoder;
     private final JwtService jwtService;
     private final AuthenticationManager authenticationManager;
+    private final UserConverter userConverter;
 
     @Override
     public AuthenticationResponse register(@RequestBody RegisterRequest request){
+//        if(userDao.findByEmail(request.getEmail()) != null){
+//            return AuthenticationResponse.builder().token("").build();
+//        }
         var user = User.builder()
-                .fullName(request.getFullName())
+                .firstname(request.getFirstname())
+                .lastname(request.getLastname())
                 .email(request.getEmail())
                 .password(passwordEncoder.encode(request.getPassword()))
                 .role(Role.STUDENT)
@@ -40,16 +49,34 @@ public class AuthServiceImpl implements AuthService {
     }
 
     @Override
-    public AuthenticationResponse authenticate(@RequestBody AuthenticationRequest request){
-        authenticationManager.authenticate(
-                new UsernamePasswordAuthenticationToken(
-                        request.getEmail(),
-                        request.getPassword()
-                )
-        );
-        var user = userDao.findByEmail(request.getEmail())
-                .orElseThrow();
-        var jwtToken = jwtService.generateToken(user);
-        return AuthenticationResponse.builder().token(jwtToken).build();
+    public AuthenticationResponse authenticate(@RequestBody AuthenticationRequest request) {
+        try {
+            authenticationManager.authenticate(
+                    new UsernamePasswordAuthenticationToken(
+                            request.getEmail(),
+                            request.getPassword()
+                    )
+            );
+
+            var user = userDao.findByEmail(request.getEmail())
+                    .orElseThrow(() -> new UsernameNotFoundException("User not found"));
+            var authUser = userConverter.toDto(user);
+            var jwtToken = jwtService.generateToken(user);
+
+            return AuthenticationResponse.builder()
+                    .token(jwtToken)
+                    .statusCode(200)
+                    .message("successfully")
+                    .authUser(authUser)
+                    .build();
+        } catch (AuthenticationException e) {
+            // Handle authentication failure
+            return AuthenticationResponse.builder()
+                    .token(null)
+                    .statusCode(403)
+                    .message("incorrect credentials")
+                    .authUser(null)
+                    .build();
+        }
     }
 }
