@@ -1,9 +1,9 @@
-
 <div class="flex h-screen items-center justify-center gap-4 px-4 bg-gray-300/10">
 
     <div class="p-4">
         <div>
-            <h1 class="mb-2 text-4xl font-bold text-primary-900 leading-relaxed">Customize Your Schedule: <br> Select Available Days and
+            <h1 class="mb-2 text-4xl font-bold text-primary-900 leading-relaxed">Customize Your Schedule: <br> Select
+                Available Days and
                 Times</h1>
             <p>Select your available days and times to streamline your teaching schedule. Your choices optimize your
                 availability.</p>
@@ -15,53 +15,18 @@
         <div>
             <p class="block mb-2  font-medium text-gray-900 text-start">
                 <i class="fa-solid fa-calendar-days text-accent-300"></i>
-                Days of the Week</p>
-            <div class="flex items-center">
-                <div class="relative mb-6 flex gap-4">
-                    <div class="space-y-2">
-                        <div class="flex items-center ml-4">
-                            <input id="monday" type="checkbox" name="day-of-week" value="Monday"
-                                (change)="toggleAvailability($event, 'Monday')"
-                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                            <label for="monday" class="ml-2 text-sm font-medium text-gray-900">Monday</label>
-                        </div>
-                        <div class="flex items-center ml-4">
-                            <input id="Tuesday" type="checkbox" name="day-of-week" value="Tuesday"
-                                (change)="toggleAvailability($event, 'Tuesday')"
-                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                            <label for="Tuesday" class="ml-2 text-sm font-medium text-gray-900">Tuesday</label>
-                        </div>
-                    </div>
-                    <div class="space-y-2">
-                        <div class="flex items-center ml-4">
-                            <input id="Wednesday" type="checkbox" name="day-of-week" value="Wednesday"
-                                (change)="toggleAvailability($event, 'Wednesday')"
-                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                            <label for="Wednesday" class="ml-2 text-sm font-medium text-gray-900">Wednesday</label>
-                        </div>
-                        <div class="flex items-center ml-4">
-                            <input id="Thursday" type="checkbox" name="day-of-week" value="Thursday"
-                                (change)="toggleAvailability($event, 'Thursday')"
-                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                            <label for="Thursday" class="ml-2 text-sm font-medium text-gray-900">Thursday</label>
-                        </div>
-                    </div>
-                    <div class="space-y-2">
-                        <div class="flex items-center ml-4">
-                            <input id="Friday" type="checkbox" name="day-of-week" value="Friday"
-                                (change)="toggleAvailability($event, 'Friday')"
-                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                            <label for="Friday" class="ml-2 text-sm font-medium text-gray-900">Friday</label>
-                        </div>
-                        <div class="flex items-center ml-4">
-                            <input id="Saturday" type="checkbox" name="day-of-week" value="Saturday"
-                                (change)="toggleAvailability($event, 'Saturday')"
-                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                            <label for="Saturday" class="ml-2 text-sm font-medium text-gray-900">Saturday</label>
-                        </div>
-                    </div>
-
+                Days of the Week
+            </p>
+            <div class="grid grid-cols-2  gap-2">
+                @for (day of days; track $index) {
+                <div class="flex items-center ml-4 col-span-1">
+                    <input [id]="day.code" type="checkbox" name="day-of-week" [value]="day.code"
+                        (change)="toggleAvailability($event, day.label)"
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                    <label [for]="day.code" class="ml-2 text-sm font-medium text-gray-900">{{ day.label}}</label>
                 </div>
+                }
+
             </div>
         </div>
         <div class="space-y-2  overflow-auto h-3/4">
@@ -85,7 +50,9 @@
             </div>
             }
         </div>
-        <button class="text-white text-sm md:text-lg bg-primary-900 font-bold  px-6 py-2 m-5 rounded-2xl border-2 border-primary-700 border-solid outline-none tracking-wider uppercase cursor-pointer  transform active:scale-90  hover:bg-transparent hover:text-primary-900  transition duration-300 ease-in">Get Start</button>
+        <button type="button" (click)="save()"
+            class="text-white text-sm md:text-lg bg-primary-900 font-bold  px-6 py-2 m-5 rounded-2xl border-2 border-primary-700 border-solid outline-none tracking-wider uppercase cursor-pointer  transform active:scale-90  hover:bg-transparent hover:text-primary-900  transition duration-300 ease-in">Get
+            Start</button>
     </form>
 
 </div>

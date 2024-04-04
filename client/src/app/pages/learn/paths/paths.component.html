@@ -1,3 +1,8 @@
+<div class="mx-12">
+  <button routerLink="/paths/create/path-info" class="ml-auto block bg-slate-200/50 hover:bg-white hover:text-primary-900 transition duration-500 px-4 py-2 rounded-xl border font-lato font-bold text-gray-800 m-1"
+    [ngClass]="{'hidden': !isAdmin}"
+  >Create new path</button>
+</div>
 <div class="flex flex-col  space-y-4 justify-center pt-5 mx-12">
   <!-- Bouton Beginner -->
   <div class="bg-primary-700/50  border border-primary-900 hover:bg-primary-700 text-xl font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline">

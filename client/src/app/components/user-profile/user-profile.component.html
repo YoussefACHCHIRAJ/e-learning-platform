@@ -7,14 +7,14 @@
     <div class="flex items-start gap-3 px-4 py-2 flex-col md:flex-row ">
       <div>
 
-        <img src="../../../assets/profile_img.jpeg" alt="User Image"
+        <img [src]="avatarUrl" alt="User Image"
           class="w-14 h-14 border-2 border-primary-900 rounded-full mr-4">
       </div>
       <div class=" font-lato space-y-1 md:space-y-2">
 
-        <p class="text-gray-700"><strong class="text-gray-800">Full name :</strong> bachir ben dada</p>
-        <p class="text-gray-700"><strong class="text-gray-800">Username :</strong> bachir-ben-demdem</p>
-        <p class="text-gray-700"><strong class="text-gray-800">Email :</strong> bachir33.dada&#64;gmail.com</p>
+        <p class="text-gray-700"><strong class="text-gray-800">Firstname :</strong> {{ authUser.firstname }}</p>
+        <p class="text-gray-700"><strong class="text-gray-800">Lastname :</strong> {{ authUser.lastname }}</p>
+        <p class="text-gray-700"><strong class="text-gray-800">Email :</strong> {{ authUser.email }}</p>
 
       </div>
       <button

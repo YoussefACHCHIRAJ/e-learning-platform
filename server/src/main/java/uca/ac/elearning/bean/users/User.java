@@ -17,15 +17,14 @@ import java.util.List;
 @AllArgsConstructor
 @Entity
 public class User implements UserDetails {
-    @Id @GeneratedValue
-    private Long id;
-    private String fullName;
+    @Id
+    @GeneratedValue
+    private Integer id;
+    private String firstname;
+    private String lastname;
     private String email;
     private String password;
-    private boolean accountNonExpired = true;
-    private boolean accountNonLocked = true;
-    private boolean credentialsNonExpired = true;
-    private boolean enabled = true;
+
     @Enumerated(EnumType.STRING)
     private Role role;
 
@@ -35,7 +34,34 @@ public class User implements UserDetails {
     }
 
     @Override
+    public String getPassword() {
+        return password;
+    }
+
+    @Override
     public String getUsername() {
         return email;
     }
+
+    @Override
+    public boolean isAccountNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isAccountNonLocked() {
+        return true;
+    }
+
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return true;
+    }
+
+
 }

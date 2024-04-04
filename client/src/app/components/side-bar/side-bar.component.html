@@ -1,5 +1,5 @@
 <div class="h-screen w-full p-6 pr-0 flex flex-col">
-  <h1 class="lg:text-2xl md:text-lg text-md  font-semibold mb-6 cursor-pointer" (click)="navigateTo('dashboard', 'Learn')">
+  <h1 class="lg:text-2xl md:text-lg text-md  font-semibold mb-6 cursor-pointer" (click)="navigateTo('dashboard')">
 
     <i class="fas fa-graduation-cap mr-3 text-white"></i>
     <span class="text-white">Laabit</span> academy
@@ -16,7 +16,7 @@
     </li>
     }
   </ul>
-  <button routerLink="" class="border-t w-full pt-4 text-start font-bold text-white pl-2 space-x-2 mt-auto">
+  <button (click)="logout()" class="border-t w-full pt-4 text-start font-bold text-white pl-2 space-x-2 mt-auto">
     <i class="fa-solid fa-arrow-right-from-bracket"></i>
     Log out
   </button>

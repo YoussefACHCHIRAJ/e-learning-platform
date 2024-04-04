@@ -1,3 +1,6 @@
+import { Roles } from "../app/shared/authorization/roles";
+import { auth } from "../app/utils/functions";
+
 export const eventList = [
   {
     title: 'cours 1',
@@ -32,56 +35,56 @@ export const navigationButtonsValues = [
     icon: "fa-solid fa-house",
     content: "Learn",
     path: "dashboard",
-    title: "Learn",
-    isActive: true
+    title: `Welcome back ${auth().user.firstname}`,
+    isActive: true,
+    authorities: [Roles.ADMIN, Roles.PROF, Roles.STUDENT]
   },
   {
     icon: "fa-solid fa-route",
     content: "Paths",
     path: "dashboard/paths",
     title: "Paths",
-    isActive: false
-
+    isActive: false,
+    authorities: [Roles.ADMIN, Roles.PROF, Roles.STUDENT]
   },
   {
     icon: "fas fa-user",
     content: "Profile",
     path: "dashboard/profile",
     title: "Your Profile",
-    isActive:  false
-
+    isActive:  false,
+    authorities: [Roles.ADMIN, Roles.PROF, Roles.STUDENT]
   },
   {
     icon: "fa-solid fa-users-rectangle",
     content: "Groups",
     path: "dashboard/groups",
     title: "Groups List",
-    isActive: false
-
+    isActive: false,
+    authorities: [Roles.ADMIN, Roles.PROF]
   },
   {
     icon: "fa-solid fa-user-tie",
     content: "Profs",
     path: "dashboard/profs",
     title: "Profs List",
-    isActive: false
-
+    isActive: false,
+    authorities: [Roles.ADMIN]
   },
   {
     icon: "fa-solid fa-user-group",
     content: "Students",
     path: "dashboard/students",
     title: "Students List",
-    isActive: false
-
+    isActive: false,
+    authorities: [Roles.ADMIN, Roles.PROF]
   },
   {
     icon: "fa-solid fa-calendar-days",
     content: "Calender",
     path: "dashboard/calendar",
     title: "Calendar",
-    isActive: false
-
+    isActive: false,
+    authorities: [Roles.ADMIN, Roles.PROF, Roles.STUDENT]
   },
- 
 ]
