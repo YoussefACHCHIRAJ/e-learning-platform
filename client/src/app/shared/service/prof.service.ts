@@ -5,7 +5,8 @@ import { AvailabilityProf } from '../model/availabilityprof.model';
 import { AvailabilityProfDetails } from '../model/availability-prof-details.model';
 import { Observable } from 'rxjs';
 import { Day } from '../model/day.model';
-import { token } from '../../utils/functions';
+import { auth, token } from '../../utils/functions';
+import { Roles } from '../authorization/roles';
 
 interface ResponseType {
   statusCode: number;
@@ -40,7 +41,6 @@ export class ProfService {
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${token()}`,
     });
-    console.log(this.headers)
   }
 
   saveProfAvailability(): Observable<ResponseType> {
@@ -53,6 +53,14 @@ export class ProfService {
 
   findAllDays(): Observable<Day[]> {
     return this.http.get<Day[]>(this.url + 'days', { headers: this.headers });
+  }
+
+  findAllProfAvailabilities():Observable<AvailabilityProf[]>{
+    return this.http.get<AvailabilityProf[]>(
+      `${this.url}findAllProfAvailabilities/${auth().user.email}`,
+      { headers: this.headers }
+    )
+    
   }
 
   public get requestBody(): RequestBodyType {
