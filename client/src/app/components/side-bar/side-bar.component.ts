@@ -43,7 +43,7 @@ export class SideBarComponent implements OnInit {
     this._navigationButtons = value;
   }
 
-  navigateTo(path: string, title: string) {
+  navigateTo(path: string, title: string = `Welcome back ${auth().user.firstname}`) {
     this.router.navigate([path]);
     this.headerService.headerTitle = title;
   }
