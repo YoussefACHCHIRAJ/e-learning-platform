@@ -7,7 +7,5 @@ import uca.ac.elearning.bean.path.PathStatus;
 @Repository
 public interface PathStatusDao extends JpaRepository<PathStatus, Long> {
     PathStatus findByCode(String code);
-
-
     int deleteByCode(String code);
 }

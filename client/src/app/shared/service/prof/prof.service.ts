@@ -1,17 +1,14 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import { Injectable } from '@angular/core';
-import { AvailabilityProf } from '../model/availabilityprof.model';
-import { AvailabilityProfDetails } from '../model/availability-prof-details.model';
+import { AvailabilityProf } from '../../model/prof/availabilityprof.model';
+import { AvailabilityProfDetails } from '../../model/prof/availability-prof-details.model';
 import { Observable } from 'rxjs';
-import { Day } from '../model/day.model';
-import { auth, token } from '../../utils/functions';
-import { Roles } from '../authorization/roles';
+import { Day } from '../../model/common/day.model';
+import { AuthResponseType } from '../../../types';
+import { auth, token } from '../../../utils/functions';
 
-interface ResponseType {
-  statusCode: number;
-  message: string;
-}
+
 interface RequestBodyType {
   profEmail: string;
   profAvailabilitiesDetails: AvailabilityProfDetails[];
@@ -43,8 +40,8 @@ export class ProfService {
     });
   }
 
-  saveProfAvailability(): Observable<ResponseType> {
-    return this.http.post<ResponseType>(
+  saveProfAvailability(): Observable<AuthResponseType> {
+    return this.http.post<AuthResponseType>(
       this.url + 'availability',
       this.requestBody,
       { headers: this.headers }
