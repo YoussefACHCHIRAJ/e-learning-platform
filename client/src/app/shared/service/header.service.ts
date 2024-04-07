@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
+import { auth } from '../../utils/functions';
 
 @Injectable({
   providedIn: 'root'
 })
 export class HeaderService {
-  private _headerTitle = "Learn";
+  private _headerTitle = `Welcome back ${auth().user.firstname}`;
   
   constructor() { }
   public get headerTitle(): string {

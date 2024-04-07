@@ -5,7 +5,7 @@ import { AvailabilityProf } from '../../model/prof/availabilityprof.model';
 import { AvailabilityProfDetails } from '../../model/prof/availability-prof-details.model';
 import { Observable } from 'rxjs';
 import { Day } from '../../model/common/day.model';
-import { token } from '../../../utils/functions';
+import { auth, token } from '../../../utils/functions';
 import { AuthResponseType } from '../../../types';
 
 
@@ -50,6 +50,14 @@ export class ProfService {
 
   findAllDays(): Observable<Day[]> {
     return this.http.get<Day[]>(this.url + 'days', { headers: this.headers });
+  }
+
+  findAllProfAvailabilities():Observable<AvailabilityProf[]>{
+    return this.http.get<AvailabilityProf[]>(
+      `${this.url}findAllProfAvailabilities/${auth().user.email}`,
+      { headers: this.headers }
+    )
+    
   }
 
   public get requestBody(): RequestBodyType {

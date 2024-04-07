@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { auth } from '../../utils/functions';
+import { AvatarService } from '../../shared/service/avatar.service';
 
 @Component({
   selector: 'app-user-profile',
@@ -10,6 +11,14 @@ import { auth } from '../../utils/functions';
 })
 export class UserProfileComponent {
   private _authUser = auth()?.user;
+ 
+ 
+  constructor(private avatarService: AvatarService){}
+
+  public get avatarUrl(): string {
+    return this.avatarService.avatarUrl;
+  }
+
   public get authUser() {
     return this._authUser;
   }

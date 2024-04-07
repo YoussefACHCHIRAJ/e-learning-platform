@@ -54,4 +54,9 @@ public class ProfServiceImpl implements ProfService {
                 .message("ok")
                 .build();
     }
+
+    @Override
+    public List<ProfAvailability> findAllProfAvailabilities(String profEmail){
+        return profAvailabilityDao.findByProf_Email(profEmail);
+    }
 }
