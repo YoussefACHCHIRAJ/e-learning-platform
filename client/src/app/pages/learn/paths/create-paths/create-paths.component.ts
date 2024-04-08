@@ -21,11 +21,11 @@ export class CreatePathsComponent implements OnInit {
     private pathStatusService: PathStatusService
   ) {}
   ngOnInit(): void {
-    this.findAll();
+    this.findAllPathsStatuses();
   }
 
 
-  findAll(){
+  findAllPathsStatuses(){
     return this.pathStatusService.findAll().subscribe(data => {
       this.pathStatuses = data;
     });

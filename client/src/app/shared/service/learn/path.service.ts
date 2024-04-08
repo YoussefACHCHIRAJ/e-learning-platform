@@ -22,7 +22,7 @@ export class PathService {
   }
   
   public save(): Observable<number> {
-    return this.http.post<number>(this.url, this.path);
+    return this.http.post<number>(this.url, this.path, { headers: this.headers });
   }
 
   get path(): Path {

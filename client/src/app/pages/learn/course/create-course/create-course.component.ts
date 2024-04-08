@@ -25,11 +25,11 @@ export class CreateCourseComponent {
   }
 
   get path(): Path {
-    return this.pathService.item;
+    return this.pathService.path;
   }
 
   set path(value: Path) {
-    this.pathService.item = value;
+    this.pathService.path = value;
   }
   courseNumbers(): number[]{
     const array = new Array(this.path.courseNumbers);

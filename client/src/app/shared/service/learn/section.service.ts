@@ -6,8 +6,24 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class SectionService {
-  private section:Section;
-  private sections:Array<Section>;
-
+  private _section!: Section;
+  
+  private _sections!: Array<Section>;
+  
   constructor(private http:HttpClient) { }
+
+  public get section(): Section {
+    return this._section;
+  }
+  public set section(value: Section) {
+    this._section = value;
+  }
+  
+  public get sections(): Array<Section> {
+    return this._sections;
+  }
+  public set sections(value: Array<Section>) {
+    this._sections = value;
+  }
+
 }
