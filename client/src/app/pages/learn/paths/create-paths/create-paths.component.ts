@@ -39,25 +39,25 @@ export class CreatePathsComponent implements OnInit {
     //     alert('Error');
     //   }
     // });
-    console.log(this.service.item);
+    console.log(this.service.path);
     this.incrementStepper();
     
   }
 
-  get item(): Path {
-    return this.service.item;
+  get path(): Path {
+    return this.service.path;
   }
 
-  set item(value: Path) {
-    this.service.item = value;
+  set path(value: Path) {
+    this.service.path = value;
   }
 
-  get items(): Array<Path> {
-    return this.service.items;
+  get paths(): Array<Path> {
+    return this.service.paths;
   }
 
   set items(value: Array<Path>) {
-    this.service.items = value;
+    this.service.paths = value;
   }
 
   incrementStepper() {
