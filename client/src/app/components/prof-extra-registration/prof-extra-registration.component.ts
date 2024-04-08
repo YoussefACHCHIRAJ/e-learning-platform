@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProfService } from '../../shared/service/prof.service';
-import { Day } from '../../shared/model/day.model';
+import { ProfService } from '../../shared/service/prof/prof.service';
+import { Day } from '../../shared/model/common/day.model';
 import { Router } from '@angular/router';
 import { auth } from '../../utils/functions';
 
