@@ -4,6 +4,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Path } from '../../model/learn/path.model';
 import { Observable } from 'rxjs';
 import { token } from '../../../utils/functions';
+import { RequestBodyInterface } from '../../../types';
 
 @Injectable({
   providedIn: 'root'
@@ -12,6 +13,8 @@ export class PathService {
   public _path:Path | undefined ;
   public _paths:Array<Path> | undefined ;
   private url = 'http://localhost:8090/api/path/';
+  private _requestBody!: RequestBodyInterface;
+  
   private headers: HttpHeaders;
   
   constructor(private http: HttpClient) {
@@ -22,7 +25,7 @@ export class PathService {
   }
   
   public save(): Observable<number> {
-    return this.http.post<number>(this.url, this.path, { headers: this.headers });
+    return this.http.post<number>(this.url, this.requestBody, { headers: this.headers });
   }
 
   get path(): Path {
@@ -47,6 +50,11 @@ export class PathService {
         this._paths = values;
     }
 
-
+    public get requestBody(): RequestBodyInterface {
+      return this._requestBody;
+    }
+    public set requestBody(value: RequestBodyInterface) {
+      this._requestBody = value;
+    }
   
 }

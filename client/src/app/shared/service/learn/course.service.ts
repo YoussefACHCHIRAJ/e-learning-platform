@@ -9,26 +9,26 @@ import { Course } from '../../model/learn/course.model';
  
 
 export class CourseService {
-private course! :Course;
-private courses! :Array<Course>;
+private _course! :Course;
+private _courses! :Array<Course>;
 
     constructor(private http :HttpClient) { }
     
 
-    public getCourse(): Course {
-        return this.course;
+    public get course(): Course {
+        return this._course;
     }
 
-    public setCourse(course: Course): void {
-        this.course = course;
+    public set course(course: Course) {
+        this._course = course;
     }
 
-    public getCourses():Array<Course> {
-        return this.courses;
+    public get courses():Array<Course> {
+        return this._courses;
     }
 
-    public setCourses(courses:Array<Course>): void {
-        this.courses = courses;
+    public set courses(courses:Array<Course>) {
+        this._courses = courses;
     }
 
 

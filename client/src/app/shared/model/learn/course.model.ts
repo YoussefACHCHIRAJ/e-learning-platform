@@ -1,8 +1,9 @@
 import { Path } from "./path.model";
 
 export class Course {
-    public label!: String;
-    public code!: String;
+    public label!: string;
+    public code!: string;
+    public description!: string;
     public path!: Path;
-    public sectionsNumbers!: number;
+    public sectionsNumbers?: number;
 }
