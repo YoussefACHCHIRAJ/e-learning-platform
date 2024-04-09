@@ -35,7 +35,8 @@ export const navigationButtonsValues = [
     icon: "fa-solid fa-house",
     content: "Learn",
     path: "dashboard",
-    title: 'Welcome back ${auth().user.firstname}',
+
+    title: `Welcome back ${auth()?.user.firstname}`,
     isActive: true,
     authorities: [Roles.ADMIN, Roles.PROF, Roles.STUDENT]
   },

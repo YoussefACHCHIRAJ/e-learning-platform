@@ -8,8 +8,6 @@ import java.util.List;
 
 @Data
 public class PathStatusDto {
-    private long id;
     private String label;
     private String code;
-    private List<Path> paths;
 }
