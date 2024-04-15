@@ -36,13 +36,19 @@ export class CreateSectionComponent implements OnInit {
 
   incrementStepper() {
     this.stepperService.stepperCounter = 3;
-    this.extractSectionsInfo()
+    this.extractSectionsInfo();
     const requestBody: RequestBodyInterface = {
       path: this.pathService.path,
       courses: this.courses,
       sections: this.sections,
     };
-    console.log({ requestBody });
+    this.pathService.save().subscribe((data) => {
+      if (data) {
+        this.router.navigate(['dashboard/paths']);
+      } else {
+        console.log({ data });
+      }
+    });
   }
   descrementStepper() {
     this.stepperService.stepperCounter = 1;
@@ -116,10 +122,10 @@ export class CreateSectionComponent implements OnInit {
           multimediaType: mediaType.value,
           course: course.course,
         };
-        if(this.sections){
+        if (this.sections) {
           this.sections = [...this.sections, this.section];
-        }else{
-          this.sections = [ this.section];
+        } else {
+          this.sections = [this.section];
         }
       }
     }
