@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { getAvatar } from '../../utils/functions';
+import { JwtService } from './jwt.service';
 
 @Injectable({
   providedIn: 'root',
@@ -7,8 +8,8 @@ import { getAvatar } from '../../utils/functions';
 export class AvatarService {
   private _avatarUrl!: string;
 
-  constructor() {
-    this.avatarUrl = getAvatar();
+  constructor(private jwtService: JwtService) {
+    this.avatarUrl = getAvatar(jwtService.extractAuthUser().email!);
   }
 
   public get avatarUrl(): string {

@@ -1,11 +1,12 @@
 import { CanActivateFn, Router } from '@angular/router';
 import { Roles } from './roles';
 import { inject } from '@angular/core';
-import { auth } from '../../utils/functions';
+import { JwtService } from '../service/jwt.service';
 
 export const hasRoleGuard: CanActivateFn = (route, state) => {
   const router: Router = inject(Router);
-  const userRole: string = auth()?.user?.role!;
+  const jwtService: JwtService = inject(JwtService);
+  const userRole: string = jwtService.extractRole()!;
   const expectedRoles: Roles[] = route.data['roles'];
 
   const hasRole: boolean = expectedRoles.some((role) => userRole === role);

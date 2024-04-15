@@ -5,9 +5,8 @@ import { AvailabilityProf } from '../../model/prof/availabilityprof.model';
 import { AvailabilityProfDetails } from '../../model/prof/availability-prof-details.model';
 import { Observable } from 'rxjs';
 import { Day } from '../../model/common/day.model';
-import { auth, token } from '../../../utils/functions';
 import { AuthResponseType } from '../../../types';
-
+import { JwtService } from '../jwt.service';
 
 interface RequestBodyType {
   profEmail: string;
@@ -33,10 +32,10 @@ export class ProfService {
 
   private _url = 'http://localhost:8090/api/prof/';
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private jwtService: JwtService) {
     this.headers = new HttpHeaders({
       'Content-Type': 'application/json',
-      'Authorization': `Bearer ${token()}`,
+      'Authorization': `Bearer ${this.jwtService.getToken()}`,
     });
   }
 
@@ -49,12 +48,13 @@ export class ProfService {
   }
 
   findAllDays(): Observable<Day[]> {
+    this.jwtService.extractClaims(this.jwtService.getToken())
     return this.http.get<Day[]>(this.url + 'days', { headers: this.headers });
   }
 
   findAllProfAvailabilities():Observable<AvailabilityProf[]>{
     return this.http.get<AvailabilityProf[]>(
-      `${this.url}findAllProfAvailabilities/${auth().user.email}`,
+      `${this.url}findAllProfAvailabilities/${this.jwtService.extractAuthUser().email}`,
       { headers: this.headers }
     )
     

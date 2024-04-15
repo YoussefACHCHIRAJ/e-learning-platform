@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { PathStatus } from '../../model/learn/path-status.model';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { token } from '../../../utils/functions';
+import { JwtService } from '../jwt.service';
 
 @Injectable({
   providedIn: 'root'
@@ -14,10 +14,10 @@ export class PathStatusService {
   private headers!: HttpHeaders;
   
   
-  constructor(private http:HttpClient) {
+  constructor(private http:HttpClient, private jwtService: JwtService) {
     this.headers = new HttpHeaders({
       'Content-Type': 'application/json',
-      'Authorization': `Bearer ${token()}`,
+      'Authorization': `Bearer ${this.jwtService.getToken()}`,
     });
    }
 
