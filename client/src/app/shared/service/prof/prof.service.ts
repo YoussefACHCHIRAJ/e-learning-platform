@@ -8,7 +8,6 @@ import { Day } from '../../model/common/day.model';
 import { AuthResponseType } from '../../../types';
 import { JwtService } from '../jwt.service';
 
-
 interface RequestBodyType {
   profEmail: string;
   profAvailabilitiesDetails: AvailabilityProfDetails[];

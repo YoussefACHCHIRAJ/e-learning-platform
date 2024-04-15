@@ -4,10 +4,7 @@ import { CalendarOptions } from '@fullcalendar/core';
 import interactionPlugin from '@fullcalendar/interaction';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
-import { eventList } from '../../../constants';
-//import { ProfService } from '../../shared/service/prof.service';
 import { Roles } from '../../shared/authorization/roles';
-
 import { CalendarEventsType } from '../../types';
 import { ProfService } from '../../shared/service/prof/prof.service';
 import { AvailabilityProf } from '../../shared/model/prof/availabilityprof.model';
