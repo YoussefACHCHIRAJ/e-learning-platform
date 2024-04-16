@@ -3,8 +3,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Path } from '../../model/learn/path.model';
 import { Observable } from 'rxjs';
-import { token } from '../../../utils/functions';
 import { RequestBodyInterface } from '../../../types';
+import { JwtService } from '../jwt.service';
 
 @Injectable({
   providedIn: 'root'
@@ -17,10 +17,10 @@ export class PathService {
   
   private headers: HttpHeaders;
   
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private jwtService: JwtService) {
     this.headers = new HttpHeaders({
       'Content-Type': 'application/json',
-      'Authorization': `Bearer ${token()}`,
+      'Authorization': `Bearer ${this.jwtService.getToken()}`,
     });
   }
   

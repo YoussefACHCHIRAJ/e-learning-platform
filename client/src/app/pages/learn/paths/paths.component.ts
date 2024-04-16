@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { isAdmin } from '../../../utils/functions';
 import { CommonModule } from '@angular/common';
+import { JwtService } from '../../../shared/service/jwt.service';
 
 @Component({
   selector: 'app-paths',
@@ -12,7 +12,10 @@ import { CommonModule } from '@angular/common';
 })
 export class PathsComponent {
   
-  private _isAdmin: boolean = isAdmin();
+  private _isAdmin!: boolean;
+  constructor ( private jwtSerice: JwtService) {
+    this._isAdmin = this.jwtSerice.isAdmin()
+  }
   
   public get isAdmin(): boolean {
     return this._isAdmin;
