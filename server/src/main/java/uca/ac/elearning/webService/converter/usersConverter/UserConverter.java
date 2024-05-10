@@ -2,13 +2,13 @@ package uca.ac.elearning.webService.converter.usersConverter;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
-import uca.ac.elearning.bean.student.StudentGroup;
+
 import uca.ac.elearning.bean.users.User;
-import uca.ac.elearning.webService.dto.studentDto.StudentGroupDto;
+
 import uca.ac.elearning.webService.dto.userDto.UserDto;
 
 import java.util.List;
-import java.util.stream.Collectors;
+
 
 @Component
 public class UserConverter {
