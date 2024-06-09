@@ -1,17 +1,13 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import { Injectable } from '@angular/core';
-import { AvailabilityProf } from '../model/availabilityprof.model';
-import { AvailabilityProfDetails } from '../model/availability-prof-details.model';
+import { AvailabilityProf } from '../../model/prof/availabilityprof.model';
+import { AvailabilityProfDetails } from '../../model/prof/availability-prof-details.model';
 import { Observable } from 'rxjs';
-import { Day } from '../model/day.model';
-import { auth, token } from '../../utils/functions';
-import { Roles } from '../authorization/roles';
+import { Day } from '../../model/common/day.model';
+import { AuthResponseType } from '../../../types';
+import { JwtService } from '../jwt.service';
 
-interface ResponseType {
-  statusCode: number;
-  message: string;
-}
 interface RequestBodyType {
   profEmail: string;
   profAvailabilitiesDetails: AvailabilityProfDetails[];
@@ -36,15 +32,15 @@ export class ProfService {
 
   private _url = 'http://localhost:8090/api/prof/';
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private jwtService: JwtService) {
     this.headers = new HttpHeaders({
       'Content-Type': 'application/json',
-      'Authorization': `Bearer ${token()}`,
+      'Authorization': `Bearer ${this.jwtService.getToken()}`,
     });
   }
 
-  saveProfAvailability(): Observable<ResponseType> {
-    return this.http.post<ResponseType>(
+  saveProfAvailability(): Observable<AuthResponseType> {
+    return this.http.post<AuthResponseType>(
       this.url + 'availability',
       this.requestBody,
       { headers: this.headers }
@@ -52,12 +48,13 @@ export class ProfService {
   }
 
   findAllDays(): Observable<Day[]> {
+    this.jwtService.extractClaims(this.jwtService.getToken())
     return this.http.get<Day[]>(this.url + 'days', { headers: this.headers });
   }
 
   findAllProfAvailabilities():Observable<AvailabilityProf[]>{
     return this.http.get<AvailabilityProf[]>(
-      `${this.url}findAllProfAvailabilities/${auth().user.email}`,
+      `${this.url}findAllProfAvailabilities/${this.jwtService.extractAuthUser().email}`,
       { headers: this.headers }
     )
     

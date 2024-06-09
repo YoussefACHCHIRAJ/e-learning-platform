@@ -1,5 +1,4 @@
 import { Roles } from "../app/shared/authorization/roles";
-import { auth } from "../app/utils/functions";
 
 export const eventList = [
   {
@@ -35,7 +34,7 @@ export const navigationButtonsValues = [
     icon: "fa-solid fa-house",
     content: "Learn",
     path: "dashboard",
-    title: `Welcome back ${auth()?.user.firstname}`,
+    title: `Welcome back`,
     isActive: true,
     authorities: [Roles.ADMIN, Roles.PROF, Roles.STUDENT]
   },

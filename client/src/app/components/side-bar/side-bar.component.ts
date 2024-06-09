@@ -5,7 +5,7 @@ import { NavigationEnd, Router, RouterLink } from '@angular/router';
 import { filter } from 'rxjs';
 import { navigationButtonsValues } from '../../../constants';
 import { HeaderService } from '../../shared/service/header.service';
-import { auth } from '../../utils/functions';
+import { JwtService } from '../../shared/service/jwt.service';
 
 interface NavigationButtons {
   icon: string;
@@ -26,10 +26,10 @@ interface NavigationButtons {
 export class SideBarComponent implements OnInit {
   private _navigationButtons!: Array<NavigationButtons>;
 
-  constructor(private router: Router, private headerService: HeaderService) {}
+  constructor(private router: Router, private headerService: HeaderService, private jwtService: JwtService) {}
 
   ngOnInit(): void {
-    this.navigationButtons = navigationButtonsValues.filter(nav => nav.authorities?.some(role => role === auth()?.user?.role));
+    this.navigationButtons = navigationButtonsValues.filter(nav => nav.authorities?.some(role => role === this.jwtService.extractRole()));
 
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
@@ -43,7 +43,7 @@ export class SideBarComponent implements OnInit {
     this._navigationButtons = value;
   }
 
-  navigateTo(path: string, title: string = `Welcome back ${auth().user.firstname}`) {
+  navigateTo(path: string, title: string = `Welcome back ${this.jwtService.extractAuthUser().firstname}`) {
     this.router.navigate([path]);
     this.headerService.headerTitle = title;
   }
@@ -57,7 +57,7 @@ export class SideBarComponent implements OnInit {
   }
 
   logout(){
-    localStorage.removeItem('auth');
+    localStorage.removeItem('token');
     this.router.navigate([""]);
   }
 }
