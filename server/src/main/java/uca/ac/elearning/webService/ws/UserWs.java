@@ -17,7 +17,7 @@ import uca.ac.elearning.webService.dto.userDto.UserDto;
 
 @RestController
 @RequestMapping("/api/user")
-@RequiredArgsConstructor // automatically generates a constructor for the final arguments
+@RequiredArgsConstructor 
 public class UserWs {
     private final UserService userService;
     private final UserConverter userConverter;
