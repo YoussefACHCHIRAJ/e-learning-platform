@@ -19,7 +19,7 @@ export class LoginComponent {
   constructor(private loginService: LoginService, private router: Router){}
 
   public get user(){
-    return this.loginService.user;
+    return this.loginService?.user;
   }
 
   public get error(){
