@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProfService } from '../../shared/service/prof.service';
-import { Day } from '../../shared/model/day.model';
+import { ProfService } from '../../shared/service/prof/prof.service';
+import { Day } from '../../shared/model/common/day.model';
 import { Router } from '@angular/router';
-import { auth } from '../../utils/functions';
+import { JwtService } from '../../shared/service/jwt.service';
 
 @Component({
   selector: 'app-prof-extra-registration',
@@ -16,7 +16,7 @@ import { auth } from '../../utils/functions';
 export class ProfExtraRegistrationComponent implements OnInit {
   selectedDays: string[] = [];
 
-  constructor(private profService: ProfService, private router: Router) {}
+  constructor(private profService: ProfService, private router: Router, private jwtService: JwtService) {}
   ngOnInit(): void {
     this.findAllDays();
   }
@@ -25,7 +25,7 @@ export class ProfExtraRegistrationComponent implements OnInit {
     this.extractAvailabilitiesDetails()
 
     this.profService.requestBody = {
-      profEmail: auth()?.user.email,
+      profEmail: this.jwtService.extractAuthUser().email,
       profAvailabilitiesDetails: this.profService.profAvailabltiesDetails,
     };
 

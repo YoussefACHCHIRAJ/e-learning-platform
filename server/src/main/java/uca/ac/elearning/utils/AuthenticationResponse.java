@@ -16,5 +16,4 @@ public class AuthenticationResponse {
     private int statusCode;
     private String token;
     private String message;
-    private UserDto authUser;
 }

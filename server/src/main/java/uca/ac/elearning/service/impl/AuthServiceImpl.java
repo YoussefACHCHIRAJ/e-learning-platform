@@ -20,6 +20,9 @@ import uca.ac.elearning.utils.AuthenticationResponse;
 import uca.ac.elearning.utils.RegisterRequest;
 import uca.ac.elearning.webService.converter.usersConverter.UserConverter;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @Service
 @RequiredArgsConstructor
 public class AuthServiceImpl implements AuthService {
@@ -61,13 +64,14 @@ public class AuthServiceImpl implements AuthService {
             var user = userDao.findByEmail(request.getEmail())
                     .orElseThrow(() -> new UsernameNotFoundException("User not found"));
             var authUser = userConverter.toDto(user);
-            var jwtToken = jwtService.generateToken(user);
+            var tokenMap = new HashMap<String, Object>();
+            tokenMap.put("authUser", authUser);
+            var jwtToken = jwtService.generateToken(tokenMap, user);
 
             return AuthenticationResponse.builder()
                     .token(jwtToken)
                     .statusCode(200)
                     .message("successfully")
-                    .authUser(authUser)
                     .build();
         } catch (AuthenticationException e) {
             // Handle authentication failure
@@ -75,7 +79,6 @@ public class AuthServiceImpl implements AuthService {
                     .token(null)
                     .statusCode(403)
                     .message("incorrect credentials")
-                    .authUser(null)
                     .build();
         }
     }

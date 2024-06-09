@@ -12,6 +12,8 @@ public class Course {
     private long id;
     private String label;
     private String code;
+    @Column(length = 500)
+    private String description;
     @ManyToOne
     private Path path;
 }
