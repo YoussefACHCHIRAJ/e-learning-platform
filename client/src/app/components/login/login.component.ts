@@ -20,7 +20,7 @@ export class LoginComponent {
   constructor(private loginService: LoginService, private router: Router, private jwtService: JwtService){}
 
   public get user(){
-    return this.loginService.user;
+    return this.loginService?.user;
   }
 
   public get error(){
